@@ -1,8 +1,12 @@
 /*
-See LICENSE folder for this sample’s licensing information.
+ 
+ AppDelegate.swift
+ roomfindr
+ 
+ Like SceneDelegate, this class is responsible for handling various processes at the beginning and ending of the apps lifecycle.
 
-Abstract:
-The application delegate class.
+ Created on 2/25/23.
+ 
 */
 
 import UIKit
