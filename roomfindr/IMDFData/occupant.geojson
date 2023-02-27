@@ -8,7 +8,7 @@
                 "address_id": null,
                 "alt_name": null,
                 "anchor_id": "bc57ca27-c994-4cba-8fae-10c8a52032d1",
-                "category": "restaurant",
+                "category": "classroom",
                 "display_point": {
                     "coordinates": [
                        -121.8878608,
@@ -35,7 +35,7 @@
                 "address_id": null,
                 "alt_name": null,
                 "anchor_id": "76336b53-81c9-4c93-8f81-a4c008d54ba1",
-                "category": "shopping",
+                "category": "auditorium",
                 "display_point": {
                     "coordinates": [
 	                    -121.889609,

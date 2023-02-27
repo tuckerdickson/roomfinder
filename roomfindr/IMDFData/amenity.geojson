@@ -550,11 +550,11 @@
         "accessibility": null,
         "address_id": null,
         "alt_name": null,
-        "category": "exhibit",
+        "category": "bathroom",
         "correlation_id": null,
         "hours": null,
         "name": {
-          "en": "T-Rex Exhibit"
+          "en": "T-Rex exhibit"
         },
         "phone": null,
         "unit_ids": [
@@ -578,7 +578,7 @@
         "accessibility": null,
         "address_id": null,
         "alt_name": null,
-        "category": "exhibit",
+        "category": "bathroom",
         "correlation_id": null,
         "hours": null,
         "name": {
@@ -606,11 +606,11 @@
         "accessibility": null,
         "address_id": null,
         "alt_name": null,
-        "category": "exhibit",
+        "category": "bathroom",
         "correlation_id": null,
         "hours": null,
         "name": {
-          "en": "Sauropod Exhibit"
+          "en": "Sauropod exhibit"
         },
         "phone": null,
         "unit_ids": [

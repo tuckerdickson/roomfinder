@@ -87,17 +87,17 @@ extension Opening: StylableFeature {
 // defines color for differenty types of amenities
 extension Amenity: StylableFeature {
     // the different types of amenities that we're insterested in
-    // TODO: figure out if we have any cases to add here; if not, delete this
     private enum StylableCategory: String {
-        case exhibit
+        //case exhibit
+        case bathroom
     }
     
     // define annotation colors for different categories of amenities
     func configure(annotationView: MKAnnotationView) {
         if let category = StylableCategory(rawValue: self.properties.category) {
             switch category {
-            case .exhibit:
-                annotationView.backgroundColor = UIColor(named: "ExhibitFill")
+            case .bathroom:
+                annotationView.backgroundColor = UIColor(named: "BathroomFill")
             }
         } else {
             annotationView.backgroundColor = UIColor(named: "DefaultAmenityFill")
@@ -112,18 +112,31 @@ extension Amenity: StylableFeature {
 extension Occupant: StylableFeature {
     // the types of occupant that we're interested in
     private enum StylableCategory: String {
-        case restaurant
-        case shopping
+        case classroom
+        case auditorium
+        case lab
+        case office
+        case conference
+        case library
     }
 
     // configure the annotation color for each type of occupant above
     func configure(annotationView: MKAnnotationView) {
         if let category = StylableCategory(rawValue: self.properties.category) {
             switch category {
-            case .restaurant:
-                annotationView.backgroundColor = UIColor(named: "RestaurantFill")
-            case .shopping:
-                annotationView.backgroundColor = UIColor(named: "ShoppingFill")
+            case .classroom:
+                annotationView.backgroundColor = UIColor(named: "ClassroomFill")
+            case .auditorium:
+                annotationView.backgroundColor = UIColor(named: "AuditoriumFill")
+            case .office:
+                annotationView.backgroundColor = UIColor(named: "OfficeFill")
+            case .lab:
+                annotationView.backgroundColor = UIColor(named: "LabFill")
+            case .conference:
+                annotationView.backgroundColor = UIColor(named: "ConferenceFill")
+            case .library:
+                annotationView.backgroundColor = UIColor(named: "LibraryFill")
+
             }
         }
 
