@@ -1,40 +1,49 @@
 /*
-See LICENSE folder for this sample’s licensing information.
+ 
+ IndoorMapViewController.swift
+ roomfindr
 
-Abstract:
-The main view controller.
-*/
+ This file controls the map view.
+
+ Created on 2/25/23.
+ 
+ */
 
 import UIKit
 import CoreLocation
 import MapKit
 
-class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerDelegate {
-    @IBOutlet var mapView: MKMapView!
-    private let locationManager = CLLocationManager()
-    @IBOutlet var levelPicker: LevelPickerView!
+/// Controls the map view.
+class IndoorMapViewController: UIViewController, LevelPickerDelegate {
+    @IBOutlet var mapView: MKMapView!                       // connects to our map on the map view
+    @IBOutlet var levelPicker: LevelPickerView!             // connects to our level picker on the map view
+    private let locationManager = CLLocationManager()       // location manager; allows us to locate the user
     
-    var venue: Venue?
-    private var levels: [Level] = []
-    private var currentLevelFeatures = [StylableFeature]()
-    private var currentLevelOverlays = [MKOverlay]()
-    private var currentLevelAnnotations = [MKAnnotation]()
+    var venue: Venue?                                       // object of type Venue; represents Seamans Center
+    private var levels: [Level] = []                        // levels of Seamans Center
+    
+    private var currentLevelFeatures = [StylableFeature]()  // all features of the current level being displayed
+    private var currentLevelOverlays = [MKOverlay]()        // overlays (e.g. borders) of the current level being displayed
+    private var currentLevelAnnotations = [MKAnnotation]()  // annotations (e.g. markers) of the current level being displayed
+    
     let pointAnnotationViewIdentifier = "PointAnnotationView"
     let labelAnnotationViewIdentifier = "LabelAnnotationView"
     
-    // MARK: - View life cycle
-    
+    /// Gets called everytime this view is loaded (e.g. when the app is opened).
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Request location authorization so the user's current location can be displayed on the map
+        // request location authorization from the user
         locationManager.requestWhenInUseAuthorization()
 
+        // set the mapView delegate to self so that we can use mapView delegate methods (below)
         self.mapView.delegate = self
+        
+        // tell mapView that PointAnnotationView & LabelAnnotationView will be used to display points and annotation on map
         self.mapView.register(PointAnnotationView.self, forAnnotationViewWithReuseIdentifier: pointAnnotationViewIdentifier)
         self.mapView.register(LabelAnnotationView.self, forAnnotationViewWithReuseIdentifier: labelAnnotationViewIdentifier)
 
-        // Decode the IMDF data. In this case, IMDF data is stored locally in the current bundle.
+        // decode the IMDF archive
         let imdfDirectory = Bundle.main.resourceURL!.appendingPathComponent("IMDFData")
         do {
             let imdfDecoder = IMDFDecoder()
@@ -71,19 +80,22 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
         setupLevelPicker()
     }
     
+    /// Displays the features for the current ordinal.
+    /// - Parameter ordinal: An Int representing the current level.
     private func showFeaturesForOrdinal(_ ordinal: Int) {
+        // guard against nil venue
         guard self.venue != nil else {
             return
         }
 
-        // Clear out the previously-displayed level's geometry
-        self.currentLevelFeatures.removeAll()
+        // clear the previous level's geometry from the map
         self.mapView.removeOverlays(self.currentLevelOverlays)
         self.mapView.removeAnnotations(self.currentLevelAnnotations)
+        self.currentLevelFeatures.removeAll()
         self.currentLevelAnnotations.removeAll()
         self.currentLevelOverlays.removeAll()
 
-        // Display the level's footprint, unit footprints, opening geometry, and occupant annotations
+        // coalesce the unit and opening geometries, as well as the occupant and amenity annotation
         if let levels = self.venue?.levelsByOrdinal[ordinal] {
             for level in levels {
                 self.currentLevelFeatures.append(level)
@@ -92,21 +104,24 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
                 
                 let occupants = level.units.flatMap({ $0.occupants })
                 let amenities = level.units.flatMap({ $0.amenities })
+                
                 self.currentLevelAnnotations += occupants
                 self.currentLevelAnnotations += amenities
             }
         }
         
+        // overlay the geometries from above
         let currentLevelGeometry = self.currentLevelFeatures.flatMap({ $0.geometry })
         self.currentLevelOverlays = currentLevelGeometry.compactMap({ $0 as? MKOverlay })
 
-        // Add the current level's geometry to the map
+        // add geometries and annotations to the map
         self.mapView.addOverlays(self.currentLevelOverlays)
         self.mapView.addAnnotations(self.currentLevelAnnotations)
     }
     
+    /// Sets up the level-picker in the map view.
     private func setupLevelPicker() {
-        // Use the level's short name for a level picker item display name
+        // use the levels' short names to display on the level-picker
         self.levelPicker.levelNames = self.levels.map {
             if let shortName = $0.properties.shortName.bestLocalizedValue {
                 return shortName
@@ -115,20 +130,34 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
             }
         }
         
-        // Begin by displaying the level-specific information for Ordinal 0 (which is not necessarily the first level in the list).
+        // begin by displaying the level-specific information for ordinal 0
         if let baseLevel = levels.first(where: { $0.properties.ordinal == 0 }) {
             levelPicker.selectedIndex = self.levels.firstIndex(of: baseLevel)!
         }
     }
-
-    // MARK: - MKMapViewDelegate
     
+    /// Gets called when the user changes levels with the level-picker. Sets in motion the changes to the map that take place when this happens.
+    func selectedLevelDidChange(selectedIndex: Int) {
+        // ensure selectedIndex is in appropriate range
+        precondition(selectedIndex >= 0 && selectedIndex < self.levels.count)
+        
+        // select the appropriate level and update the features to reflect it
+        let selectedLevel = self.levels[selectedIndex]
+        showFeaturesForOrdinal(selectedLevel.properties.ordinal)
+    }
+}
+
+// MKMapView delegate methods
+extension IndoorMapViewController: MKMapViewDelegate {
+    /// Paraphrasing Apple's Documentation: Provides an appropriate renderer object for our overlays. This renderer object is responsible for drawing the contents of the overlay when the map view requests.
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        // extract geometry and features from the overlay
         guard let shape = overlay as? (MKShape & MKGeoJSONObject),
             let feature = currentLevelFeatures.first( where: { $0.geometry.contains( where: { $0 == shape }) }) else {
             return MKOverlayRenderer(overlay: overlay)
         }
 
+        // determine the appropriate renderer for the overlay
         let renderer: MKOverlayPathRenderer
         switch overlay {
         case is MKMultiPolygon:
@@ -143,17 +172,19 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
             return MKOverlayRenderer(overlay: overlay)
         }
 
-        // Configure the overlay renderer's display properties in feature-specific ways.
+        // configure the renderer's display properties in feature-specific ways.
         feature.configure(overlayRenderer: renderer)
-
         return renderer
     }
 
+    /// From Apple's Documentation: returns the view associated with the specified annotation object.
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        // return if the annotation in question is the user's mark
         if annotation is MKUserLocation {
             return nil
         }
 
+        // return an annotation view depending on what annotation is
         if let stylableFeature = annotation as? StylableFeature {
             if stylableFeature is Occupant {
                 let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: labelAnnotationViewIdentifier, for: annotation)
@@ -169,40 +200,8 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
         return nil
     }
 
+    /// From Apple's documentation: tells the delegate when the map view updates the user's location.
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        guard let venue = self.venue, let location = userLocation.location else {
-            return
-        }
-
-        // Display location only if the user is inside this venue.
-        var isUserInsideVenue = false
-        let userMapPoint = MKMapPoint(location.coordinate)
-        for geometry in venue.geometry {
-            guard let overlay = geometry as? MKOverlay else {
-                continue
-            }
-
-            if overlay.boundingMapRect.contains(userMapPoint) {
-                isUserInsideVenue = true
-                break
-            }
-        }
-
-        guard isUserInsideVenue else {
-            return
-        }
-
-        // If the device knows which level the user is physically on, automatically switch to that level.
-        if let ordinal = location.floor?.level {
-            showFeaturesForOrdinal(ordinal)
-        }
-    }
-    
-    // MARK: - LevelPickerDelegate
-    
-    func selectedLevelDidChange(selectedIndex: Int) {
-        precondition(selectedIndex >= 0 && selectedIndex < self.levels.count)
-        let selectedLevel = self.levels[selectedIndex]
-        showFeaturesForOrdinal(selectedLevel.properties.ordinal)
+        // do nothing for now
     }
 }
