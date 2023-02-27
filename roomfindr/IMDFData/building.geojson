@@ -3,20 +3,20 @@
         {
             "feature_type": "building",
             "geometry": null,
-            "id": "26f04b4f-9ae2-45e3-99d1-393c66d58eb4",
+            "id": "f78371df-6a7c-4360-8803-7aa9bfb242ba",
             "properties": {
-                "address_id": "e105efb7-b0d1-4144-8b8e-72eadf95724f",
+                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "category": "unspecified",
                 "display_point": {
                     "coordinates": [
-                        -121.889164,
-                        37.32925
+                        -91.53672770348507,
+                        41.65943912197582
                     ],
                     "type": "Point"
                 },
                 "name": {
-                    "en": "San Jose McEnery Convention Center"
+                    "en": "Seamans Center for the Engineering Arts and Sciences"
                 },
                 "restriction": null
             },

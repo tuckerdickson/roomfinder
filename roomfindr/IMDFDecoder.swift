@@ -85,6 +85,7 @@ class IMDFDecoder {
         // associate the different levels to the venue
         // there can only be one venue
         guard venues.count == 1 else {
+            print("IMDFDecoder:88")
             throw IMDFError.invalidData
         }
         let venue = venues[0]
@@ -115,6 +116,7 @@ class IMDFDecoder {
         for amenity in amenities {
             // obtain geometry of the amenity
             guard let pointGeometry = amenity.geometry[0] as? MKPointAnnotation else {
+                print("IMDFDecoder:119")
                 throw IMDFError.invalidData
             }
             amenity.coordinate = pointGeometry.coordinate
@@ -143,11 +145,13 @@ class IMDFDecoder {
         // associate each occupant with appropriate unit
         for occupant in occupants {
             guard let anchor = anchorsById[occupant.properties.anchorId] else {
+                print("IMDFDecoder:148")
                 throw IMDFError.invalidData
             }
             
             // get the location of the occupant from corresponding anchor
             guard let pointGeometry = anchor.geometry[0] as? MKPointAnnotation else {
+                print("IMDFDecoder:154")
                 throw IMDFError.invalidData
             }
             occupant.coordinate = pointGeometry.coordinate

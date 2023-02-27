@@ -15,12 +15,14 @@ class Feature<Properties: Decodable>: NSObject, IMDFDecodableFeature {
     
     required init(feature: MKGeoJSONFeature) throws {
         guard let uuidString = feature.identifier else {
+            print("Feature:18")
             throw IMDFError.invalidData
         }
         
         if let identifier = UUID(uuidString: uuidString) {
             self.identifier = identifier
         } else {
+            print("Feature:25")
             throw IMDFError.invalidData
         }
         
@@ -29,6 +31,7 @@ class Feature<Properties: Decodable>: NSObject, IMDFDecodableFeature {
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             properties = try decoder.decode(Properties.self, from: propertiesData)
         } else {
+            print("Feature:34")
             throw IMDFError.invalidData
         }
         
