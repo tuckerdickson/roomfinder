@@ -22,17 +22,17 @@
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Your current location will be displayed on the map.</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>UILaunchScreen</key>
 	<dict>
+		<key>UIColorName</key>
+		<string>LaunchScreenColor</string>
 		<key>UIImageName</key>
 		<string>Image</string>
 		<key>UIImageRespectsSafeAreaInsets</key>
 		<true/>
-		<key>UIColorName</key>
-		<string>LaunchScreenColor</string>
 	</dict>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

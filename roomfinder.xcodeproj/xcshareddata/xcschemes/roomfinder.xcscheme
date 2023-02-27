@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7E61CEFB215E1FF500EAD172"
-               BuildableName = "roomfindr.app"
-               BlueprintName = "roomfindr"
-               ReferencedContainer = "container:roomfindr.xcodeproj">
+               BuildableName = "roomfinder.app"
+               BlueprintName = "roomfinder"
+               ReferencedContainer = "container:roomfinder.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E61CEFB215E1FF500EAD172"
-            BuildableName = "roomfindr.app"
-            BlueprintName = "roomfindr"
-            ReferencedContainer = "container:roomfindr.xcodeproj">
+            BuildableName = "roomfinder.app"
+            BlueprintName = "roomfinder"
+            ReferencedContainer = "container:roomfinder.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -54,9 +54,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E61CEFB215E1FF500EAD172"
-            BuildableName = "roomfindr.app"
-            BlueprintName = "roomfindr"
-            ReferencedContainer = "container:roomfindr.xcodeproj">
+            BuildableName = "roomfinder.app"
+            BlueprintName = "roomfinder"
+            ReferencedContainer = "container:roomfinder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E61CEFB215E1FF500EAD172"
-            BuildableName = "roomfindr.app"
-            BlueprintName = "roomfindr"
-            ReferencedContainer = "container:roomfindr.xcodeproj">
+            BuildableName = "roomfinder.app"
+            BlueprintName = "roomfinder"
+            ReferencedContainer = "container:roomfinder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

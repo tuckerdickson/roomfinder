@@ -40,7 +40,7 @@
 		75E7ED09E5BC9AB9BC056378 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		7E4BF84622160D8B00AE3916 /* Amenity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amenity.swift; sourceTree = "<group>"; };
 		7E4CC6C72242206000724B06 /* PointAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointAnnotationView.swift; sourceTree = "<group>"; };
-		7E61CEFC215E1FF500EAD172 /* roomfindr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roomfindr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E61CEFC215E1FF500EAD172 /* roomfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roomfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E61CEFF215E1FF500EAD172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E61CF01215E1FF500EAD172 /* IndoorMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoorMapViewController.swift; sourceTree = "<group>"; };
 		7E61CF04215E1FF500EAD172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				F77FB50C2276FE70006F9FD0 /* README.md */,
-				7E61CEFE215E1FF500EAD172 /* roomfindr */,
+				7E61CEFE215E1FF500EAD172 /* roomfinder */,
 				7E61CEFD215E1FF500EAD172 /* Products */,
 				7E61CF11215E20B600EAD172 /* Frameworks */,
 				F786F26322679FBB006CBEC1 /* LICENSE */,
@@ -110,12 +110,12 @@
 		7E61CEFD215E1FF500EAD172 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E61CEFC215E1FF500EAD172 /* roomfindr.app */,
+				7E61CEFC215E1FF500EAD172 /* roomfinder.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7E61CEFE215E1FF500EAD172 /* roomfindr */ = {
+		7E61CEFE215E1FF500EAD172 /* roomfinder */ = {
 			isa = PBXGroup;
 			children = (
 				7E61CEFF215E1FF500EAD172 /* AppDelegate.swift */,
@@ -130,7 +130,7 @@
 				7E61CF0B215E1FF600EAD172 /* Info.plist */,
 				7E61CF06215E1FF600EAD172 /* Assets.xcassets */,
 			);
-			path = roomfindr;
+			path = roomfinder;
 			sourceTree = "<group>";
 		};
 		7E61CF11215E20B600EAD172 /* Frameworks */ = {
@@ -177,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E61CEFB215E1FF500EAD172 /* roomfindr */ = {
+		7E61CEFB215E1FF500EAD172 /* roomfinder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E61CF0E215E1FF600EAD172 /* Build configuration list for PBXNativeTarget "roomfindr" */;
+			buildConfigurationList = 7E61CF0E215E1FF600EAD172 /* Build configuration list for PBXNativeTarget "roomfinder" */;
 			buildPhases = (
 				7E61CEF8215E1FF500EAD172 /* Sources */,
 				7E61CEF9215E1FF500EAD172 /* Frameworks */,
@@ -189,9 +189,9 @@
 			);
 			dependencies = (
 			);
-			name = roomfindr;
+			name = roomfinder;
 			productName = IMDF_Sample_Code;
-			productReference = 7E61CEFC215E1FF500EAD172 /* roomfindr.app */;
+			productReference = 7E61CEFC215E1FF500EAD172 /* roomfinder.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7E61CEF7215E1FF500EAD172 /* Build configuration list for PBXProject "roomfindr" */;
+			buildConfigurationList = 7E61CEF7215E1FF500EAD172 /* Build configuration list for PBXProject "roomfinder" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,7 +223,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7E61CEFB215E1FF500EAD172 /* roomfindr */,
+				7E61CEFB215E1FF500EAD172 /* roomfinder */,
 			);
 		};
 /* End PBXProject section */
@@ -419,13 +419,13 @@
 					"$(inherited)",
 					"$(SDKROOT)$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
-				INFOPLIST_FILE = roomfindr/Info.plist;
+				INFOPLIST_FILE = roomfinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ctrlaltelite.roomfindr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctrlaltelite.roomfinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,13 +443,13 @@
 					"$(inherited)",
 					"$(SDKROOT)$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
-				INFOPLIST_FILE = roomfindr/Info.plist;
+				INFOPLIST_FILE = roomfinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ctrlaltelite.roomfindr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctrlaltelite.roomfinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,7 +459,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7E61CEF7215E1FF500EAD172 /* Build configuration list for PBXProject "roomfindr" */ = {
+		7E61CEF7215E1FF500EAD172 /* Build configuration list for PBXProject "roomfinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E61CF0C215E1FF600EAD172 /* Debug */,
@@ -468,7 +468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E61CF0E215E1FF600EAD172 /* Build configuration list for PBXNativeTarget "roomfindr" */ = {
+		7E61CF0E215E1FF600EAD172 /* Build configuration list for PBXNativeTarget "roomfinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E61CF0F215E1FF600EAD172 /* Debug */,
