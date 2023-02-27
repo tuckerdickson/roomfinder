@@ -1,34 +1,46 @@
 /*
-See LICENSE folder for this sample’s licensing information.
+ 
+ LevelPickerView.swift
+ roomfindr
 
-Abstract:
-This view displays IMDF level names as vertically-stacked buttons.
-*/
+ This file specifies the styles for the level-picker apparatus on the main view.
+
+ Created on 2/25/23.
+ 
+ */
 
 import UIKit
 
+// a protocol defines an outline for methods that can be adopted by classes
+// this protocol connects the level-picker to the selectedLevelDidChange function
 @objc protocol LevelPickerDelegate: AnyObject {
     func selectedLevelDidChange(selectedIndex: Int)
 }
 
+/// Defines the style and function of the level-picker apparatus.
 class LevelPickerView: UIView {
-    @IBOutlet weak var delegate: LevelPickerDelegate?
-    @IBOutlet var backgroundView: UIVisualEffectView!
-    @IBOutlet var stackView: UIStackView!
+    @IBOutlet weak var delegate: LevelPickerDelegate?   // delegate for the level-picker; allows us to call selectedLevelDidChange
+    @IBOutlet var backgroundView: UIVisualEffectView!   // connects to the level-picker background in main storyboard
+    @IBOutlet var stackView: UIStackView!               // connects to the level-picker stack in main storyboard
 
-    var levelNames: [String] = [] {
+    
+    var levelNames: [String] = [] {                     // list of the (short) names of the levels
         didSet {
+            // generates the stack view; also populates buttons var
             self.generateStackViewButtons()
         }
     }
 
-    private var buttons: [UIButton] = []
-    var selectedIndex: Int? {
+    
+    private var buttons: [UIButton] = []                // list of UIButton objects on the stack view
+    var selectedIndex: Int? {                           // the index of the button which is currently selected
         didSet {
+            // resets the color of a previously selected button to the default color
             if let oldIndex = oldValue {
                 buttons[oldIndex].backgroundColor = nil
             }
 
+            // sets the color of the currently selected button to a darker shade
             if let index = selectedIndex {
                 buttons[index].backgroundColor = UIColor(named: "LevelPickerSelected")
                 delegate?.selectedLevelDidChange(selectedIndex: index)
@@ -36,10 +48,12 @@ class LevelPickerView: UIView {
         }
     }
 
+    /// Initializer method; just calls the UIView initializer.
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
+    /// From Apple's documentation: prepares the receiver for service after it has been loaded from an Interface Builder archive, or nib file.
     override func awakeFromNib() {
         backgroundView.layer.cornerRadius = 10
         self.layer.shadowColor = UIColor.black.cgColor
@@ -50,29 +64,31 @@ class LevelPickerView: UIView {
         super.awakeFromNib()
     }
 
+    /// Generates a button for each level in the building, styles the buttons, and then adds them to a stack view.
     private func generateStackViewButtons() {
-        // Remove the existing stack view items, as we will re-create things from scratch.
+        // remove the existing stack view items
         let existingViews = stackView.arrangedSubviews
         for view in existingViews {
             stackView.removeArrangedSubview(view)
         }
         buttons.removeAll()
 
+        // create a new stack by iterating through the levels and initializing buttons
         for (index, levelName) in levelNames.enumerated() {
+            // create a button for the current level; set its title (level name), color, and height
             let levelButton = UIButton(type: .custom)
             levelButton.setTitle(levelName, for: .normal)
             levelButton.setTitleColor(.label, for: .normal)
             levelButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
             
-            // Associate the button with the index in the input list so we can reference it later.
-            // Using 'tag' because all the buttons are private and controlled entirely by this control, and because the tag
-            // property is only used for one purpose, to associate the index of a level with a button when it's been tapped.
+            // associate the button with an index so that it can be easily referenced later
             levelButton.tag = index
 
+            // add the button to the stack view
             stackView.addArrangedSubview(levelButton)
             levelButton.addTarget(self, action: #selector(levelSelected(sender:)), for: .primaryActionTriggered)
 
-            // Add a separator view between each button.
+            // add a separator view between each button
             if index < levelNames.count - 1 {
                 let separator = UIView()
                 separator.backgroundColor = UIColor.separator
@@ -84,6 +100,8 @@ class LevelPickerView: UIView {
         }
     }
     
+    /// This function gets called when a button in the level-picker is selected. It validates the selected index is in the correct bounds.
+    /// - Parameter sender: The UIButton that initiated this function call
     @objc
     private func levelSelected(sender: UIButton) {
         let selectedIndex = sender.tag
