@@ -1487,7 +1487,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
             -91.53710540797397,
@@ -2247,7 +2247,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
             -91.53688281787754,
@@ -2878,7 +2878,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
             -91.53677262308292,
@@ -3631,7 +3631,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
             -91.53679582650223,

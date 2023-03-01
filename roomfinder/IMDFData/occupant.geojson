@@ -756,87 +756,8 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "349a2aa6-11c1-466e-90b9-1f25f53af718",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "85ad9966-b3cc-4735-8f6d-678033bdccfa",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.5372736179043,
-                        41.659806544561405
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "1400S"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "5c0a5fe5-e7d0-45bf-b9ab-5c09f8c6c503",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "5de5ad80-fe40-4dc4-b6b9-ba7011eb024f",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53710994455426,
-                        41.659864549683135
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "1100S"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "90552e27-fca3-434e-b566-31e70c46ae78",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "16f2d1c6-1310-4e32-b965-b726ad712c3e",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53710540797397,
-                        41.659918247635744
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "Elevator 5"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -1215,60 +1136,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "da3db602-87a9-468b-8f57-4914c509b336",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "4583f346-6d39-47c0-bcae-0940a7a085bd",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.5369062484801,
-                        41.65983312288077
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "1203"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "93fe340e-ab54-487a-8e01-1131b91a8f2b",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "3dabe7b7-93e7-4961-8cca-741d5f3c5458",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53688281787754,
-                        41.6598012954089
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "Elevator 2"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -1323,87 +1191,8 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "21301fd2-6578-4d7b-bf40-e4b3a8252f76",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "aed1d4dd-e05a-4710-a4e5-d887ea33b403",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.5368844213763,
-                        41.65951173139388
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "1233"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "a45e2bb8-d693-4648-88ea-dc7ab4209ca4",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "6a27a2ed-a08d-4bad-94cb-4b9b6b5a2379",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.5368844213763,
-                        41.65951173139388
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "1235"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "6f88cdb0-ca2c-4533-83b3-b7ff3a6663d6",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "cf1cf078-28e5-497d-bf58-429e3a5a7ee3",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.5368844213763,
-                        41.65943923760179
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "1237"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+    
+       
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -1512,33 +1301,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "a81b6aa8-2f11-4783-8988-21bcb0038c29",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "a9bd3f00-e7d8-4e81-853a-88621d91b2fc",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.5368991871886,
-                        41.659169749095014
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "1259"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -1593,33 +1356,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "2245fb8d-e199-4ddf-a6e8-d97ec04facbe",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "59ee6796-173f-4927-a82c-bf6d30793c5f",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53677262308292,
-                        41.65986316753177
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "Elevator 3"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -1836,33 +1573,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "8efd0750-49d4-4a79-9ae6-30b0a0ca902b",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "92cf1005-4bd8-4c5d-985f-e9ba1729a147",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53642879059535,
-                        41.65962519977376
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "1300S"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -1998,33 +1709,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "0d34869d-3b87-45b8-b774-2bbcb5134b19",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "38a09706-a8f8-474a-8ff1-47fa54f3ee18",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53679582650223,
-                        41.659557433959606
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "Elevator 1"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -2484,87 +2169,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "112030e5-e5b7-4600-a48e-5010abbeae0f",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "7df39094-971e-48ce-9ac7-b24c2b0665de",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53655746410278,
-                        41.65919654040104
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "Elevator 6"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "a6b6ab4a-da7d-4a85-ae68-a52a68a035a0",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "f3614ac7-3125-4c1c-8ab5-95bb262f199d",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53655113589753,
-                        41.65917290101385
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "Elevator 7"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "3d145251-9d62-4805-b7a1-04ac38710435",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "a3216786-eb1a-4495-baef-d23df969fbc3",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53648656707972,
-                        41.65919170732013
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "XST151"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -2889,33 +2494,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "15e3365d-981e-4584-836d-6949b0b3bae2",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "19539384-11ea-4e80-aac2-cc2523bd6f18",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53729934340554,
-                        41.65978954678076
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "2400S"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -3267,33 +2846,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "b9fadde2-0a5f-411c-8d76-d971d49446dc",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "2a74da8b-9681-40f8-8748-3e3dec7750e7",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53711683307561,
-                        41.659825928509264
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "2100S"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -3483,33 +3036,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "c8c75372-10ce-4fae-8cb0-889f379a23ad",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "43c54f54-5893-4aed-b332-656a4b32e822",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53675572053847,
-                        41.65995880701385
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "2126"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -3780,33 +3307,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "e2970d44-e1f6-49c9-bbb1-43b5f19f9344",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "974341ad-cd66-4f67-970e-fdef0d94d0e4",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.5368735165146,
-                        41.65981598774235
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "2203"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -4185,33 +3686,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "fa5a44b5-b03a-4963-946b-4e1b74e0ac58",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "b3bd3224-e3a7-4276-b3c8-a70b1c3af24f",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53635204675912,
-                        41.65960619716995
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "2300S"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -4347,87 +3822,8 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "1deac7bc-3337-4c64-a9a6-6d8b2462b74f",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "7142c71d-f350-410c-9be3-2f2f07f22af9",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53687498544564,
-                        41.659478120947654
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "2233"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "a1ea186f-282b-4d1c-8ae7-df9cd15ef990",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "75c196b7-c43a-45c0-a3e7-cd6d52f9e799",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53689406154403,
-                        41.65943892817029
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "2235"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "9e76b0e2-d211-4259-8b80-a2b6cc09cf9e",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "aefd9b1a-f19d-44e5-a100-ef69060046ac",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53688929251929,
-                        41.65940507984257
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "2237"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -4590,33 +3986,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "b276358e-1551-49c3-ad5c-e0076af3a70a",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "76335b5d-ac44-43be-806b-758551351bd6",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53690359959845,
-                        41.65908797359677
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "2259"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -4806,60 +4176,8 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "efa8ae0b-15b8-4e32-bd06-754800f935a2",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "27ff1e72-0140-4b34-8e46-f67fa8e52ff7",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.5364076210372,
-                        41.65911113309443
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "XST251"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "97b232ce-b2b7-41cd-b448-74389dd55921",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "e5f204f5-9c54-44d9-8aa2-19c6a79bb8f2",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53649346348075,
-                        41.65910935159465
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "XEL0607"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -5022,33 +4340,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "50f20d7e-1481-4497-9242-63bbfce520db",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "a52e6f01-f5f8-437b-96b8-f4cfd3811bf0",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53685471480873,
-                        41.6598100854267
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "3203"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -7452,168 +6744,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "37899861-2833-41fd-b7e8-25cf49377325",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "86c4f3f9-d95c-4cc5-8dc8-70fc19bb12ce",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53710522486618,
-                        41.659834886063805
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "3100S"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "454fcf18-b298-4865-9d40-4b5813f98a92",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "7ea146f8-4fce-4452-858c-b10af8509e52",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53708986837265,
-                        41.65991519631382
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "XEL05"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "a8cafd2d-7adb-4813-a0ac-02b0f8020236",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "497d1647-ff9c-4e31-947d-a3ec9d374c58",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53639882569983,
-                        41.65851057166097
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "XST361"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "bf672101-b039-48d2-bb17-626746f279f1",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "fac967b0-5209-44e1-b6c9-8aa15111d177",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53685506163089,
-                        41.65978426120549
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "XEL02"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "04c8347d-a788-4c57-96fb-10a6d68db46f",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "c0707473-d722-46b9-92ee-54e875e0121b",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53639224497313,
-                        41.65981521824946
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "3000S"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "56f50b3c-14a4-44eb-98a9-da7b6bacd909",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "9410ad4a-1cc9-45d1-b74b-db8bd4044020",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53639443875761,
-                        41.65977424358047
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "XEL04"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,
@@ -7641,249 +6772,7 @@
             },
             "type": "Feature"
         },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "8aabac1f-ca4d-49db-a614-cb6a3afc104b",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "59c0bc7f-5aeb-46ec-abaf-6eb63d5cf28c",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53634836927735,
-                        41.659589037758394
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "3300S"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "6ff979ff-9b30-44fe-8f12-b482d83f10c7",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "91fafce5-58d3-40c6-b32d-8d6f04d47c03",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53675641315235,
-                        41.65951856106358
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "XEL01"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "736bede7-3b05-4ef1-9d73-2b279fd0026e",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "546132c0-ebcb-4324-bd65-84574b035940",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53683758317052,
-                        41.659462835250764
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "3233"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "1aac7328-8a99-4f35-9824-30f974792c78",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "96193f04-1a5c-40f3-a2f6-6dec4d1c3007",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53687048993496,
-                        41.659420221361415
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "3235"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "043f36a2-ac16-47b8-958c-7deafe3a876b",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "b5ea4cd5-19cd-460c-be94-e507dd6c85f6",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.5368692839809,
-                        41.659390009818736
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "3237"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "d7d23865-bdc0-40f3-bdd1-d2aecf3fb946",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "4f1ed337-c341-46a0-9296-94223c0f8254",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53687926508444,
-                        41.65909569927186
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "3259"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "3437ffda-47f3-42da-8b65-d64644e18ff3",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "7e807b9b-c037-488a-9326-bdd8b1e1c921",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.5364975466204,
-                        41.65912684035047
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "XEL06"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "1e16636a-d231-476b-9505-b2511b8ad27c",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "a4c0bad5-8a18-455b-bda7-01eec54a83a6",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.53649535283631,
-                        41.65909406026745
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "XEL07"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "ef502310-d3d2-40c7-b62c-7e7dfa077f9a",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "d71319fc-ebe3-41a4-bfc8-dca9ad569250",
-                "category": "restaurant",
-                "display_point": {
-                    "coordinates": [
-                        -91.5364185703808,
-                        41.65911864533291
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "XST351"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
+        
         {
             "feature_type": "occupant",
             "geometry": null,

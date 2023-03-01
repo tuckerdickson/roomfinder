@@ -42,27 +42,16 @@ extension Level: StylableFeature {
 extension Unit: StylableFeature {
     // the different types of units that we use
     private enum StylableCategory: String {
-        case elevator
-        case stairs
-        case restroom
-        case restroomMale = "restroom.male"
-        case restroomFemale = "restroom.female"
-        case room
-        case walkway
+        case bathroom
+
     }
     
     // specify the approprite fill color for the unit based on its category
     func configure(overlayRenderer: MKOverlayPathRenderer) {
         if let category = StylableCategory(rawValue: self.properties.category) {
             switch category {
-            case .elevator, .stairs:
-                overlayRenderer.fillColor = UIColor(named: "ElevatorFill")
-            case .restroom, .restroomMale, .restroomFemale:
+            case .bathroom:
                 overlayRenderer.fillColor = UIColor(named: "RestroomFill")
-            case .room:
-                overlayRenderer.fillColor = UIColor(named: "RoomFill")
-            case .walkway:
-                overlayRenderer.fillColor = UIColor(named: "WalkwayFill")
             }
         } else {
             overlayRenderer.fillColor = UIColor(named: "DefaultUnitFill")
@@ -89,15 +78,24 @@ extension Amenity: StylableFeature {
     // the different types of amenities that we're insterested in
     private enum StylableCategory: String {
         //case exhibit
-        case bathroom
+        case restroom
+        case elevator
+        case stairs
     }
     
     // define annotation colors for different categories of amenities
     func configure(annotationView: MKAnnotationView) {
         if let category = StylableCategory(rawValue: self.properties.category) {
             switch category {
-            case .bathroom:
-                annotationView.backgroundColor = UIColor(named: "BathroomFill")
+            case .restroom:
+                annotationView.backgroundColor = UIColor(named: "RestroomFill")
+                annotationView.image = UIImage(systemName: "figure.dress.line.vertical.figure")
+            case .elevator:
+                annotationView.backgroundColor = UIColor(named: "RestroomFill")
+                annotationView.image = UIImage(systemName: "arrow.up.arrow.down.square")
+            case .stairs:
+                annotationView.backgroundColor = UIColor(named: "RestroomFill")
+                annotationView.image = UIImage(systemName: "stairs")
             }
         } else {
             annotationView.backgroundColor = UIColor(named: "DefaultAmenityFill")
