@@ -8694,50 +8694,335 @@
     {
       "type": "Feature",
       "feature_type": "unit",
-      "id": "ef5c8773-b61b-458f-bb35-97e920e49b56",
+      "id": "c035635a-d2f5-4b86-9c0e-ca2f3ac9e301",
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
-            -91.53649346348075,
-            41.65910935159465
-          ],
+              -91.5367409809314,
+              41.65953608895231
+            ],
           "type": "Point"
         },
         "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "name": "XEL0607",
+        "name": "XEL01",
         "restriction": null
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
-            [
-              -91.53647200286974,
-              41.659148544573384
-            ],
-            [
-              -91.53652207762858,
-              41.659148544573384
-            ],
-            [
-              -91.53652207762858,
-              41.65907372159376
-            ],
-            [
-              -91.53647200286974,
-              41.65907372159376
-            ],
-            [
-              -91.53647200286974,
-              41.659148544573384
-            ]
+              [
+                            -91.53671973765265,
+                            41.65955785491826
+                          ],
+                          [
+                            -91.53676161725951,
+                            41.65955785491826
+                          ],
+                          [
+                            -91.53676161725951,
+                            41.65951432297953
+                          ],
+                          [
+                            -91.53671973765265,
+                            41.65951432297953
+                          ],
+                          [
+                            -91.53671973765265,
+                            41.65955785491826
+                          ]
           ]
         ]
       }
     },
+    {
+      "type": "Feature",
+      "feature_type": "unit",
+      "id": "aabc314a-7eaf-44f7-afe4-661f44ca72d3",
+      "properties": {
+        "accessibility": null,
+        "alt_name": null,
+        "category": "elevator",
+        "display_point": {
+          "coordinates": [
+              -91.53683323945103,
+              41.659795919598196
+            ],
+          "type": "Point"
+        },
+        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+        "name": "XEL02",
+        "restriction": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [
+                            -91.53680896141768,
+                            41.6598045352591
+                          ],
+                          [
+                            -91.53685144797518,
+                            41.6598045352591
+                          ],
+                          [
+                            -91.53685144797518,
+                            41.65978685048037
+                          ],
+                          [
+                            -91.53680896141768,
+                            41.65978685048037
+                          ],
+                          [
+                            -91.53680896141768,
+                            41.6598045352591
+                          ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "unit",
+      "id": "fa7f462b-7be2-4dbe-92f0-8c2848d7a757",
+      "properties": {
+        "accessibility": null,
+        "alt_name": null,
+        "category": "elevator",
+        "display_point": {
+          "coordinates": [
+              -91.53671303111041,
+                        41.659863903348764
+            ],
+          "type": "Point"
+        },
+        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+        "name": "XEL03",
+        "restriction": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [
+                            -91.5367014990454,
+                            41.65985166005214
+                          ],
+                          [
+                            -91.5367014990454,
+                            41.659875239732685
+                          ],
+                          [
+                            -91.53672577707806,
+                            41.659875239732685
+                          ],
+                          [
+                            -91.53672577707806,
+                            41.65985166005214
+                          ],
+                          [
+                            -91.5367014990454,
+                            41.65985166005214
+                          ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "unit",
+      "id": "7bf3d7f5-080c-4b76-9626-f62059546188",
+      "properties": {
+        "accessibility": null,
+        "alt_name": null,
+        "category": "elevator",
+        "display_point": {
+          "coordinates": [
+              -91.53641076280778,
+              41.65978135900906
+            ],
+          "type": "Point"
+        },
+        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+        "name": "XEL04",
+        "restriction": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [
+                            -91.53642897133264,
+                            41.65978952121611
+                          ],
+                          [
+                            -91.53642897133264,
+                            41.65977274334506
+                          ],
+                          [
+                            -91.53639134038166,
+                            41.65977274334506
+                          ],
+                          [
+                            -91.53639134038166,
+                            41.65978952121611
+                          ],
+                          [
+                            -91.53642897133264,
+                            41.65978952121611
+                          ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "unit",
+      "id": "bc0d7f29-69c1-424b-bfc4-c1309331c7fe",
+      "properties": {
+        "accessibility": null,
+        "alt_name": null,
+        "category": "elevator",
+        "display_point": {
+          "coordinates": [
+              -91.53710371923627,
+              41.65992610271897
+            ],
+          "type": "Point"
+        },
+        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+        "name": "XEL05",
+        "restriction": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [
+                            -91.53711403739999,
+                            41.65993562527197
+                          ],
+                          [
+                            -91.53711403739999,
+                            41.65991612670919
+                          ],
+                          [
+                            -91.53709158021994,
+                            41.65991612670919
+                          ],
+                          [
+                            -91.53709158021994,
+                            41.65993562527197
+                          ],
+                          [
+                            -91.53711403739999,
+                            41.65993562527197
+                          ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "unit",
+      "id": "ffdfc9c5-a2e4-43c7-a52d-1e0e5406fa41",
+      "properties": {
+        "accessibility": null,
+        "alt_name": null,
+        "category": "elevator",
+        "display_point": {
+          "coordinates": [
+              -91.53649920894479,
+              41.65913006680634
+            ],
+          "type": "Point"
+        },
+        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+        "name": "XEL06",
+        "restriction": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [
+                            -91.53651984527289,
+                            41.659148205225705
+                          ],
+                          [
+                            -91.53651984527289,
+                            41.65911283530292
+                          ],
+                          [
+                            -91.53647614481343,
+                            41.65911283530292
+                          ],
+                          [
+                            -91.53647614481343,
+                            41.659148205225705
+                          ],
+                          [
+                            -91.53651984527289,
+                            41.659148205225705
+                          ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "unit",
+      "id": "4fa43cb7-2e05-49dc-a259-f07c34f38a04",
+      "properties": {
+        "accessibility": null,
+        "alt_name": null,
+        "category": "elevator",
+        "display_point": {
+          "coordinates": [
+              -91.53649981589544,
+              41.65909469687355
+            ],
+          "type": "Point"
+        },
+        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+        "name": "XEL07",
+        "restriction": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [
+                            -91.53647614481343,
+                            41.65911283530292
+                          ],
+                          [
+                            -91.53651984527289,
+                            41.65911283530292
+                          ],
+                          [
+                            -91.53651984527289,
+                            41.65907383767322
+                          ],
+                          [
+                            -91.53647614481343,
+                            41.65907383767322
+                          ],
+                          [
+                            -91.53647614481343,
+                            41.65911283530292
+                          ]
+          ]
+        ]
+      }
+    },
+    
+    
+    
     {
       "type": "Feature",
       "feature_type": "unit",
