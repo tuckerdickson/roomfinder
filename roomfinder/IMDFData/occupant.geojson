@@ -408,60 +408,6 @@
         {
             "feature_type": "occupant",
             "geometry": null,
-            "id": "f0f9f154-5a92-4193-ac77-e767cd124a59",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "81b6ae5d-2afa-4c6e-9e99-a1e1effccc3c",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53720686660036,
-                        41.65978032583254
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "1449"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
-            "id": "8f922bf2-841a-4c90-9eae-2796c3b26cc6",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "d69d7641-8d68-423e-9848-c58fdf9c1486",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53720064762156,
-                        41.659808203206296
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "1447"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
             "id": "02c10884-1198-4c47-aa34-859d03fc3fb3",
             "properties": {
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
@@ -2362,33 +2308,6 @@
         {
             "feature_type": "occupant",
             "geometry": null,
-            "id": "19614949-c699-4966-97ed-0e96105a50bb",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "d4be4d51-afbf-441a-87af-11d424d24a51",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53721531093262,
-                        41.65978954678076
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "2442"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
             "id": "14055a26-faa5-48cc-aa6e-8662e1ce44fe",
             "properties": {
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
@@ -4186,7 +4105,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "808e475c-0e83-415b-bb54-3dc44c97868d",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53710919378476,
@@ -4213,7 +4132,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "d0a4ff75-8e2e-47c8-9af3-0167d3a08a2a",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53703899268784,
@@ -4240,7 +4159,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "2e34f1ec-0c26-4cb0-bf5c-eec304c358c7",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53700169835534,
@@ -4267,7 +4186,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "2c3c72a2-e9f0-4537-a32d-69608bcbfa61",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53697976051227,
@@ -4294,7 +4213,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "f4b5738b-536f-468b-a440-d203d9a25570",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53692052833709,
@@ -4321,7 +4240,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "65c60d40-fb91-4767-a494-903530aaac63",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53685252102447,
@@ -4349,7 +4268,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "d436ff1a-994e-4060-a4d8-1803eb571a0a",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53682400182898,
@@ -4376,7 +4295,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "dbf120a0-1f9a-4557-b7df-1b895bf1e814",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53689639670976,
@@ -4403,7 +4322,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "76dd140e-2bc2-437b-ad20-1b499025504d",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53684813345592,
@@ -4430,7 +4349,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "b8fb0288-c7d3-4a61-988f-b3e1f0309002",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.5368700712986,
@@ -4457,7 +4376,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "a9f9daa0-a24f-4ee1-a4c6-e6490743263d",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53687226508285,
@@ -4484,7 +4403,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "4a9e5f18-5e38-4eab-b01b-fc755beeac90",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53687665265137,
@@ -4511,7 +4430,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "c4063ba9-fff4-47f3-94b1-13a45ddc094a",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53687884643566,
@@ -4538,7 +4457,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "1fffd4a6-8398-40e7-8f33-3f3b5da7c5c3",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53688323367979,
@@ -4565,7 +4484,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "e8ca69d2-c056-4353-83c7-a3f286d78e2a",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53687884643566,
@@ -4592,7 +4511,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "478eb181-410a-45a9-8b13-49eb08d2d781",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53683497075032,
@@ -4619,7 +4538,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "c6917bbd-13c9-4e3d-a8b1-c09c5ce2fd77",
-                "category": "restaurant",
+                "category": "conference",
                 "display_point": {
                     "coordinates": [
                         -91.5367208939681,
@@ -4646,7 +4565,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "59983409-c342-4f21-a06e-a7587e1bf48a",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53672528153663,
@@ -4673,7 +4592,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "104b503d-a627-476e-a796-51688eeb3768",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53672528153663,
@@ -4700,7 +4619,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "2a25dadc-529b-45e7-920a-8c70ce5a1466",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53672623043218,
@@ -4727,7 +4646,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "eb4316b6-2995-4f74-b40d-76df5bc581ba",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53671650639959,
@@ -4754,7 +4673,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "4f66c842-68ec-4e5f-afe1-f3e810be557c",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53667263071388,
@@ -4781,7 +4700,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "0f2bcafb-66a6-4ec0-9e34-9778de46f73c",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53663094881281,
@@ -4808,7 +4727,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "f86d13cd-c518-48b9-8437-a8509e763e72",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53657610420575,
@@ -4835,7 +4754,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "f86d13cd-c518-48b9-8437-a8509e763e72",
-                "category": "restaurant",
+                "category": "classroom",
                 "display_point": {
                     "coordinates": [
                         -91.53646641499208,
@@ -4862,7 +4781,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "ffa200d6-6a21-44ed-81f3-37ab4a627322",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53635672577839,
@@ -4889,7 +4808,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "97a95835-94e2-4616-8791-60a2837ec0d3",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53646244607012,
@@ -4916,7 +4835,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "4c801b98-0674-49ac-bb57-195a2322e668",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53642076416898,
@@ -4943,7 +4862,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "5940a075-488b-4f7e-b4f3-fa9e36f1cd77",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53637908226744,
@@ -4970,7 +4889,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "79e1cdac-31f7-4c98-b95c-24967f7e7e5b",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53633081901367,
@@ -4997,7 +4916,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "b487b16a-7944-49c0-9006-563ce2746a9f",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53646463985419,
@@ -5024,7 +4943,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "054035a8-5f56-4d20-bdcd-b746bd7447c1",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53638346983601,
@@ -5051,7 +4970,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "f75a8a0c-30eb-4c71-8a98-861ee88ba05f",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53633520658224,
@@ -5078,7 +4997,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "bb2a0e79-be9b-4d16-9a76-6ecd019eda23",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53637908226744,
@@ -5105,7 +5024,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "8a6bc0fd-4481-40c4-97d8-0036fad35bb1",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53642076416898,
@@ -5132,7 +5051,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "6109d7d3-343e-4383-b1e0-2e3b0bf5e480",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53646463985419,
@@ -5159,7 +5078,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "ec6cca47-8324-452d-a126-c8fcfe7f0e05",
-                "category": "restaurant",
+                "category": "classroom",
                 "display_point": {
                     "coordinates": [
                         -91.53639898317624,
@@ -5186,7 +5105,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "2031a2c1-4691-4769-8ddd-7e30171c2d0e",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.5364405082273,
@@ -5213,7 +5132,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "4ceef188-a10a-4882-810c-0c6401163c6b",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53643831444325,
@@ -5240,7 +5159,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "f3ef7c28-1097-4698-a2da-137eccd993b3",
-                "category": "restaurant",
+                "category": "auditorium",
                 "display_point": {
                     "coordinates": [
                         -91.53642734552162,
@@ -5267,7 +5186,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "291c35f3-b908-4f80-9b31-3063fb25dfe2",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53644489579587,
@@ -5294,7 +5213,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "093efbbf-c1c4-4ea7-a689-762660cf1fad",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.5367608007315,
@@ -5321,7 +5240,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "6badaff9-a962-4005-91b7-157ec98f6534",
-                "category": "restaurant",
+                "category": "classroom",
                 "display_point": {
                     "coordinates": [
                         -91.53667304936026,
@@ -5348,7 +5267,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "88d8b8a4-a5e1-43e6-9a86-f3c1c530d532",
-                "category": "restaurant",
+                "category": "classroom",
                 "display_point": {
                     "coordinates": [
                         -91.53653180696926,
@@ -5375,7 +5294,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "e799a9b8-8181-4860-a2d6-a1cf1ed018e0",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53675641316293,
@@ -5402,7 +5321,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "6419f6da-2ad5-4bc0-9b2d-40f4a09cdd65",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53672350639893,
@@ -5429,7 +5348,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "38125eaa-2ddc-40b5-8f64-eba02de38884",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53669169369401,
@@ -5456,7 +5375,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "a4d44edf-6983-405e-bf60-8d31e29a06a8",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53665330530194,
@@ -5483,7 +5402,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "c0a8a201-d175-496c-8b16-a6ea84afedaf",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53661820475344,
@@ -5510,7 +5429,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "bc311f8b-3ae5-46fe-8d11-7c18d1e447fc",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53658529798943,
@@ -5537,7 +5456,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "38fa7667-0660-43e0-a6bc-5d04515de608",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53655239122543,
@@ -5564,7 +5483,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "2d1c2648-207d-4cf9-9da6-daf913fed2cb",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53651948446142,
@@ -5591,7 +5510,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "ce4a8bc9-49e3-4239-8f54-0edbdabd810b",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53648438391293,
@@ -5618,7 +5537,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "2bfea6e5-96cb-40b4-8295-f266188c7460",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53637908226744,
@@ -5645,7 +5564,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "a4bf74be-3b66-45f9-89ac-ec1203e7aa64",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53633081901367,
@@ -5672,7 +5591,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "bd88a5de-822a-41df-b6cc-3c60ccda53b3",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53632862522917,
@@ -5699,7 +5618,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "a8c335a7-74c5-47f3-b1ad-3ecb7d1a5d9a",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53635933820914,
@@ -5726,7 +5645,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "01d97432-e400-4d21-828f-6b9b36aa88d6",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53641418281593,
@@ -5753,7 +5672,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "51276d58-cd86-4975-a296-846993a7b689",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53638785740456,
@@ -5780,7 +5699,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "f2bfed5c-fd5c-44b7-9217-f43fbc68b56e",
-                "category": "restaurant",
+                "category": "classroom",
                 "display_point": {
                     "coordinates": [
                         -91.53634617550344,
@@ -5807,7 +5726,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "01360ea6-5dca-41aa-b7b0-01e61b0344da",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53640979524738,
@@ -5834,7 +5753,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "f4bdcdbf-4e21-42bf-a13d-b8458bbb7a32",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53674763802582,
@@ -5861,7 +5780,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "179daef1-5896-41e1-8c81-cda78afa5644",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53672350639893,
@@ -5888,7 +5807,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "1ac47b44-9708-4808-b80d-e93fb30a939c",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53673886288868,
@@ -5915,7 +5834,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "cbb25864-792e-4111-a538-cd36d8ab5b4c",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53639443875761,
@@ -5942,7 +5861,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "af63a7c9-5d67-498b-accf-7670f4411414",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53633740036632,
@@ -5969,7 +5888,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "66a661d7-1eac-439a-80b2-345fd00d03cf",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53633959415082,
@@ -5996,7 +5915,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "c429f4a4-fde9-455f-92c8-6cb2b4fc707b",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53633740036632,
@@ -6023,7 +5942,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "546c6767-7dac-4600-8607-04b469781fcd",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53671034369323,
@@ -6050,7 +5969,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "91dd8955-4112-4abd-a186-1e2794641564",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53675126112823,
@@ -6077,7 +5996,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "f340e75d-3e24-4813-a8d9-5d5b9e9acb65",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53671034369323,
@@ -6104,7 +6023,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "afd15c34-59cf-4b7d-9e89-e13b1ea4647b",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53667542453313,
@@ -6131,7 +6050,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "a87a95b0-930b-4296-b491-c739b229afaf",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53656336014664,
@@ -6158,7 +6077,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "584d8115-e0d7-4bd8-a7dd-6a1e4b18592c",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53641418281593,
@@ -6185,7 +6104,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "af99957d-1124-4aea-a644-0fafa556148e",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53638590434635,
@@ -6212,7 +6131,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "197822d3-8a52-49e1-bd4d-2405e5d1200e",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53633959410142,
@@ -6239,7 +6158,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "d7fb95e8-dedf-4486-a44c-4cf4223ef1bd",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.5370591553906,
@@ -6266,7 +6185,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "0101e4c8-ae0d-4564-9510-b133be8d69ff",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53705624662138,
@@ -6293,7 +6212,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "d3aafc48-33d1-4605-83fa-8e89d6a790d7",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53701557766999,
@@ -6320,7 +6239,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "10032e9f-dd71-4d8a-a397-312d01f5dda4",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.537021028148,
@@ -6347,7 +6266,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "74101016-28e2-4a1a-85ae-dc444ea0abc7",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53697359780611,
@@ -6374,7 +6293,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "8d764c87-6ed5-4c29-8d0a-43fdaf0ae354",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53693630347357,
@@ -6401,7 +6320,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "cf87dfa9-b3f8-4a2a-ac19-36ca251319b6",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53688145886674,
@@ -6428,7 +6347,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "fd4be597-17ec-43a8-aa2a-8ade7812230f",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.5368075037945,
@@ -6455,7 +6374,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "6ad5e444-2adf-4665-83a6-edfc8ffd8f0e",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.5366993747654,
@@ -6482,7 +6401,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "1ff0f320-6ff3-4eb8-a17e-d8b3e05d1a6d",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53660065447298,
@@ -6509,7 +6428,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "47316754-d0a5-4927-b0cc-c453d694f32a",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.5365594691591,
@@ -6536,7 +6455,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "41976de4-2f71-46e6-aaf1-cf2aa91086d5",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53651729067695,
@@ -6563,7 +6482,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "81bb0def-a559-4447-bac5-d69cb350fbc2",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53648306700937,
@@ -6590,7 +6509,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "c6d9e6cf-ddf9-43f7-b007-2b3fd2bd7601",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53640102011023,
@@ -6617,7 +6536,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "bdc12889-0048-4c6d-81de-8864c81c8116",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53634178793487,
@@ -6644,7 +6563,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "bdc12889-0048-4c6d-81de-8864c81c8116",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53633740035099,
@@ -6671,7 +6590,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "71872d77-15a7-456b-8f8c-b247478de496",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53633520658224,
@@ -6698,7 +6617,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "a63a1cff-cf56-4c3d-9afa-2c1cdc45542d",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53633740036632,
@@ -6725,7 +6644,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "23808b22-7a24-4f81-8777-09d28b835548",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53642515173756,
@@ -6753,7 +6672,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "253a4b37-5b50-4684-a6ef-87283c33d9a6",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53640979524738,
@@ -6781,7 +6700,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "f2f90f5e-609f-4fb8-8fbc-8d12269d8b15",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53637030712662,
@@ -6808,7 +6727,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "9cb20ab2-4def-4d48-adcc-e656feaab1db",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53633168747683,
@@ -6835,7 +6754,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "5f4e771b-bcf3-4171-a481-5a1bcbf2d672",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53634617550344,
@@ -6862,7 +6781,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "9905595e-98c7-461a-a733-cb79d0ea73d8",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.5363966325417,
@@ -6889,7 +6808,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "b4e668fb-b103-4de5-a4af-95bd98c2ed44",
-                "category": "restaurant",
+                "category": "office",
                 "display_point": {
                     "coordinates": [
                         -91.53640102011023,
