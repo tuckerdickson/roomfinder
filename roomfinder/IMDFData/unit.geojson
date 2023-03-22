@@ -738,7 +738,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "restroom",
         "display_point": {
           "coordinates": [
             -91.53720686660036,
@@ -793,7 +793,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "restroom",
         "display_point": {
           "coordinates": [
             -91.53720064762156,
@@ -5047,7 +5047,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "restroom",
         "display_point": {
           "coordinates": [
             -91.53721531093262,
@@ -8796,7 +8796,7 @@
         "display_point": {
           "coordinates": [
               -91.53671303111041,
-                        41.659863903348764
+              41.659863903348764
             ],
           "type": "Point"
         },
@@ -11191,7 +11191,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "classroom",
         "display_point": {
           "coordinates": [
             -91.53667304936026,
@@ -11238,7 +11238,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "classroom",
         "display_point": {
           "coordinates": [
             -91.53653180696926,

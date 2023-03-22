@@ -173,34 +173,6 @@
     {
       "type": "Feature",
       "feature_type": "amenity",
-      "id": "97b232ce-b2b7-41cd-b448-74389dd55921",
-      "properties": {
-        "accessibility": null,
-        "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-        "alt_name": null,
-        "category": "elevator",
-        "correlation_id": null,
-        "hours": null,
-        "name": {
-            "en": "Elevator 607"
-        },
-        "phone": null,
-        "unit_ids": [
-            "ef5c8773-b61b-458f-bb35-97e920e49b56"
-        ],
-        "website": null
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-            -91.53649346348075,
-            41.65910935159465
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "amenity",
       "id": "454fcf18-b298-4865-9d40-4b5813f98a92",
       "properties": {
         "accessibility": null,
@@ -1177,8 +1149,287 @@
               41.659390009818736
           ]
         }
-      }
-
+      },
+    {
+        "type": "Feature",
+        "feature_type": "amenity",
+        "id": "8f922bf2-841a-4c90-9eae-2796c3b26cc6",
+        "properties": {
+          "accessibility": null,
+          "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+          "alt_name": null,
+          "category": "restroom",
+          "correlation_id": null,
+          "hours": null,
+          "name": {
+              "en": "1447 - Single User Restroom"
+          },
+          "phone": null,
+          "unit_ids": [
+              "f5ab9542-7614-4037-b26a-55290593426c"
+          ],
+          "website": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -91.53720064762156,
+              41.659808203206296
+          ]
+        }
+      },
+    {
+        "type": "Feature",
+        "feature_type": "amenity",
+        "id": "f0f9f154-5a92-4193-ac77-e767cd124a59",
+        "properties": {
+          "accessibility": null,
+          "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+          "alt_name": null,
+          "category": "restroom",
+          "correlation_id": null,
+          "hours": null,
+          "name": {
+              "en": "1449 - Men's Restroom"
+          },
+          "phone": null,
+          "unit_ids": [
+              "558a26c6-b1bd-4425-a1dd-0d2e1a6a9fa3"
+          ],
+          "website": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -91.53720686660036,
+              41.65978032583254
+          ]
+        }
+      },
+    {
+        "type": "Feature",
+        "feature_type": "amenity",
+        "id": "19614949-c699-4966-97ed-0e96105a50bb",
+        "properties": {
+          "accessibility": null,
+          "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+          "alt_name": null,
+          "category": "restroom",
+          "correlation_id": null,
+          "hours": null,
+          "name": {
+              "en": "2442 - Men's Restroom"
+          },
+          "phone": null,
+          "unit_ids": [
+              "7c522a44-3987-44d2-a231-26595fc26315"
+          ],
+          "website": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -91.53721531093262,
+              41.65978954678076
+          ]
+        }
+      },
+    {
+        "type": "Feature",
+        "feature_type": "amenity",
+        "id": "3d07f07c-ebfb-48a6-9332-e44fdccb5991",
+        "properties": {
+          "accessibility": null,
+          "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+          "alt_name": null,
+          "category": "elevator",
+          "correlation_id": null,
+          "hours": null,
+          "name": {
+              "en": "Elevator 1"
+          },
+          "phone": null,
+          "unit_ids": [
+              "c035635a-d2f5-4b86-9c0e-ca2f3ac9e301"
+          ],
+          "website": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -91.5367409809314,
+              41.65953608895231
+          ]
+        }
+      },
+    {
+        "type": "Feature",
+        "feature_type": "amenity",
+        "id": "82d122f6-49a4-49a8-bf9c-3ba9a34f9902",
+        "properties": {
+          "accessibility": null,
+          "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+          "alt_name": null,
+          "category": "elevator",
+          "correlation_id": null,
+          "hours": null,
+          "name": {
+              "en": "Elevator 2"
+          },
+          "phone": null,
+          "unit_ids": [
+              "aabc314a-7eaf-44f7-afe4-661f44ca72d3"
+          ],
+          "website": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -91.53683323945103,
+              41.659795919598196
+          ]
+        }
+      },
+    {
+        "type": "Feature",
+        "feature_type": "amenity",
+        "id": "79593bba-40e4-416e-aaf0-52f2db95da58",
+        "properties": {
+          "accessibility": null,
+          "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+          "alt_name": null,
+          "category": "elevator",
+          "correlation_id": null,
+          "hours": null,
+          "name": {
+              "en": "Elevator 3"
+          },
+          "phone": null,
+          "unit_ids": [
+              "fa7f462b-7be2-4dbe-92f0-8c2848d7a757"
+          ],
+          "website": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -91.53671303111041,
+              41.659863903348764
+          ]
+        }
+      },
+    {
+        "type": "Feature",
+        "feature_type": "amenity",
+        "id": "cefa1c53-a9c2-4611-850f-817d6455e427",
+        "properties": {
+          "accessibility": null,
+          "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+          "alt_name": null,
+          "category": "elevator",
+          "correlation_id": null,
+          "hours": null,
+          "name": {
+              "en": "Elevator 4"
+          },
+          "phone": null,
+          "unit_ids": [
+              "7bf3d7f5-080c-4b76-9626-f62059546188"
+          ],
+          "website": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -91.53641076280778,
+              41.65978135900906
+          ]
+        }
+      },
+    {
+        "type": "Feature",
+        "feature_type": "amenity",
+        "id": "038a2616-aec6-4378-b4ac-526bff9ab8b9",
+        "properties": {
+          "accessibility": null,
+          "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+          "alt_name": null,
+          "category": "elevator",
+          "correlation_id": null,
+          "hours": null,
+          "name": {
+              "en": "Elevator 5"
+          },
+          "phone": null,
+          "unit_ids": [
+              "bc0d7f29-69c1-424b-bfc4-c1309331c7fe"
+          ],
+          "website": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -91.53710371923627,
+              41.65992610271897
+          ]
+        }
+      },
+    {
+        "type": "Feature",
+        "feature_type": "amenity",
+        "id": "40eccf4d-3e6a-4293-aea1-88636b51882b",
+        "properties": {
+          "accessibility": null,
+          "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+          "alt_name": null,
+          "category": "elevator",
+          "correlation_id": null,
+          "hours": null,
+          "name": {
+              "en": "Elevator 6"
+          },
+          "phone": null,
+          "unit_ids": [
+              "ffdfc9c5-a2e4-43c7-a52d-1e0e5406fa41"
+          ],
+          "website": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -91.53649920894479,
+              41.65913006680634
+          ]
+        }
+      },
+    {
+        "type": "Feature",
+        "feature_type": "amenity",
+        "id": "737690d4-964c-40d4-8695-970b512ee158",
+        "properties": {
+          "accessibility": null,
+          "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+          "alt_name": null,
+          "category": "elevator",
+          "correlation_id": null,
+          "hours": null,
+          "name": {
+              "en": "Elevator 7"
+          },
+          "phone": null,
+          "unit_ids": [
+              "ffdfc9c5-a2e4-43c7-a52d-1e0e5406fa41"
+          ],
+          "website": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -91.53649981589544,
+              41.65909469687355
+          ]
+        }
+      },
     
   ]
 }
