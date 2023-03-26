@@ -2781,6 +2781,2114 @@
         ]
       }
     },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "7c0caf4e-dfe6-45b0-8984-c3af254c6c80",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53731097044347,
+              41.65965834684914
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1437"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53731097044347,
+                        41.65965834684914
+                      ],
+                      [
+                        -91.53731017718286,
+                        41.65964234529946
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "c05b26df-f7f3-4290-9fae-2872fd6afd2d",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53731097044347,
+              41.65971346326816
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1433"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53731097044347,
+                        41.65971346326816
+                      ],
+                      [
+                        -91.53731097044347,
+                        41.65969864703089
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "182a73e1-68bc-4d6d-a958-722532724bac",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53731017718286,
+              41.659751392818634
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1431"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53731017718286,
+                        41.659751392818634
+                      ],
+                      [
+                        -91.53731017718286,
+                        41.659737761888834
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "f2d9cc55-7f26-49a7-9b0b-949382726db5",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.537279240027,
+              41.65978102526472
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1442"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.537279240027,
+                        41.65978102526472
+                      ],
+                      [
+                        -91.53725544221457,
+                        41.65978102526472
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "f0daeb31-1637-42de-a36b-b70373036e72",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53723481744414,
+              41.65978102526472
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1449"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53723481744414,
+                        41.65978102526472
+                      ],
+                      [
+                        -91.53721895223569,
+                        41.65978102526472
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "f2a0102d-48cf-463e-8259-4c030300ebe4",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.5372205387565,
+              41.659818954776085
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1447"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.5372205387565,
+                        41.659818954776085
+                      ],
+                      [
+                        -91.5372205387565,
+                        41.6598094724005
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "8d8b3245-d996-4db2-8ddb-0eb8d1122d5c",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.5372205387565,
+              41.659850365135696
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1445"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.5372205387565,
+                        41.659850365135696
+                      ],
+                      [
+                        -91.5372205387565,
+                        41.65983969746793
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "b2e9f7f1-56ea-411f-b330-4137a194843e",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53722133201713,
+              41.659850957783675
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1443"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53722133201713,
+                        41.659850957783675
+                      ],
+                      [
+                        -91.53722133201713,
+                        41.659861625449565
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "1d7a870b-969a-4eaa-a512-11bfc274242a",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.5372205387565,
+              41.65987584900088
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1441"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.5372205387565,
+                        41.65987584900088
+                      ],
+                      [
+                        -91.5372205387565,
+                        41.65988592401433
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "8837b94d-057b-4ff6-94d7-d000510c14d3",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53724671635038,
+              41.65979761942842
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1400S"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53724671635038,
+                        41.65979761942842
+                      ],
+                      [
+                        -91.53725940851679,
+                        41.65979761942842
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "18305d94-7b18-4879-ad71-5ebdce985127",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.5373308019537,
+              41.659642937950025
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1438"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.5373308019537,
+                        41.659642937950025
+                      ],
+                      [
+                        -91.5373308019537,
+                        41.65965182770029
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "4c03b2e1-5b37-41ac-80ba-21841aa0d5fc",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.5373308019537,
+              41.65969864703089
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1434"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.5373308019537,
+                        41.65969864703089
+                      ],
+                      [
+                        -91.5373308019537,
+                        41.6596873866886
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "14f3e268-0724-4d4a-8874-1bf95f004651",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.5373308019537,
+              41.65973894718752
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1430"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.5373308019537,
+                        41.65973894718752
+                      ],
+                      [
+                        -91.5373308019537,
+                        41.65974902222237
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "6eedec70-119f-4c4e-af25-ca24b4711638",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53733873455771,
+              41.659792878239244
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1428"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53733873455771,
+                        41.659792878239244
+                      ],
+                      [
+                        -91.53733873455771,
+                        41.659782803211215
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "4f1cec76-73ad-4397-b17b-69ea13187349",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.5373379412971,
+              41.65979347088836
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1426"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.5373379412971,
+                        41.65979347088836
+                      ],
+                      [
+                       -91.5373379412971,
+                        41.659804731212176
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "96b8a863-b0f0-4f4a-8b94-8222a473d5c7",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53731017718286,
+              41.6598207327215
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1423"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53731017718286,
+                        41.6598207327215
+                      ],
+                      [
+                        -91.53731017718286,
+                        41.65983969746793
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "460a9615-1a1d-4069-bc59-f1198aebc652",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53735618628653,
+              41.6598580695609
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1421"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53735618628653,
+                        41.6598580695609
+                      ],
+                      [
+                        -91.53737601779676,
+                        41.6598580695609
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "d366814e-fae8-4598-94d4-232b04ce7e41",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.5373942627862,
+              41.65985866220882
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1422"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.5373942627862,
+                        41.65985866220882
+                      ],
+                      [
+                        -91.5373942627862,
+                        41.65986992252124
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "f74d44f7-0712-454f-883b-6acb1776ab31",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.5373942627862,
+              41.659901925503505
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1420"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.5373942627862,
+                        41.659901925503505
+                      ],
+                      [
+                        -91.5373942627862,
+                        41.65989362843598
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "701c4697-d3ad-4ce9-accd-d2ac9143c0e2",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53739346952601,
+              41.65990251815097
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1418"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53739346952601,
+                        41.65990251815097
+                      ],
+                      [
+                        -91.53739346952601,
+                        41.65991377845572
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "7306ce0b-4adb-47f6-9c3d-48de6a04bdea",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53739346952601,
+              41.659928594643446
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1416"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53739346952601,
+                        41.659928594643446
+                      ],
+                      [
+                        -91.53739346952601,
+                        41.6599380770015
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "750f55fe-1bda-4b8c-975d-c3b1fb018ef4",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.5373942627862,
+              41.659969487303016
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1414"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.5373942627862,
+                        41.659969487303016
+                      ],
+                      [
+                        -91.5373942627862,
+                        41.65996178289049
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "5ea2c347-fbe7-43f2-b5dd-fca5d423d494",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53737522453658,
+              41.6598746637047
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1440"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53737522453658,
+                        41.6598746637047
+                      ],
+                      [
+                        -91.53736253236973,
+                        41.6598746637047
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "1e19d8c1-deb1-409f-85c1-97ebb5594b6d",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53734666716173,
+              41.65994044759077
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1412"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53734666716173,
+                        41.65994044759077
+                      ],
+                      [
+                        -91.53735935932814,
+                        41.65994044759077
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "fa6de453-5821-4bdb-b8ad-d87b1a6462f9",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53731169089096,
+              41.65994036599727
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1410"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53731169089096,
+                        41.65994036599727
+                      ],
+                      [
+                        -91.53732121001578,
+                        41.65994036599727
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "7cfecec4-b908-4f2c-ae0a-2a3bcd7a0f17",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53727758069353,
+              41.65994036599727
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1408"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53727758069353,
+                        41.65994036599727
+                      ],
+                      [
+                        -91.53728709981833,
+                        41.65994036599727
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "1588c49d-ec96-4aab-810a-5b44aadd4b4b",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53724585027707,
+              41.65994036599727
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1406"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53724585027707,
+                        41.65994036599727
+                      ],
+                      [
+                        -91.53725695592267,
+                        41.65994036599727
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "1588c49d-ec96-4aab-810a-5b44aadd4b4b",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.5371855624862,
+              41.65992792040268
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1402"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.5371855624862,
+                        41.65992792040268
+                      ],
+                      [
+                        -91.53716731749674,
+                        41.65992792040268
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "2103ea81-5a77-415c-a934-45d072abf320",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53713320729887,
+              41.65991251156737
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1401"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53713320729887,
+                        41.65991251156737
+                      ],
+                      [
+                        -91.53711892861168,
+                        41.65991191891999
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "15055198-3cba-4f21-ba25-2fa87ca17c98",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53709037123681,
+              41.6599024365581
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1100S"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53709037123681,
+                        41.6599024365581
+                      ],
+                      [
+                        -91.53709037123681,
+                        41.65988999095549
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "ae782176-84cb-48f6-a6a9-69c329c5994a",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53705308799775,
+              41.659889398307854
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1141"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53705308799775,
+                        41.659889398307854
+                      ],
+                      [
+                        -91.53706498690397,
+                        41.659889398307854
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "c784750d-1b65-4e60-8027-9d255c653082",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53705150147697,
+              41.6599024365581
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1139"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53705150147697,
+                        41.6599024365581
+                      ],
+                      [
+                        -91.53705150147697,
+                        41.659891768898945
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "9fb5dc69-ac36-4012-93cc-36637e5f00a0",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53702611714371,
+              41.6599024365581
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1137"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53702611714371,
+                        41.6599024365581
+                      ],
+                      [
+                        -91.53702532388351,
+                        41.659891768898945
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "d76882b5-e22d-4e6d-b22c-ac05b7ca187f",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53698169456084,
+              41.65990599244361
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1135"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53698169456084,
+                        41.65990599244361
+                      ],
+                      [
+                        -91.536966622613,
+                        41.65990599244361
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "3c78dc49-51b2-42be-85e5-c1c613728fe4",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53694044501955,
+              41.6599053997962
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1133"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53694044501955,
+                        41.6599053997962
+                      ],
+                      [
+                        -91.53692775285317,
+                        41.6599053997962
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "9f6f0da2-eb82-41c8-b6ee-2f960a93ad78",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53690554156151,
+              41.65990480714868
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1131"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53690554156151,
+                        41.65990480714868
+                      ],
+                      [
+                        -91.53689522917652,
+                        41.65990480714868
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "9f49125a-c2f6-4abc-9d4f-7c7027cfd2b5",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53687222462469,
+              41.6599053997962
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1129"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53687222462469,
+                        41.6599053997962
+                      ],
+                      [
+                        -91.53685715267687,
+                        41.6599053997962
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "5abde57d-2b45-4b7e-9035-be3df80b9953",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53704674191457,
+              41.659932068934665
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1138"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53704674191457,
+                        41.659932068934665
+                      ],
+                      [
+                        -91.53703325648753,
+                        41.659932068934665
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "81d0fa55-8847-48b1-93f1-90a393c0330e",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53701104519587,
+              41.65993266158188
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1136"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53701104519587,
+                        41.65993266158188
+                      ],
+                      [
+                        -91.53699914629009,
+                        41.65993266158188
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "7549988a-01d5-48dd-840c-e8a5f4fde7f6",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53697614173826,
+              41.659932068934665
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1134"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53697614173826,
+                        41.659932068934665
+                      ],
+                      [
+                        -91.53696265631123,
+                        41.659932068934665
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "a91e5527-526e-41de-9a25-3b53c10d9213",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53694123828019,
+              41.659932068934665
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1132"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53694123828019,
+                        41.659932068934665
+                      ],
+                      [
+                        -91.53692695959255,
+                        41.659932068934665
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "453263a6-8101-468c-b105-3a3956a33997",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53690316178053,
+              41.659932068934665
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1130"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53690316178053,
+                        41.659932068934665
+                      ],
+                      [
+                        -91.53688967635348,
+                        41.659932068934665
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "50483029-dd57-4785-8b61-b36ac980f7e0",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53686984484325,
+              41.659932068934665
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1128"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53686984484325,
+                        41.659932068934665
+                      ],
+                      [
+                        -91.53685715267687,
+                        41.659932068934665
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "c8179ef2-e8ae-41c5-a22f-cb9885aabd2e",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53683097508342,
+              41.65993266158188
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1126"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53683097508342,
+                        41.65993266158188
+                      ],
+                      [
+                        -91.53681828291657,
+                        41.65993266158188
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "1937e828-343a-4fea-9e71-b439814b8862",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53680442109992,
+              41.659868954498535
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1247"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53680442109992,
+                        41.659868954498535
+                      ],
+                      [
+                        -91.53680442109992,
+                        41.659858795111006
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "f63dc0d4-38b4-4914-bbbd-8d5b91ee07b5",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53684453625586,
+              41.659847619782596
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1203"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53684453625586,
+                        41.659847619782596
+                      ],
+                      [
+                        -91.53684385633815,
+                        41.65983593648275
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "239f759f-0afa-4773-bfcf-01ca95600039",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53684181658429,
+              41.6597597409978
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1215"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53684181658429,
+                        41.6597597409978
+                      ],
+                      [
+                        -91.53684181658429,
+                        41.659770408370946
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "ea956d86-5e60-44b8-b759-6d7080cf8158",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53680986044307,
+              41.65975923302716
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1220"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53680986044307,
+                        41.65975923302716
+                      ],
+                      [
+                        -91.53681054036078,
+                        41.65978869529246
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "f96d89dc-9fdf-4977-9bf3-c3e1ab3991d3",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53684249650239,
+              41.65963122440783
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1231"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53684249650239,
+                        41.65963122440783
+                      ],
+                      [
+                        -91.53684181658429,
+                        41.65966424252858
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "2ff4de29-551e-436a-80ef-7ec139344fbe",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53684154581468,
+              41.65952326887279
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1233"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53684154581468,
+                        41.65952326887279
+                      ],
+                      [
+                        -91.53684154581468,
+                        41.659499336006036
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "e38672dc-bd52-43b1-a122-cab5b91c87aa",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53684154581468,
+              41.65945420543318
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1235"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53684154581468,
+                        41.65945420543318
+                      ],
+                      [
+                        -91.53684154581468,
+                        41.65946788136759
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "893b517a-975d-4d98-88f8-f02c2c2efa6c",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53684063055758,
+              41.65945283784001
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1237"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                       -91.53684063055758,
+                       41.65945283784001
+                     ],
+                     [
+                       -91.53684063055758,
+                       41.65944121329264
+                     ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "c8cf9317-6b67-476e-8d48-45b9daf31e9e",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53684246107234,
+              41.659422750772706
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1245"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53684246107234,
+                        41.659422750772706
+                      ],
+                      [
+                        -91.53684246107234,
+                        41.659409074828716
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "9bdac9d0-d9f0-4eff-a207-6f826abfbbf5",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53684246107234,
+              41.659269580032685
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1249"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53684246107234,
+                        41.659269580032685
+                      ],
+                      [
+                        -91.53684246107234,
+                        41.65928393980471
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "811fba9d-219d-45bb-a070-f1b3632ddd5b",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53684154581468,
+              41.65921897890476
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1253"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53684154581468,
+                        41.65921897890476
+                      ],
+                      [
+                        -91.53684154581468,
+                        41.659231287290424
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "72e49843-30e4-47dc-b404-f55ca935ea73",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53684154581468,
+              41.659207354315214
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1257"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53684154581468,
+                        41.659207354315214
+                      ],
+                      [
+                       -91.53684154581468,
+                        41.6591957297243
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "5c22b892-51ba-4e10-9fe0-ae5ac9d0fca6",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53684154581468,
+              41.65916701013694
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1259"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53684154581468,
+                        41.65916701013694
+                      ],
+                      [
+                        -91.53684063055758,
+                        41.65915675313832
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "455a941b-ba0d-4257-9151-a1e705538ba3",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53680859654875,
+              41.65922103030198
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1256"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53680859654875,
+                        41.65922103030198
+                      ],
+                      [
+                        -91.53680768129165,
+                        41.65924086047832
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "d2adf836-67e1-4730-9823-75613aa9ed6b",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53680859654875,
+              41.65929829957432
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1248"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53680859654875,
+                        41.65929829957432
+                      ],
+                      [
+                        -91.53680859654875,
+                        41.65931265933992
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "0b07fc24-68e1-4059-84ae-3380aee5c198",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53680768129165,
+              41.659389244704215
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1246"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53680768129165,
+                        41.659389244704215
+                      ],
+                      [
+                        -91.53680768129165,
+                        41.65937488495567
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "a599a3d3-a02c-4acd-87a8-004096f31ba9",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53680768129165,
+              41.659412493814784
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1242"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53680768129165,
+                        41.659412493814784
+                      ],
+                      [
+                        -91.53680768129165,
+                        41.65942480216421
+                      ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "opening",
+      "id": "757faac5-4b3c-4643-8383-68be60718f54",
+      "properties": {
+        "access_control": null,
+        "accessibility": null,
+        "alt_name": null,
+        "category": "pedestrian",
+        "display_point": {
+          "coordinates": [
+              -91.53679944397504,
+              41.65948360868879
+          ],
+          "type": "Point"
+        },
+        "door": null,
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1525"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                        -91.53679944397504,
+                        41.65948360868879
+                      ],
+                      [
+                        -91.53677930831283,
+                        41.65948429248505
+                      ]
+        ]
+      }
+    },
     
     
   ]
