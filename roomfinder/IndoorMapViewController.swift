@@ -12,12 +12,26 @@
 import UIKit
 import CoreLocation
 import MapKit
+import CodeScanner
+import SwiftUI
 
 /// Controls the map view.
 class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     @IBOutlet var mapView: MKMapView!                       // connects to our map on the map view
     @IBOutlet var levelPicker: LevelPickerView!             // connects to our level picker on the map view
     private let locationManager = CLLocationManager()       // location manager; allows us to locate the user
+    
+    @IBSegueAction func scanView(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder,
+                                   rootView: CodeScannerView(codeTypes: [.qr],
+                                            simulatedData: "Paul Hudson") { response in
+            switch response {
+            case .success(let result):
+                print("Found code: \(result.string)")
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        })}
     
     var venue: Venue?                                       // object of type Venue; represents Seamans Center
     private var levels: [Level] = []                        // levels of Seamans Center

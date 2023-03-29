@@ -87,6 +87,9 @@
                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" name="LevelStroke"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="YZf-8O-ZsI" kind="show" destinationCreationSelector="scanView:" id="G0V-hn-mlY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -112,6 +115,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="50.399999999999999" y="19.95073891625616"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="6tr-Y9-hlk">
+            <objects>
+                <hostingController id="YZf-8O-ZsI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lMz-S8-LyX"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D9J-VG-ivq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130" y="20"/>
         </scene>
     </scenes>
     <resources>
