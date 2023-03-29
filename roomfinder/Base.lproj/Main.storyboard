@@ -75,7 +75,7 @@
                     </view>
                     <connections>
                         <outlet property="levelPicker" destination="sL9-v1-3AR" id="fhf-85-VpR"/>
-                        <outlet property="mapView" destination="IgS-LO-u88" id="VA8-Ts-RWb"/>
+                        <outlet property="mapV" destination="IgS-LO-u88" id="VA8-Ts-RWb"/>
                         <outlet property="searchContainerView" destination="hVi-23-1Td" id="des-R2-ZU5"/>
                     </connections>
                 </viewController>

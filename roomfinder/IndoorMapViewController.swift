@@ -15,7 +15,7 @@ import MapKit
 
 /// Controls the map view.
 class IndoorMapViewController: UIViewController, LevelPickerDelegate {
-    @IBOutlet var mapView: MKMapView!                       // connects to our map on the map view
+    @IBOutlet var mapV: MKMapView!                       // connects to our map on the map view
     @IBOutlet var levelPicker: LevelPickerView!             // connects to our level picker on the map view
     private let locationManager = CLLocationManager()       // location manager; allows us to locate the user
     
@@ -31,6 +31,7 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     
     var searchController: UISearchController!
     var currentDataSource: [String] = []
+
     @IBOutlet weak var searchContainerView: UIView!
     
     /// Gets called everytime this view is loaded (e.g. when the app is opened).
@@ -47,11 +48,11 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         locationManager.requestWhenInUseAuthorization()
 
         // set the mapView delegate to self so that we can use mapView delegate methods (below)
-        self.mapView.delegate = self
+        self.mapV.delegate = self
         
         // tell mapView that PointAnnotationView & LabelAnnotationView will be used to display points and annotation on map
-        self.mapView.register(PointAnnotationView.self, forAnnotationViewWithReuseIdentifier: pointAnnotationViewIdentifier)
-        self.mapView.register(LabelAnnotationView.self, forAnnotationViewWithReuseIdentifier: labelAnnotationViewIdentifier)
+        self.mapV.register(PointAnnotationView.self, forAnnotationViewWithReuseIdentifier: pointAnnotationViewIdentifier)
+        self.mapV.register(LabelAnnotationView.self, forAnnotationViewWithReuseIdentifier: labelAnnotationViewIdentifier)
 
         // decode the IMDF archive
         let imdfDirectory = Bundle.main.resourceURL!.appendingPathComponent("IMDFData")
@@ -79,7 +80,7 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         
         // Set the map view's region to enclose the venue
         if let venue = venue, let venueOverlay = venue.geometry[0] as? MKOverlay {
-            self.mapView.setVisibleMapRect(venueOverlay.boundingMapRect, edgePadding:
+            self.mapV.setVisibleMapRect(venueOverlay.boundingMapRect, edgePadding:
                 UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20), animated: false)
         }
 
@@ -99,8 +100,8 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         }
 
         // clear the previous level's geometry from the map
-        self.mapView.removeOverlays(self.currentLevelOverlays)
-        self.mapView.removeAnnotations(self.currentLevelAnnotations)
+        self.mapV.removeOverlays(self.currentLevelOverlays)
+        self.mapV.removeAnnotations(self.currentLevelAnnotations)
         self.currentLevelFeatures.removeAll()
         self.currentLevelAnnotations.removeAll()
         self.currentLevelOverlays.removeAll()
@@ -125,18 +126,25 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         self.currentLevelOverlays = currentLevelGeometry.compactMap({ $0 as? MKOverlay })
 
         // add geometries and annotations to the map
-        self.mapView.addOverlays(self.currentLevelOverlays)
-        self.mapView.addAnnotations(self.currentLevelAnnotations)
+        self.mapV.addOverlays(self.currentLevelOverlays)
+        self.mapV.addAnnotations(self.currentLevelAnnotations)
     }
     
+
     func filterRooms(searchTerm: String) {
-        print(searchTerm)
-        
-        //the following doesnt do anything currently
-        if searchTerm.count > 0 {
-            let filteredResults = currentDataSource.filter { $0.replacingOccurrences(of: " ", with:"").lowercased().contains(searchTerm.replacingOccurrences(of: " ", with: "").lowercased()) }
+        for occupant in self.currentLevelAnnotations{
             
-            currentDataSource = filteredResults
+            if(occupant.title!! == searchTerm){
+                print(occupant.title!!)
+                self.mapV.selectAnnotation(occupant, animated: true)
+                break
+            }
+            else{
+                let selectedAnnotations = mapV.selectedAnnotations
+                for annotation in selectedAnnotations{
+                    mapV.deselectAnnotation(annotation, animated: true)
+                }
+            }
         }
     }
     
@@ -193,7 +201,6 @@ extension IndoorMapViewController: UISearchBarDelegate{
         }
     }
 }
-
 
 // MKMapView delegate methods
 extension IndoorMapViewController: MKMapViewDelegate {
