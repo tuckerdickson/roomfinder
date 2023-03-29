@@ -32,7 +32,6 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     var searchController: UISearchController!
     var currentDataSource: [String] = []
     @IBOutlet weak var searchContainerView: UIView!
-    @IBOutlet weak var tableView: UITableView!
     
     /// Gets called everytime this view is loaded (e.g. when the app is opened).
     override func viewDidLoad() {
@@ -43,17 +42,12 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
 //        searchController.obscuresBackgroundDuringPresentation = false
         searchContainerView.addSubview(searchController.searchBar)
         searchController.searchBar.delegate = self
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
 
         // request location authorization from the user
         locationManager.requestWhenInUseAuthorization()
 
         // set the mapView delegate to self so that we can use mapView delegate methods (below)
         self.mapView.delegate = self
-        
         
         // tell mapView that PointAnnotationView & LabelAnnotationView will be used to display points and annotation on map
         self.mapView.register(PointAnnotationView.self, forAnnotationViewWithReuseIdentifier: pointAnnotationViewIdentifier)
@@ -138,16 +132,13 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     func filterRooms(searchTerm: String) {
         print(searchTerm)
         
+        //the following doesnt do anything currently
         if searchTerm.count > 0 {
             let filteredResults = currentDataSource.filter { $0.replacingOccurrences(of: " ", with:"").lowercased().contains(searchTerm.replacingOccurrences(of: " ", with: "").lowercased()) }
             
             currentDataSource = filteredResults
-            tableView.reloadData()
         }
-
     }
-    
-    
     
     /// Sets up the level-picker in the map view.
     private func setupLevelPicker() {
@@ -203,28 +194,6 @@ extension IndoorMapViewController: UISearchBarDelegate{
     }
 }
 
-extension IndoorMapViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alertController = UIAlertController(title: "Selection", message: "Selected \(currentDataSource[indexPath.row])", preferredStyle: .alert)
-        
-        searchController.isActive = false
-        
-        let okAction = UIAlertAction(title: "OK", style: .default)
-        alertController.addAction(okAction)
-        present(alertController, animated: true)
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currentDataSource.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = currentDataSource[indexPath.row]
-        return cell
-    }
-    
-}
 
 // MKMapView delegate methods
 extension IndoorMapViewController: MKMapViewDelegate {
