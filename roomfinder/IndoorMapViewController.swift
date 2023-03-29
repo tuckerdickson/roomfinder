@@ -24,7 +24,7 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     //on qr button click, show qr scanner
     @IBSegueAction func scanView(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder,
-                                   rootView: CodeScannerView(codeTypes: [.qr],
+                                   rootView: CodeScannerView(codeTypes: [.qr],  //only scan qr codes
                                             simulatedData: "Simulated QR Code Read") { response in
             switch response {
             case .success(let result):
@@ -32,11 +32,13 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
             case .failure(let error):
                 print(error.localizedDescription)
             }
+            //above chunk handles if successful or unsuccessful scan and prints it out,
+            // can add more within there for roomfinder specific applications
             
+            //dismiss the scanning screen when done
             self.dismiss(animated: true, completion: nil)
         })}
     
-    //when done scanning
     
     var venue: Venue?                                       // object of type Venue; represents Seamans Center
     private var levels: [Level] = []                        // levels of Seamans Center
