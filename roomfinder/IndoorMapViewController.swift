@@ -30,7 +30,7 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     let labelAnnotationViewIdentifier = "LabelAnnotationView"
     
     var searchController: UISearchController!
-    var currentDataSource: [String] = []
+    var filterOptions: [String] = ["office", "lab", "library", "classroom", "conference", "auditorium", "restroom", "elevator", "stairs"]
 
     @IBOutlet weak var searchContainerView: UIView!
     
@@ -132,20 +132,27 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     
 
     func filterRooms(searchTerm: String) {
-        for occupant in self.currentLevelAnnotations{
-            
-            if(occupant.title!! == searchTerm){
-                print(occupant.title!!)
-                self.mapV.selectAnnotation(occupant, animated: true)
-                break
-            }
-            else{
-                let selectedAnnotations = mapV.selectedAnnotations
-                for annotation in selectedAnnotations{
-                    mapV.deselectAnnotation(annotation, animated: true)
+        self.mapV.addAnnotations(self.currentLevelAnnotations)
+ 
+        if(filterOptions.contains(searchTerm.lowercased())){
+            let allAnnotations = self.mapV.annotations
+            self.mapV.removeAnnotations(allAnnotations)
+            for occupant in self.currentLevelAnnotations{
+                if(occupant.subtitle!! == searchTerm){
+                    self.mapV.addAnnotation(occupant)
                 }
             }
         }
+        else{
+            for occupant in self.currentLevelAnnotations{
+                
+                if(occupant.title!! == searchTerm){
+                    self.mapV.selectAnnotation(occupant, animated: true)
+                    break
+                }
+            }
+        }
+        
     }
     
     /// Sets up the level-picker in the map view.
@@ -179,7 +186,9 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
 extension IndoorMapViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text{
-            filterRooms(searchTerm: searchText)
+            if(searchText != ""){
+                filterRooms(searchTerm: searchText)
+            }
         }
     }
 }
