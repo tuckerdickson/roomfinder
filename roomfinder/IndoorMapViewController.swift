@@ -28,7 +28,10 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
                                             simulatedData: "Simulated QR Code Read") { response in
             switch response {
             case .success(let result):
-                print("Found code: \(result.string)")
+                //get text read from qr code (room number)
+                var roomread = result.string
+                print("Found code: \(roomread)")
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }
