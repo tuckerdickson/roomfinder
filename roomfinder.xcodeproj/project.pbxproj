@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4306A889223825C9005E7E97 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4306A888223825C9005E7E97 /* Styles.swift */; };
 		4353A0932228CD9600F2977B /* IMDFData in Resources */ = {isa = PBXBuildFile; fileRef = 4353A0922228CD9500F2977B /* IMDFData */; };
 		436217FD2256A4800075E16C /* LocalizedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436217FC2256A4800075E16C /* LocalizedName.swift */; };
+		4D1184BB29D49FB5004CE063 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 4D1184BA29D49FB5004CE063 /* CodeScanner */; };
 		7E4BF84722160D8B00AE3916 /* Amenity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4BF84622160D8B00AE3916 /* Amenity.swift */; };
 		7E4CC6C82242206000724B06 /* PointAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4CC6C72242206000724B06 /* PointAnnotationView.swift */; };
 		7E61CF00215E1FF500EAD172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61CEFF215E1FF500EAD172 /* AppDelegate.swift */; };
@@ -70,6 +71,7 @@
 			files = (
 				7E6509D121B06864005D2B6C /* MapKit.framework in Frameworks */,
 				7E61CF13215E20B700EAD172 /* CoreLocation.framework in Frameworks */,
+				4D1184BB29D49FB5004CE063 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +192,9 @@
 			dependencies = (
 			);
 			name = roomfinder;
+			packageProductDependencies = (
+				4D1184BA29D49FB5004CE063 /* CodeScanner */,
+			);
 			productName = IMDF_Sample_Code;
 			productReference = 7E61CEFC215E1FF500EAD172 /* roomfinder.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +224,9 @@
 				Base,
 			);
 			mainGroup = 7E61CEF3215E1FF500EAD172;
+			packageReferences = (
+				4D1184B929D49FB5004CE063 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 7E61CEFD215E1FF500EAD172 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -413,8 +421,9 @@
 			baseConfigurationReference = 0E4DF414B6CA3700FEC8FA74 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HKNXW42UPG;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)$(LOCAL_LIBRARY_DIR)/Frameworks",
@@ -437,8 +446,9 @@
 			baseConfigurationReference = 0E4DF414B6CA3700FEC8FA74 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HKNXW42UPG;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)$(LOCAL_LIBRARY_DIR)/Frameworks",
@@ -478,6 +488,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D1184B929D49FB5004CE063 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D1184BA29D49FB5004CE063 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D1184B929D49FB5004CE063 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E61CEF4215E1FF500EAD172 /* Project object */;
 }
