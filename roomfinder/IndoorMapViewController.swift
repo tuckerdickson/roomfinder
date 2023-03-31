@@ -21,28 +21,6 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     @IBOutlet var levelPicker: LevelPickerView!             // connects to our level picker on the map view
     private let locationManager = CLLocationManager()       // location manager; allows us to locate the user
     
-    //on qr button click, show qr scanner
-    @IBSegueAction func scanView(_ coder: NSCoder) -> UIViewController? {
-        return UIHostingController(coder: coder,
-                                   rootView: CodeScannerView(codeTypes: [.qr],  //only scan qr codes
-                                            simulatedData: "Simulated QR Code Read") { response in
-            switch response {
-            case .success(let result):
-                //get text read from qr code (room number)
-                var roomread = result.string
-                print("Found code: \(roomread)")
-                
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-            //above chunk handles if successful or unsuccessful scan and prints it out,
-            // can add more within there for roomfinder specific applications
-            
-            //dismiss the scanning screen when done
-            self.dismiss(animated: true, completion: nil)
-        })}
-    
-    
     var venue: Venue?                                       // object of type Venue; represents Seamans Center
     private var levels: [Level] = []                        // levels of Seamans Center
     
@@ -54,17 +32,25 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     let labelAnnotationViewIdentifier = "LabelAnnotationView"
     
     var searchController: UISearchController!
+    //all possible categories for unit
     var filterOptions: [String] = ["office", "lab", "library", "classroom", "conference", "auditorium", "restroom", "elevator", "stairs"]
 
     @IBOutlet weak var searchContainerView: UIView!
+    
+    @IBOutlet weak var directionsButton: UIButton!
     
     /// Gets called everytime this view is loaded (e.g. when the app is opened).
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //directions button configs
+        self.directionsButton.layer.cornerRadius = 20
+        
+        //configuration for search bar
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
 //        searchController.obscuresBackgroundDuringPresentation = false
+        //adding the physical search bar to view
         searchContainerView.addSubview(searchController.searchBar)
         searchController.searchBar.delegate = self
 
@@ -154,7 +140,11 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         self.mapView.addAnnotations(self.currentLevelAnnotations)
     }
     
-
+    @IBAction func directionsButtonTapped(_ sender: Any) {
+        let popUp = PopUpViewController()
+        popUp.appear(sender: self)
+    }
+    
     func filterRooms(searchTerm: String) {
         self.mapView.addAnnotations(self.currentLevelAnnotations)
  
