@@ -44,7 +44,6 @@ class PopUpViewController: UIViewController {
         sourceContainerView.addSubview(searchController.searchBar)
         searchController.searchBar.delegate = self
         searchController.searchBar.frame = CGRect(x: 0, y: 0, width: 286, height: 55)
-        searchController.width
         
 
         
