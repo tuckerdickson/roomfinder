@@ -2,9 +2,7 @@
  
  IndoorMapViewController.swift
  roomfindr
-
  This file controls the map view.
-
  Created on 2/25/23.
  
  */
