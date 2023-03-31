@@ -30,17 +30,25 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     let labelAnnotationViewIdentifier = "LabelAnnotationView"
     
     var searchController: UISearchController!
+    //all possible categories for unit
     var filterOptions: [String] = ["office", "lab", "library", "classroom", "conference", "auditorium", "restroom", "elevator", "stairs"]
 
     @IBOutlet weak var searchContainerView: UIView!
+    
+    @IBOutlet weak var directionsButton: UIButton!
     
     /// Gets called everytime this view is loaded (e.g. when the app is opened).
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //directions button configs
+        self.directionsButton.layer.cornerRadius = 20
+        
+        //configuration for search bar
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
 //        searchController.obscuresBackgroundDuringPresentation = false
+        //adding the physical search bar to view
         searchContainerView.addSubview(searchController.searchBar)
         searchController.searchBar.delegate = self
 
@@ -130,7 +138,11 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         self.mapV.addAnnotations(self.currentLevelAnnotations)
     }
     
-
+    @IBAction func directionsButtonTapped(_ sender: Any) {
+        let popUp = PopUpViewController()
+        popUp.appear(sender: self)
+    }
+    
     func filterRooms(searchTerm: String) {
         self.mapV.addAnnotations(self.currentLevelAnnotations)
  

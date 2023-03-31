@@ -57,10 +57,22 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hVi-23-1Td">
-                                <rect key="frame" x="0.0" y="709" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="662" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJo-dY-bRn">
+                                <rect key="frame" x="123" y="730" width="129" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Get Directions">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="directionsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dvK-xs-mmk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,6 +86,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="directionsButton" destination="gJo-dY-bRn" id="Rq2-QR-DxN"/>
                         <outlet property="levelPicker" destination="sL9-v1-3AR" id="fhf-85-VpR"/>
                         <outlet property="mapV" destination="IgS-LO-u88" id="VA8-Ts-RWb"/>
                         <outlet property="searchContainerView" destination="hVi-23-1Td" id="des-R2-ZU5"/>
