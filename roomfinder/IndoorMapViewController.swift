@@ -21,28 +21,6 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     @IBOutlet var levelPicker: LevelPickerView!             // connects to our level picker on the map view
     private let locationManager = CLLocationManager()       // location manager; allows us to locate the user
     
-    //on qr button click, show qr scanner
-    @IBSegueAction func scanView(_ coder: NSCoder) -> UIViewController? {
-        return UIHostingController(coder: coder,
-                                   rootView: CodeScannerView(codeTypes: [.qr],  //only scan qr codes
-                                            simulatedData: "Simulated QR Code Read") { response in
-            switch response {
-            case .success(let result):
-                //get text read from qr code (room number)
-                var roomread = result.string
-                print("Found code: \(roomread)")
-                
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-            //above chunk handles if successful or unsuccessful scan and prints it out,
-            // can add more within there for roomfinder specific applications
-            
-            //dismiss the scanning screen when done
-            self.dismiss(animated: true, completion: nil)
-        })}
-    
-    
     var venue: Venue?                                       // object of type Venue; represents Seamans Center
     private var levels: [Level] = []                        // levels of Seamans Center
     
