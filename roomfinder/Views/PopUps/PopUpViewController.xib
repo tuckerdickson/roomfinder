@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewController" customModule="roomfinder" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="tIS-PR-LYl" id="nIt-PD-6EC"/>
+                <outlet property="searchContainerView" destination="E1W-vf-HUB" id="oMJ-gv-J5i"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIS-PR-LYl">
+                    <rect key="frame" x="0.0" y="234" width="393" height="618"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNs-1i-VgM">
+                            <rect key="frame" x="158" y="541" width="77" height="35"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="WO7-Fm-I7x"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Qlg-aQ-pM1">
+                            <rect key="frame" x="-1" y="50" width="394" height="203"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Room Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8b-5i-TEj">
+                                    <rect key="frame" x="117.66666666666669" y="0.0" width="159" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1W-vf-HUB">
+                                    <rect key="frame" x="0.0" y="46.333333333333314" width="394" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elu-xR-iXE">
+                                    <rect key="frame" x="189.33333333333334" y="122.3333333333333" width="15.666666666666657" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lo6-6Z-6lK">
+                                    <rect key="frame" x="129.66666666666669" y="168.66666666666669" width="134.66666666666669" height="34.333333333333343"/>
+                                    <color key="tintColor" systemColor="tintColor"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Scan QR Code" cornerStyle="capsule">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="tintColor"/>
+                                        </backgroundConfiguration>
+                                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="E1W-vf-HUB" firstAttribute="top" secondItem="z8b-5i-TEj" secondAttribute="bottom" constant="26" id="2cc-7R-iPz"/>
+                                <constraint firstAttribute="trailing" secondItem="E1W-vf-HUB" secondAttribute="trailing" id="DnF-x0-J5d"/>
+                                <constraint firstItem="elu-xR-iXE" firstAttribute="top" secondItem="E1W-vf-HUB" secondAttribute="bottom" constant="26" id="NG9-Cr-FDf"/>
+                                <constraint firstItem="E1W-vf-HUB" firstAttribute="leading" secondItem="Qlg-aQ-pM1" secondAttribute="leading" id="Nfe-j5-J2B"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Qlg-aQ-pM1" firstAttribute="top" secondItem="tIS-PR-LYl" secondAttribute="top" constant="50" id="1Rq-uc-nzG"/>
+                        <constraint firstItem="ZNs-1i-VgM" firstAttribute="leading" secondItem="tIS-PR-LYl" secondAttribute="leading" constant="158" id="7Xj-Y2-fPw"/>
+                        <constraint firstItem="ZNs-1i-VgM" firstAttribute="top" secondItem="Qlg-aQ-pM1" secondAttribute="bottom" constant="288" id="QvK-p0-QkS"/>
+                        <constraint firstItem="Qlg-aQ-pM1" firstAttribute="leading" secondItem="tIS-PR-LYl" secondAttribute="leading" constant="-1" id="i9m-AW-x0c"/>
+                        <constraint firstAttribute="trailing" secondItem="Qlg-aQ-pM1" secondAttribute="trailing" id="kcz-FD-JC3"/>
+                        <constraint firstAttribute="bottom" secondItem="ZNs-1i-VgM" secondAttribute="bottom" constant="42" id="mKL-uR-2xe"/>
+                        <constraint firstAttribute="trailing" secondItem="ZNs-1i-VgM" secondAttribute="trailing" constant="158" id="y5o-yx-oOh"/>
+                        <constraint firstItem="ZNs-1i-VgM" firstAttribute="top" secondItem="Qlg-aQ-pM1" secondAttribute="bottom" constant="288" id="ydc-re-8Da"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tIS-PR-LYl" secondAttribute="bottom" id="Cvy-dX-QQy"/>
+                <constraint firstItem="tIS-PR-LYl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="175" id="PCY-yG-BeF"/>
+                <constraint firstItem="tIS-PR-LYl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bWo-Pf-4vu"/>
+                <constraint firstItem="tIS-PR-LYl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jbB-rn-m50"/>
+            </constraints>
+            <point key="canvasLocation" x="125.95419847328243" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -10,6 +10,8 @@
 		4306A889223825C9005E7E97 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4306A888223825C9005E7E97 /* Styles.swift */; };
 		4353A0932228CD9600F2977B /* IMDFData in Resources */ = {isa = PBXBuildFile; fileRef = 4353A0922228CD9500F2977B /* IMDFData */; };
 		436217FD2256A4800075E16C /* LocalizedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436217FC2256A4800075E16C /* LocalizedName.swift */; };
+		44B6BA2A29DB547900F41D0E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B6BA2829DB547900F41D0E /* PopUpViewController.swift */; };
+		44B6BA2B29DB547900F41D0E /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B6BA2929DB547900F41D0E /* PopUpViewController.xib */; };
 		4D1184BB29D49FB5004CE063 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 4D1184BA29D49FB5004CE063 /* CodeScanner */; };
 		7E4BF84722160D8B00AE3916 /* Amenity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4BF84622160D8B00AE3916 /* Amenity.swift */; };
 		7E4CC6C82242206000724B06 /* PointAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4CC6C72242206000724B06 /* PointAnnotationView.swift */; };
@@ -38,6 +40,8 @@
 		4306A888223825C9005E7E97 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		4353A0922228CD9500F2977B /* IMDFData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IMDFData; sourceTree = "<group>"; };
 		436217FC2256A4800075E16C /* LocalizedName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedName.swift; sourceTree = "<group>"; };
+		44B6BA2829DB547900F41D0E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		44B6BA2929DB547900F41D0E /* PopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
 		75E7ED09E5BC9AB9BC056378 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		7E4BF84622160D8B00AE3916 /* Amenity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amenity.swift; sourceTree = "<group>"; };
 		7E4CC6C72242206000724B06 /* PointAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointAnnotationView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44B6BA2729DB545000F41D0E /* PopUps */ = {
+			isa = PBXGroup;
+			children = (
+				44B6BA2829DB547900F41D0E /* PopUpViewController.swift */,
+				44B6BA2929DB547900F41D0E /* PopUpViewController.xib */,
+			);
+			path = PopUps;
+			sourceTree = "<group>";
+		};
 		4731D0181E07D1195EF67D74 /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 		7E4CC6C9224222C400724B06 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				44B6BA2729DB545000F41D0E /* PopUps */,
 				7EEA2CB421CA3D87005539F2 /* LevelPickerView.swift */,
 				7E4CC6C72242206000724B06 /* PointAnnotationView.swift */,
 				F78C77EA228DF74D0017CF2D /* LabelAnnotationView.swift */,
@@ -246,6 +260,7 @@
 				F77FB50D2276FE70006F9FD0 /* README.md in Resources */,
 				7E61CF05215E1FF500EAD172 /* Main.storyboard in Resources */,
 				4353A0932228CD9600F2977B /* IMDFData in Resources */,
+				44B6BA2B29DB547900F41D0E /* PopUpViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +281,7 @@
 				7EEA2CB521CA3D87005539F2 /* LevelPickerView.swift in Sources */,
 				7E61CF02215E1FF500EAD172 /* IndoorMapViewController.swift in Sources */,
 				7E4CC6C82242206000724B06 /* PointAnnotationView.swift in Sources */,
+				44B6BA2A29DB547900F41D0E /* PopUpViewController.swift in Sources */,
 				7EEA2CC221CBF3BB005539F2 /* Level.swift in Sources */,
 				7EEBCE8B21AD3B0E00FF4181 /* IMDFDecoder.swift in Sources */,
 				7EEA2CBE21CBF2DF005539F2 /* Unit.swift in Sources */,

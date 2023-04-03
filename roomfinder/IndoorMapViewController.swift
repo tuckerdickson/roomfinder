@@ -54,21 +54,22 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     var searchController: UISearchController!
     var currentDataSource: [String] = []
     @IBOutlet weak var searchContainerView: UIView!
-    @IBOutlet weak var tableView: UITableView!
+
+    @IBOutlet weak var getDIrectionsButton: UIButton!
+    
+    var filterOptions: [String] = ["office", "lab", "library", "classroom", "conference", "auditorium", "restroom", "elevator", "stairs"]
     
     /// Gets called everytime this view is loaded (e.g. when the app is opened).
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.getDIrectionsButton.layer.cornerRadius = 20
         
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
 //        searchController.obscuresBackgroundDuringPresentation = false
         searchContainerView.addSubview(searchController.searchBar)
         searchController.searchBar.delegate = self
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
 
         // request location authorization from the user
         locationManager.requestWhenInUseAuthorization()
@@ -157,15 +158,34 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         self.mapView.addAnnotations(self.currentLevelAnnotations)
     }
     
+    
+
+    @IBAction func getDirectionsButtonTapped(_ sender: Any) {
+        let popUp = PopUpViewController()
+        popUp.appear(sender: self)
+    }
+    
     func filterRooms(searchTerm: String) {
-        print(searchTerm)
-        
-        if searchTerm.count > 0 {
-            let filteredResults = currentDataSource.filter { $0.replacingOccurrences(of: " ", with:"").lowercased().contains(searchTerm.replacingOccurrences(of: " ", with: "").lowercased()) }
-            
-            currentDataSource = filteredResults
-            tableView.reloadData()
-        }
+        self.mapView.addAnnotations(self.currentLevelAnnotations)
+         
+                if(filterOptions.contains(searchTerm.lowercased())){
+                    let allAnnotations = self.mapView.annotations
+                    self.mapView.removeAnnotations(allAnnotations)
+                    for occupant in self.currentLevelAnnotations{
+                        if(occupant.subtitle!! == searchTerm){
+                            self.mapView.addAnnotation(occupant)
+                        }
+                    }
+                }
+                else{
+                    for occupant in self.currentLevelAnnotations{
+                        
+                        if(occupant.title!! == searchTerm){
+                            self.mapView.selectAnnotation(occupant, animated: true)
+                            break
+                        }
+                    }
+                }
 
     }
     
@@ -202,7 +222,9 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
 extension IndoorMapViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text{
-            filterRooms(searchTerm: searchText)
+            if(searchText != ""){
+                filterRooms(searchTerm: searchText)
+            }
         }
     }
 }
@@ -225,28 +247,6 @@ extension IndoorMapViewController: UISearchBarDelegate{
     }
 }
 
-extension IndoorMapViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alertController = UIAlertController(title: "Selection", message: "Selected \(currentDataSource[indexPath.row])", preferredStyle: .alert)
-        
-        searchController.isActive = false
-        
-        let okAction = UIAlertAction(title: "OK", style: .default)
-        alertController.addAction(okAction)
-        present(alertController, animated: true)
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currentDataSource.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = currentDataSource[indexPath.row]
-        return cell
-    }
-    
-}
 
 // MKMapView delegate methods
 extension IndoorMapViewController: MKMapViewDelegate {
