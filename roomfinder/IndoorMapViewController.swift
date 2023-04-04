@@ -27,8 +27,10 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
             switch response {
             case .success(let result):
                 //get text read from qr code (room number)
-                var roomread = result.string
+                let roomread = result.string
                 print("Found code: \(roomread)")
+                //fill out search bar with the scanned code
+                self.searchController.searchBar.text = roomread
                 
             case .failure(let error):
                 print(error.localizedDescription)
