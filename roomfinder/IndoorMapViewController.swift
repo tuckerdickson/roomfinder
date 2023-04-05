@@ -23,7 +23,9 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     @IBSegueAction func scanView(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder,
                                    rootView: CodeScannerView(codeTypes: [.qr],  //only scan qr codes
-                                            simulatedData: "Simulated QR Code Read") { response in
+                                                             showViewfinder: true,
+                                            simulatedData: "Simulated QR Code Read"
+                                                             ) { response in
             switch response {
             case .success(let result):
                 //get text read from qr code (room number)
