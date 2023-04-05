@@ -43,6 +43,11 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         })}
     
     
+    @IBSegueAction func directionsButtonTapped(_ coder: NSCoder) -> PopUpViewController? {
+        return PopUpViewController(coder: coder)
+    }
+    
+    
     var venue: Venue?                                       // object of type Venue; represents Seamans Center
     private var levels: [Level] = []                        // levels of Seamans Center
     
@@ -162,10 +167,10 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     
     
 
-    @IBAction func getDirectionsButtonTapped(_ sender: Any) {
-        let popUp = PopUpViewController()
-        popUp.appear(sender: self)
-    }
+//    @IBAction func getDirectionsButtonTapped(_ sender: Any) {
+//        let popUp = PopUpViewController()
+//        popUp.appear(sender: self)
+//    }
     
     func filterRooms(searchTerm: String) {
         self.mapView.addAnnotations(self.currentLevelAnnotations)
