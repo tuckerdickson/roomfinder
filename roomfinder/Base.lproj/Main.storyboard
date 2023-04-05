@@ -74,7 +74,7 @@
                                     <color key="baseBackgroundColor" name="LevelPickerSelected"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="YZf-8O-ZsI" kind="show" destinationCreationSelector="scanView:" id="G0V-hn-mlY"/>
+                                    <segue destination="YZf-8O-ZsI" kind="show" identifier="scanViewSegue" destinationCreationSelector="scanView:" id="G0V-hn-mlY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbc-lJ-YzU">
@@ -192,7 +192,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hoI-oi-EEz"/>
+        <segue reference="G0V-hn-mlY"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>

@@ -77,6 +77,8 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
 //        searchController.obscuresBackgroundDuringPresentation = false
         searchContainerView.addSubview(searchController.searchBar)
         searchController.searchBar.delegate = self
+        searchController.searchBar.showsBookmarkButton = true
+        searchController.searchBar.setImage(UIImage(systemName: "qrcode.viewfinder"), for: .bookmark, state: .normal)
 
         // request location authorization from the user
         locationManager.requestWhenInUseAuthorization()
@@ -245,6 +247,12 @@ extension IndoorMapViewController: UISearchBarDelegate{
         }
         
     }
+    
+    func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
+        print("click")
+        performSegue(withIdentifier: "scanViewSegue", sender: nil)
+    }
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchController.isActive = false
         
