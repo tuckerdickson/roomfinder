@@ -74,7 +74,7 @@
                                     <color key="baseBackgroundColor" name="LevelPickerSelected"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="YZf-8O-ZsI" kind="show" destinationCreationSelector="scanView:" id="G0V-hn-mlY"/>
+                                    <segue destination="YZf-8O-ZsI" kind="show" identifier="scanViewSegue" destinationCreationSelector="scanView:" id="G0V-hn-mlY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbc-lJ-YzU">
@@ -91,7 +91,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="getDirectionsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1j1-IV-Uyp"/>
+                                    <segue destination="lYr-5c-1aL" kind="show" destinationCreationSelector="directionsButtonTapped:" id="qlc-Ak-8qM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,7 +128,72 @@
             </objects>
             <point key="canvasLocation" x="1130" y="20"/>
         </scene>
+        <!--PopUp-->
+        <scene sceneID="xno-cx-gKa">
+            <objects>
+                <viewController title="PopUp" id="lYr-5c-1aL" customClass="PopUpViewController" customModule="roomfinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vsr-HZ-84w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Z20-al-JpR">
+                                <rect key="frame" x="0.0" y="76" width="375" height="233"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Nearby Room Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyz-yN-FSE">
+                                        <rect key="frame" x="78.333333333333329" y="0.0" width="218.33333333333337" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4n-3m-1Ie">
+                                        <rect key="frame" x="0.0" y="56.333333333333343" width="375" height="50"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l39-CF-LWD">
+                                        <rect key="frame" x="179.66666666666666" y="142.33333333333334" width="15.666666666666657" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXT-JB-Ubr">
+                                        <rect key="frame" x="105" y="198.66666666666669" width="165" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="qrcode.viewfinder" catalog="system" title=" Scan QR Code"/>
+                                        <connections>
+                                            <segue destination="YZf-8O-ZsI" kind="show" destinationCreationSelector="scanView:" id="hoI-oi-EEz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="t4n-3m-1Ie" secondAttribute="trailing" id="R0R-hP-V0O"/>
+                                    <constraint firstItem="t4n-3m-1Ie" firstAttribute="top" secondItem="Oyz-yN-FSE" secondAttribute="bottom" constant="36" id="bpZ-fV-Ugt"/>
+                                    <constraint firstItem="t4n-3m-1Ie" firstAttribute="leading" secondItem="Z20-al-JpR" secondAttribute="leading" id="tda-GT-VVP"/>
+                                    <constraint firstItem="l39-CF-LWD" firstAttribute="top" secondItem="t4n-3m-1Ie" secondAttribute="bottom" constant="36" id="zZ7-92-x7E"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KCD-qi-xgK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z20-al-JpR" firstAttribute="trailing" secondItem="KCD-qi-xgK" secondAttribute="trailing" id="ATi-wp-3PT"/>
+                            <constraint firstItem="Z20-al-JpR" firstAttribute="top" secondItem="KCD-qi-xgK" secondAttribute="top" constant="29" id="Hmi-g5-QW5"/>
+                            <constraint firstItem="Z20-al-JpR" firstAttribute="leading" secondItem="KCD-qi-xgK" secondAttribute="leading" id="MmR-bz-dxd"/>
+                            <constraint firstItem="KCD-qi-xgK" firstAttribute="bottom" secondItem="Z20-al-JpR" secondAttribute="bottom" constant="446" id="Szg-cj-BOA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fWJ-GB-64Z"/>
+                    <connections>
+                        <outlet property="contentView" destination="vsr-HZ-84w" id="Oq6-Hu-ebo"/>
+                        <outlet property="searchContainerView" destination="t4n-3m-1Ie" id="YzI-U1-XBU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6n-v0-rgz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="808.37438423645324"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="G0V-hn-mlY"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <namedColor name="LevelPickerSelected">
@@ -136,6 +201,9 @@
         </namedColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

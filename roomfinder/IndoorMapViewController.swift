@@ -45,6 +45,11 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         })}
     
     
+    @IBSegueAction func directionsButtonTapped(_ coder: NSCoder) -> PopUpViewController? {
+        return PopUpViewController(coder: coder)
+    }
+    
+    
     var venue: Venue?                                       // object of type Venue; represents Seamans Center
     private var levels: [Level] = []                        // levels of Seamans Center
     
@@ -74,6 +79,8 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
 //        searchController.obscuresBackgroundDuringPresentation = false
         searchContainerView.addSubview(searchController.searchBar)
         searchController.searchBar.delegate = self
+        searchController.searchBar.showsBookmarkButton = true
+        searchController.searchBar.setImage(UIImage(systemName: "qrcode.viewfinder"), for: .bookmark, state: .normal)
 
         // request location authorization from the user
         locationManager.requestWhenInUseAuthorization()
@@ -164,10 +171,10 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     
     
 
-    @IBAction func getDirectionsButtonTapped(_ sender: Any) {
-        let popUp = PopUpViewController()
-        popUp.appear(sender: self)
-    }
+//    @IBAction func getDirectionsButtonTapped(_ sender: Any) {
+//        let popUp = PopUpViewController()
+//        popUp.appear(sender: self)
+//    }
     
     func filterRooms(searchTerm: String) {
         self.mapView.addAnnotations(self.currentLevelAnnotations)
@@ -242,6 +249,12 @@ extension IndoorMapViewController: UISearchBarDelegate{
         }
         
     }
+    
+    func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
+        print("click")
+        performSegue(withIdentifier: "scanViewSegue", sender: nil)
+    }
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchController.isActive = false
         

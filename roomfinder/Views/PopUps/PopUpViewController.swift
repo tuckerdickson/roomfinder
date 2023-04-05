@@ -6,32 +6,39 @@
 //  Copyright © 2023 Apple. All rights reserved.
 //
 import UIKit
+import CodeScanner
+import SwiftUI
 
 class PopUpViewController: UIViewController {
     
     var searchController: UISearchController!
     
-    
     @IBOutlet weak var searchContainerView: UIView!
+
+    @IBOutlet var contentView: UIView!
     
-    @IBOutlet weak var contentView: UIView!
+    @IBSegueAction func scanView(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder,
+                                   rootView: CodeScannerView(codeTypes: [.qr],  //only scan qr codes
+                                            simulatedData: "Simulated QR Code Read") { response in
+            switch response {
+            case .success(let result):
+                //get text read from qr code (room number)
+                let roomread = result.string
+                print("Found code: \(roomread)")
+                //fill out search bar with the scanned code
+                self.searchController.searchBar.text = roomread
+                
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+            //above chunk handles if successful or unsuccessful scan and prints it out,
+            // can add more within there for roomfinder specific applications
+            
+            //dismiss the scanning screen when done
+            self.dismiss(animated: true, completion: nil)
+        })}
     
-    //called when cancel button is clicked
-    
-    @IBAction func cancelButtonTapped(_ sender: Any) {
-        hide()
-    }
-    
-    //inits
-    init(){
-        super.init(nibName: "PopUpViewController", bundle: nil)
-        self.modalPresentationStyle = .overFullScreen
-        
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
