@@ -20,6 +20,7 @@ class PopUpViewController: UIViewController {
     @IBSegueAction func scanView(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder,
                                    rootView: CodeScannerView(codeTypes: [.qr],  //only scan qr codes
+                                            showViewfinder: true,
                                             simulatedData: "Simulated QR Code Read") { response in
             switch response {
             case .success(let result):
