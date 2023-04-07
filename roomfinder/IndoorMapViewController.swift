@@ -81,7 +81,9 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         searchController.searchBar.delegate = self
         searchController.searchBar.showsBookmarkButton = true
         searchController.searchBar.setImage(UIImage(systemName: "qrcode.viewfinder"), for: .bookmark, state: .normal)
-
+            
+        getDIrectionsButton.isEnabled = false
+        getDIrectionsButton.isHidden = true
         // request location authorization from the user
         locationManager.requestWhenInUseAuthorization()
 
@@ -193,6 +195,8 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
                         
                         if(occupant.title!! == searchTerm){
                             self.mapView.selectAnnotation(occupant, animated: true)
+                            getDIrectionsButton.isEnabled = true
+                            getDIrectionsButton.isHidden = false
                             break
                         }
                     }
@@ -233,16 +237,28 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
 extension IndoorMapViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text{
-            if(searchText != ""){
-                filterRooms(searchTerm: searchText)
+            if (searchText == "") {
+                //hide get directions button
+                getDIrectionsButton.isEnabled = false
+                getDIrectionsButton.isHidden = true
+                
+                //deselect all annotations when cancel button is clicked
+                let selectedAnnotations = self.mapView.selectedAnnotations
+                for annotation in selectedAnnotations{
+                    self.mapView.deselectAnnotation(annotation, animated: true)
+                }
+                
+                //add back all dots
+                self.mapView.addAnnotations(self.currentLevelAnnotations)
             }
         }
     }
 }
 
 extension IndoorMapViewController: UISearchBarDelegate{
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchController.isActive = false
+        searchController.isActive = true
         
         if let searchText = searchBar.text {
             filterRooms(searchTerm: searchText)
@@ -251,12 +267,17 @@ extension IndoorMapViewController: UISearchBarDelegate{
     }
     
     func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
-        print("click")
         performSegue(withIdentifier: "scanViewSegue", sender: nil)
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchController.isActive = false
+        
+        //deselect all annotations when cancel button is clicked
+        let selectedAnnotations = self.mapView.selectedAnnotations
+        for annotation in selectedAnnotations{
+            self.mapView.deselectAnnotation(annotation, animated: true)
+        }
         
         if let searchText = searchBar.text, !searchText.isEmpty {
             
