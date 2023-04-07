@@ -33,6 +33,8 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
                 print("Found code: \(roomread)")
                 //fill out search bar with the scanned code
                 self.searchController.searchBar.text = roomread
+                self.filterRooms(searchTerm: roomread)
+                
                 
             case .failure(let error):
                 print(error.localizedDescription)
