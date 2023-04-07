@@ -75,13 +75,15 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         self.getDIrectionsButton.layer.cornerRadius = 20
         
         searchController = UISearchController(searchResultsController: nil)
-        searchController.searchResultsUpdater = self
+//        searchController.searchResultsUpdater = self
 //        searchController.obscuresBackgroundDuringPresentation = false
         searchContainerView.addSubview(searchController.searchBar)
         searchController.searchBar.delegate = self
         searchController.searchBar.showsBookmarkButton = true
         searchController.searchBar.setImage(UIImage(systemName: "qrcode.viewfinder"), for: .bookmark, state: .normal)
-
+            
+        getDIrectionsButton.isEnabled = false
+        getDIrectionsButton.isHidden = true
         // request location authorization from the user
         locationManager.requestWhenInUseAuthorization()
 
@@ -230,19 +232,30 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     }
 }
 
-extension IndoorMapViewController: UISearchResultsUpdating{
-    func updateSearchResults(for searchController: UISearchController) {
-        if let searchText = searchController.searchBar.text{
-            if(searchText != ""){
-                filterRooms(searchTerm: searchText)
-            }
-        }
-    }
-}
+//extension IndoorMapViewController: UISearchResultsUpdating{
+//    func updateSearchResults(for searchController: UISearchController) {
+//        if let searchText = searchController.searchBar.text{
+//            if(searchText != ""){
+//                filterRooms(searchTerm: searchText)
+//            }
+//        }
+//    }
+//}
 
 extension IndoorMapViewController: UISearchBarDelegate{
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchController.isActive = false
+        searchController.isActive = true
+        
+        if (searchBar.text == " ") {
+            getDIrectionsButton.isEnabled = false
+            getDIrectionsButton.isHidden = true
+        }
+            
+        else{
+            getDIrectionsButton.isEnabled = true
+            getDIrectionsButton.isHidden = false
+        }
         
         if let searchText = searchBar.text {
             filterRooms(searchTerm: searchText)
@@ -251,7 +264,6 @@ extension IndoorMapViewController: UISearchBarDelegate{
     }
     
     func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
-        print("click")
         performSegue(withIdentifier: "scanViewSegue", sender: nil)
     }
     
