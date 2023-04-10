@@ -14,7 +14,7 @@ import CodeScanner
 import SwiftUI
 
 /// Controls the map view.
-class IndoorMapViewController: UIViewController, LevelPickerDelegate {
+class IndoorMapViewController: UIViewController, UISearchControllerDelegate, LevelPickerDelegate {
     @IBOutlet var mapView: MKMapView!                       // connects to our map on the map view
     @IBOutlet var levelPicker: LevelPickerView!             // connects to our level picker on the map view
     private let locationManager = CLLocationManager()       // location manager; allows us to locate the user
@@ -42,7 +42,8 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
             
             //dismiss the scanning screen when done
             self.dismiss(animated: true, completion: nil)
-        })}
+        })
+    }
     
     
     var venue: Venue?                                       // object of type Venue; represents Seamans Center
@@ -67,11 +68,17 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tap = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIInputViewController.dismissKeyboard)
+        )
+        self.view.addGestureRecognizer(tap)
+
         self.getDIrectionsButton.layer.cornerRadius = 20
         
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
-//        searchController.obscuresBackgroundDuringPresentation = false
+
         searchContainerView.addSubview(searchController.searchBar)
         searchController.searchBar.delegate = self
 
@@ -172,28 +179,30 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     func filterRooms(searchTerm: String) {
         self.mapView.addAnnotations(self.currentLevelAnnotations)
          
-                if(filterOptions.contains(searchTerm.lowercased())){
-                    let allAnnotations = self.mapView.annotations
-                    self.mapView.removeAnnotations(allAnnotations)
-                    for occupant in self.currentLevelAnnotations{
-                        if(occupant.subtitle!! == searchTerm){
-                            self.mapView.addAnnotation(occupant)
-                        }
-                    }
+        if(filterOptions.contains(searchTerm.lowercased())){
+            let allAnnotations = self.mapView.annotations
+            self.mapView.removeAnnotations(allAnnotations)
+            for occupant in self.currentLevelAnnotations{
+                if(occupant.subtitle!! == searchTerm){
+                    self.mapView.addAnnotation(occupant)
                 }
-                else{
-                    for occupant in self.currentLevelAnnotations{
-                        
-                        if(occupant.title!! == searchTerm){
-                            self.mapView.selectAnnotation(occupant, animated: true)
-                            break
-                        }
-                    }
+            }
+        }
+        else{
+            for occupant in self.currentLevelAnnotations{
+                
+                if(occupant.title!! == searchTerm){
+                    self.mapView.selectAnnotation(occupant, animated: true)
+                    break
                 }
-
+            }
+        }
     }
-    
-    
+
+    @objc func dismissKeyboard() {
+        searchController.searchBar.resignFirstResponder()
+        view.endEditing(true)
+    }
     
     /// Sets up the level-picker in the map view.
     private func setupLevelPicker() {
