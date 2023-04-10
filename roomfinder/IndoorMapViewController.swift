@@ -15,6 +15,9 @@ import SwiftUI
 
 /// Controls the map view.
 class IndoorMapViewController: UIViewController, LevelPickerDelegate {
+    
+    @IBOutlet weak var errorMessage: UILabel!
+    
     @IBOutlet var mapView: MKMapView!                       // connects to our map on the map view
     @IBOutlet var levelPicker: LevelPickerView!             // connects to our level picker on the map view
     private let locationManager = CLLocationManager()       // location manager; allows us to locate the user
@@ -69,6 +72,7 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     @IBOutlet weak var getDIrectionsButton: UIButton!
     
     var filterOptions: [String] = ["office", "lab", "library", "classroom", "conference", "auditorium", "restroom", "elevator", "stairs"]
+    var floorOptions: [Int] = [1,2,3]
     
     /// Gets called everytime this view is loaded (e.g. when the app is opened).
     override func viewDidLoad() {
@@ -181,31 +185,47 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
 //    }
     
     func filterRooms(searchTerm: String) {
-        self.mapView.addAnnotations(self.currentLevelAnnotations)
-         
-                if(filterOptions.contains(searchTerm.lowercased())){
-                    let allAnnotations = self.mapView.annotations
-                    self.mapView.removeAnnotations(allAnnotations)
-                    for occupant in self.currentLevelAnnotations{
-                        if(occupant.subtitle!! == searchTerm){
-                            self.mapView.addAnnotation(occupant)
-                        }
+        
+        //self.mapView.addAnnotations(self.currentLevelAnnotations)
+        if(searchTerm.first!.wholeNumberValue == nil){
+            if(filterOptions.contains(searchTerm.lowercased())){
+                let allAnnotations = self.mapView.annotations
+                self.mapView.removeAnnotations(allAnnotations)
+                for occupant in self.currentLevelAnnotations{
+                    if(occupant.subtitle!! == searchTerm){
+                        self.mapView.addAnnotation(occupant)
                     }
+                }
+                errorMessage.isHidden = true
+            }
+            else{
+                //show pop up that nothing was found
+                errorMessage.isHidden = false
+            }
+        }
+        else{
+            if (floorOptions.contains(searchTerm.first!.wholeNumberValue!) && (levelPicker.selectedIndex != floorOptions.count - searchTerm.first!.wholeNumberValue!)) {
+                //showFeaturesForOrdinal(searchText.first!.wholeNumberValue! - 2)
+                selectedLevelDidChange(selectedIndex: floorOptions.count - searchTerm.first!.wholeNumberValue!)
+                levelPicker.selectedIndex = floorOptions.count - searchTerm.first!.wholeNumberValue!
+            }
+            
+            for occupant in self.currentLevelAnnotations{
+                
+                if(occupant.title!! == searchTerm){
+                    self.mapView.selectAnnotation(occupant, animated: true)
+                    getDIrectionsButton.isEnabled = true
+                    getDIrectionsButton.isHidden = false
+                    errorMessage.isHidden = true
+                    break
                 }
                 else{
-                    for occupant in self.currentLevelAnnotations{
-                        
-                        if(occupant.title!! == searchTerm){
-                            self.mapView.selectAnnotation(occupant, animated: true)
-                            getDIrectionsButton.isEnabled = true
-                            getDIrectionsButton.isHidden = false
-                            break
-                        }
-                    }
+                    //show that no room was found
+                    errorMessage.isHidden = false
                 }
-
+            }
+        }
     }
-    
     
     
     /// Sets up the level-picker in the map view.
