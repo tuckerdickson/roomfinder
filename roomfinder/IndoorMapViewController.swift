@@ -177,13 +177,6 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         self.mapView.addAnnotations(self.currentLevelAnnotations)
     }
     
-    
-
-//    @IBAction func getDirectionsButtonTapped(_ sender: Any) {
-//        let popUp = PopUpViewController()
-//        popUp.appear(sender: self)
-//    }
-    
     func filterRooms(searchTerm: String) {
         
         //self.mapView.addAnnotations(self.currentLevelAnnotations)
