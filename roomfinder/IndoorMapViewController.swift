@@ -14,7 +14,7 @@ import CodeScanner
 import SwiftUI
 
 /// Controls the map view.
-class IndoorMapViewController: UIViewController, LevelPickerDelegate {
+class IndoorMapViewController: UIViewController, UISearchControllerDelegate, LevelPickerDelegate {
     
     @IBOutlet weak var errorMessage: UILabel!
     
@@ -77,6 +77,12 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
     /// Gets called everytime this view is loaded (e.g. when the app is opened).
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIInputViewController.dismissKeyboard)
+        )
+        self.view.addGestureRecognizer(tap)
         
         self.getDIrectionsButton.layer.cornerRadius = 20
         
@@ -246,6 +252,10 @@ class IndoorMapViewController: UIViewController, LevelPickerDelegate {
         // select the appropriate level and update the features to reflect it
         let selectedLevel = self.levels[selectedIndex]
         showFeaturesForOrdinal(selectedLevel.properties.ordinal)
+    }
+    
+    @objc func dismissKeyboard() {
+        searchController.searchBar.resignFirstResponder()
     }
 }
 
