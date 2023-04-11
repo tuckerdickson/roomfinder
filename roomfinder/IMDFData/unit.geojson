@@ -9,7 +9,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53741951023787,
@@ -307,7 +307,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53736472594774,
@@ -354,7 +354,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.5373562574528,
@@ -401,7 +401,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.537387216987,
@@ -456,7 +456,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53738514399406,
@@ -503,7 +503,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53738514399406,
@@ -550,7 +550,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53724625346662,
@@ -597,7 +597,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.5372545454384,
@@ -644,7 +644,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.5372503994525,
@@ -840,7 +840,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53720479360742,
@@ -887,7 +887,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53720272061449,
@@ -934,7 +934,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "religous",
         "display_point": {
           "coordinates": [
             -91.53721101258627,
@@ -1032,7 +1032,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lounge",
         "display_point": {
           "coordinates": [
             -91.53717919097164,
@@ -1291,7 +1291,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53732188055857,
@@ -1338,7 +1338,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53728201140939,
@@ -1432,7 +1432,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.53710994455426,
@@ -1824,7 +1824,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53681678617906,
@@ -1871,7 +1871,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "academic center",
         "display_point": {
           "coordinates": [
             -91.53706600258919,
@@ -2200,7 +2200,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.5369062484801,
@@ -2294,7 +2294,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53687429765843,
@@ -2400,7 +2400,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.5368844213763,
@@ -2447,7 +2447,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "restroom",
         "display_point": {
           "coordinates": [
             -91.53688231197455,
@@ -2494,7 +2494,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "restroom",
         "display_point": {
           "coordinates": [
             -91.5368844213763,
@@ -2541,7 +2541,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "classroom",
         "display_point": {
           "coordinates": [
             -91.5368991871886,
@@ -2588,7 +2588,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53690129659034,
@@ -2635,7 +2635,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "academic center",
         "display_point": {
           "coordinates": [
             -91.53688653077805,
@@ -2729,7 +2729,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.5368991871886,
@@ -2831,7 +2831,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53679582650223,
@@ -3012,7 +3012,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53646675982695,
@@ -3059,7 +3059,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53651527606769,
@@ -3208,7 +3208,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53661863675406,
@@ -3255,7 +3255,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53670723162816,
@@ -3349,7 +3349,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.53642879059535,
@@ -3396,7 +3396,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53643511880064,
@@ -3443,7 +3443,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53651738546945,
@@ -3490,7 +3490,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53658910512951,
@@ -3537,7 +3537,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53669246581586,
@@ -3584,7 +3584,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53679371710047,
@@ -3832,7 +3832,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53659332393302,
@@ -3879,7 +3879,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53660387094178,
@@ -3950,7 +3950,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "academic center",
         "display_point": {
           "coordinates": [
             -91.53651105726419,
@@ -3997,7 +3997,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53646254102344,
@@ -4044,7 +4044,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53642035298834,
@@ -4091,7 +4091,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53643722820239,
@@ -4138,7 +4138,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.5367641854759,
@@ -4185,7 +4185,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53675363846675,
@@ -4232,7 +4232,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "restroom",
         "display_point": {
           "coordinates": [
             -91.53672621624393,
@@ -4326,7 +4326,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.5367641854759,
@@ -4373,7 +4373,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.5367599666724,
@@ -4420,7 +4420,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "academic center",
         "display_point": {
           "coordinates": [
             -91.53676207607418,
@@ -4467,7 +4467,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "conference",
         "display_point": {
           "coordinates": [
             -91.53661652735232,
@@ -4514,7 +4514,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53651949487119,
@@ -4561,7 +4561,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
             -91.53655746410278,
@@ -4608,7 +4608,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
             -91.53655113589753,
@@ -4655,7 +4655,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.53648656707972,
@@ -8701,9 +8701,9 @@
         "category": "elevator",
         "display_point": {
           "coordinates": [
-              -91.5367409809314,
-              41.65953608895231
-            ],
+            -91.5367409809314,
+            41.65953608895231
+          ],
           "type": "Point"
         },
         "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
@@ -8714,26 +8714,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-              [
-                            -91.53671973765265,
-                            41.65955785491826
-                          ],
-                          [
-                            -91.53676161725951,
-                            41.65955785491826
-                          ],
-                          [
-                            -91.53676161725951,
-                            41.65951432297953
-                          ],
-                          [
-                            -91.53671973765265,
-                            41.65951432297953
-                          ],
-                          [
-                            -91.53671973765265,
-                            41.65955785491826
-                          ]
+            [
+              -91.53671973765265,
+              41.65955785491826
+            ],
+            [
+              -91.53676161725951,
+              41.65955785491826
+            ],
+            [
+              -91.53676161725951,
+              41.65951432297953
+            ],
+            [
+              -91.53671973765265,
+              41.65951432297953
+            ],
+            [
+              -91.53671973765265,
+              41.65955785491826
+            ]
           ]
         ]
       }
@@ -8748,9 +8748,9 @@
         "category": "elevator",
         "display_point": {
           "coordinates": [
-              -91.53683323945103,
-              41.659795919598196
-            ],
+            -91.53683323945103,
+            41.659795919598196
+          ],
           "type": "Point"
         },
         "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
@@ -8761,26 +8761,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-              [
-                            -91.53680896141768,
-                            41.6598045352591
-                          ],
-                          [
-                            -91.53685144797518,
-                            41.6598045352591
-                          ],
-                          [
-                            -91.53685144797518,
-                            41.65978685048037
-                          ],
-                          [
-                            -91.53680896141768,
-                            41.65978685048037
-                          ],
-                          [
-                            -91.53680896141768,
-                            41.6598045352591
-                          ]
+            [
+              -91.53680896141768,
+              41.6598045352591
+            ],
+            [
+              -91.53685144797518,
+              41.6598045352591
+            ],
+            [
+              -91.53685144797518,
+              41.65978685048037
+            ],
+            [
+              -91.53680896141768,
+              41.65978685048037
+            ],
+            [
+              -91.53680896141768,
+              41.6598045352591
+            ]
           ]
         ]
       }
@@ -8795,9 +8795,9 @@
         "category": "elevator",
         "display_point": {
           "coordinates": [
-              -91.53671303111041,
-              41.659863903348764
-            ],
+            -91.53671303111041,
+            41.659863903348764
+          ],
           "type": "Point"
         },
         "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
@@ -8808,26 +8808,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-              [
-                            -91.5367014990454,
-                            41.65985166005214
-                          ],
-                          [
-                            -91.5367014990454,
-                            41.659875239732685
-                          ],
-                          [
-                            -91.53672577707806,
-                            41.659875239732685
-                          ],
-                          [
-                            -91.53672577707806,
-                            41.65985166005214
-                          ],
-                          [
-                            -91.5367014990454,
-                            41.65985166005214
-                          ]
+            [
+              -91.5367014990454,
+              41.65985166005214
+            ],
+            [
+              -91.5367014990454,
+              41.659875239732685
+            ],
+            [
+              -91.53672577707806,
+              41.659875239732685
+            ],
+            [
+              -91.53672577707806,
+              41.65985166005214
+            ],
+            [
+              -91.5367014990454,
+              41.65985166005214
+            ]
           ]
         ]
       }
@@ -8842,9 +8842,9 @@
         "category": "elevator",
         "display_point": {
           "coordinates": [
-              -91.53641076280778,
-              41.65978135900906
-            ],
+            -91.53641076280778,
+            41.65978135900906
+          ],
           "type": "Point"
         },
         "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
@@ -8855,26 +8855,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-              [
-                            -91.53642897133264,
-                            41.65978952121611
-                          ],
-                          [
-                            -91.53642897133264,
-                            41.65977274334506
-                          ],
-                          [
-                            -91.53639134038166,
-                            41.65977274334506
-                          ],
-                          [
-                            -91.53639134038166,
-                            41.65978952121611
-                          ],
-                          [
-                            -91.53642897133264,
-                            41.65978952121611
-                          ]
+            [
+              -91.53642897133264,
+              41.65978952121611
+            ],
+            [
+              -91.53642897133264,
+              41.65977274334506
+            ],
+            [
+              -91.53639134038166,
+              41.65977274334506
+            ],
+            [
+              -91.53639134038166,
+              41.65978952121611
+            ],
+            [
+              -91.53642897133264,
+              41.65978952121611
+            ]
           ]
         ]
       }
@@ -8889,9 +8889,9 @@
         "category": "elevator",
         "display_point": {
           "coordinates": [
-              -91.53710371923627,
-              41.65992610271897
-            ],
+            -91.53710371923627,
+            41.65992610271897
+          ],
           "type": "Point"
         },
         "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
@@ -8902,26 +8902,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-              [
-                            -91.53711403739999,
-                            41.65993562527197
-                          ],
-                          [
-                            -91.53711403739999,
-                            41.65991612670919
-                          ],
-                          [
-                            -91.53709158021994,
-                            41.65991612670919
-                          ],
-                          [
-                            -91.53709158021994,
-                            41.65993562527197
-                          ],
-                          [
-                            -91.53711403739999,
-                            41.65993562527197
-                          ]
+            [
+              -91.53711403739999,
+              41.65993562527197
+            ],
+            [
+              -91.53711403739999,
+              41.65991612670919
+            ],
+            [
+              -91.53709158021994,
+              41.65991612670919
+            ],
+            [
+              -91.53709158021994,
+              41.65993562527197
+            ],
+            [
+              -91.53711403739999,
+              41.65993562527197
+            ]
           ]
         ]
       }
@@ -8936,9 +8936,9 @@
         "category": "elevator",
         "display_point": {
           "coordinates": [
-              -91.53649920894479,
-              41.65913006680634
-            ],
+            -91.53649920894479,
+            41.65913006680634
+          ],
           "type": "Point"
         },
         "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
@@ -8949,26 +8949,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-              [
-                            -91.53651984527289,
-                            41.659148205225705
-                          ],
-                          [
-                            -91.53651984527289,
-                            41.65911283530292
-                          ],
-                          [
-                            -91.53647614481343,
-                            41.65911283530292
-                          ],
-                          [
-                            -91.53647614481343,
-                            41.659148205225705
-                          ],
-                          [
-                            -91.53651984527289,
-                            41.659148205225705
-                          ]
+            [
+              -91.53651984527289,
+              41.659148205225705
+            ],
+            [
+              -91.53651984527289,
+              41.65911283530292
+            ],
+            [
+              -91.53647614481343,
+              41.65911283530292
+            ],
+            [
+              -91.53647614481343,
+              41.659148205225705
+            ],
+            [
+              -91.53651984527289,
+              41.659148205225705
+            ]
           ]
         ]
       }
@@ -8983,9 +8983,9 @@
         "category": "elevator",
         "display_point": {
           "coordinates": [
-              -91.53649981589544,
-              41.65909469687355
-            ],
+            -91.53649981589544,
+            41.65909469687355
+          ],
           "type": "Point"
         },
         "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
@@ -8996,33 +8996,30 @@
         "type": "Polygon",
         "coordinates": [
           [
-              [
-                            -91.53647614481343,
-                            41.65911283530292
-                          ],
-                          [
-                            -91.53651984527289,
-                            41.65911283530292
-                          ],
-                          [
-                            -91.53651984527289,
-                            41.65907383767322
-                          ],
-                          [
-                            -91.53647614481343,
-                            41.65907383767322
-                          ],
-                          [
-                            -91.53647614481343,
-                            41.65911283530292
-                          ]
+            [
+              -91.53647614481343,
+              41.65911283530292
+            ],
+            [
+              -91.53651984527289,
+              41.65911283530292
+            ],
+            [
+              -91.53651984527289,
+              41.65907383767322
+            ],
+            [
+              -91.53647614481343,
+              41.65907383767322
+            ],
+            [
+              -91.53647614481343,
+              41.65911283530292
+            ]
           ]
         ]
       }
     },
-    
-    
-    
     {
       "type": "Feature",
       "feature_type": "unit",
