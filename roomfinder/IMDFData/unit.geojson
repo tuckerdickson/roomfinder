@@ -9027,7 +9027,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53710919378476,
@@ -9349,7 +9349,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.53685471480873,
@@ -9424,7 +9424,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53682400182898,
@@ -9471,7 +9471,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53689639670976,
@@ -9522,7 +9522,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53684813345592,
@@ -9573,7 +9573,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.5368700712986,
@@ -9620,7 +9620,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "classroom",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53687226508285,
@@ -9667,7 +9667,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53687665265137,
@@ -9714,7 +9714,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53687884643566,
@@ -9769,7 +9769,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53688323367979,
@@ -9836,7 +9836,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53687884643566,
@@ -9899,7 +9899,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53683497075032,
@@ -9993,7 +9993,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53672528153663,
@@ -10040,7 +10040,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53672528153663,
@@ -10087,7 +10087,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53672623043218,
@@ -10134,7 +10134,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53671650639959,
@@ -10181,7 +10181,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "restroom",
         "display_point": {
           "coordinates": [
             -91.53667263071388,
@@ -10228,7 +10228,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "conference",
         "display_point": {
           "coordinates": [
             -91.53663094881281,
@@ -10373,57 +10373,6 @@
             [
               -91.53653196623205,
               41.659422992727
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "unit",
-      "id": "5cf4f445-d1cb-47da-830e-03fe02988211",
-      "properties": {
-        "accessibility": null,
-        "alt_name": null,
-        "category": "office",
-        "display_point": {
-          "coordinates": [
-            -91.53635672577839,
-            41.65937411357618
-          ],
-          "type": "Point"
-        },
-        "level_id": "de2e9737-3086-41e8-baea-a796a2be7afb",
-        "name": "3501",
-        "restriction": null
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -91.53638676820562,
-              41.65940815678155
-            ],
-            [
-              -91.53637435055603,
-              41.659372596729355
-            ],
-            [
-              -91.53639824235711,
-              41.65933973211716
-            ],
-            [
-              -91.5363315738332,
-              41.65933958020068
-            ],
-            [
-              -91.53633139170593,
-              41.65940865775795
-            ],
-            [
-              -91.53638676820562,
-              41.65940815678155
             ]
           ]
         ]
@@ -10671,7 +10620,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "academic center",
         "display_point": {
           "coordinates": [
             -91.53638346983601,
@@ -10953,7 +10902,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.5364405082273,
@@ -11000,7 +10949,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53643831444325,
@@ -11094,7 +11043,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "academic center",
         "display_point": {
           "coordinates": [
             -91.53644489579587,
@@ -11141,7 +11090,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.5367608007315,
@@ -11282,7 +11231,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53675641316293,
@@ -11705,7 +11654,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lounge",
         "display_point": {
           "coordinates": [
             -91.53637908226744,
@@ -12034,7 +11983,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53640979524738,
@@ -12140,7 +12089,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "conference",
         "display_point": {
           "coordinates": [
             -91.53672350639893,
@@ -12399,7 +12348,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53633740036632,
@@ -12446,7 +12395,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53671034369323,
@@ -12493,7 +12442,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53675126112823,
@@ -12540,7 +12489,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53671034369323,
@@ -12587,7 +12536,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "lab",
         "display_point": {
           "coordinates": [
             -91.53667542453313,
@@ -12634,7 +12583,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "conference",
         "display_point": {
           "coordinates": [
             -91.53656336014664,
@@ -12681,7 +12630,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53641418281593,
@@ -13167,7 +13116,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "academic center",
         "display_point": {
           "coordinates": [
             -91.5368075037945,
@@ -13823,7 +13772,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.53710522486618,
@@ -13890,7 +13839,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
             -91.53708986837265,
@@ -13937,7 +13886,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.53639882569983,
@@ -13984,7 +13933,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
             -91.53685506163089,
@@ -14031,7 +13980,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.53639224497313,
@@ -14078,7 +14027,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
             -91.53639443875761,
@@ -14172,7 +14121,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.53634836927735,
@@ -14219,7 +14168,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
             -91.53675641315235,
@@ -14266,7 +14215,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.53683758317052,
@@ -14313,7 +14262,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "restroom",
         "display_point": {
           "coordinates": [
             -91.53687048993496,
@@ -14360,7 +14309,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "restroom",
         "display_point": {
           "coordinates": [
             -91.5368692839809,
@@ -14407,7 +14356,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.53687926508444,
@@ -14470,7 +14419,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
             -91.5364975466204,
@@ -14517,7 +14466,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "elevator",
         "display_point": {
           "coordinates": [
             -91.53649535283631,
@@ -14564,7 +14513,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "stairs",
         "display_point": {
           "coordinates": [
             -91.5364185703808,
@@ -14611,7 +14560,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "restroom",
         "display_point": {
           "coordinates": [
             -91.53637030712662,
@@ -14658,7 +14607,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "restroom",
         "display_point": {
           "coordinates": [
             -91.53633168747683,
@@ -14705,7 +14654,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "auditorium",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.53634617550344,
@@ -14752,7 +14701,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "utility",
         "display_point": {
           "coordinates": [
             -91.5363966325417,
@@ -14799,7 +14748,7 @@
       "properties": {
         "accessibility": null,
         "alt_name": null,
-        "category": "office",
+        "category": "restroom",
         "display_point": {
           "coordinates": [
             -91.53640102011023,
