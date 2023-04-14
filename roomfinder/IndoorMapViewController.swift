@@ -51,6 +51,7 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
     
     
     @IBSegueAction func directionsButtonTapped(_ coder: NSCoder) -> PopUpViewController? {
+        createNodes().create(currentLevelAnnotations)
         return PopUpViewController(coder: coder)
     }
     
@@ -60,7 +61,7 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
     
     private var currentLevelFeatures = [StylableFeature]()  // all features of the current level being displayed
     private var currentLevelOverlays = [MKOverlay]()        // overlays (e.g. borders) of the current level being displayed
-    private var currentLevelAnnotations = [MKAnnotation]()  // annotations (e.g. markers) of the current level being displayed
+    var currentLevelAnnotations = [MKAnnotation]()  // annotations (e.g. markers) of the current level being displayed
     
     let pointAnnotationViewIdentifier = "PointAnnotationView"
     let labelAnnotationViewIdentifier = "LabelAnnotationView"
@@ -173,7 +174,7 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
                 self.currentLevelAnnotations += amenities
             }
         }
-        
+
         // overlay the geometries from above
         let currentLevelGeometry = self.currentLevelFeatures.flatMap({ $0.geometry })
         self.currentLevelOverlays = currentLevelGeometry.compactMap({ $0 as? MKOverlay })
@@ -181,6 +182,7 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
         // add geometries and annotations to the map
         self.mapView.addOverlays(self.currentLevelOverlays)
         self.mapView.addAnnotations(self.currentLevelAnnotations)
+        
     }
     
     func filterRooms(searchTerm: String) {
