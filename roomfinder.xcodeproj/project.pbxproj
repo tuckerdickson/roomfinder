@@ -10,6 +10,7 @@
 		4306A889223825C9005E7E97 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4306A888223825C9005E7E97 /* Styles.swift */; };
 		4353A0932228CD9600F2977B /* IMDFData in Resources */ = {isa = PBXBuildFile; fileRef = 4353A0922228CD9500F2977B /* IMDFData */; };
 		436217FD2256A4800075E16C /* LocalizedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436217FC2256A4800075E16C /* LocalizedName.swift */; };
+		4477124829E9C8710046AE19 /* AStar in Frameworks */ = {isa = PBXBuildFile; productRef = 4477124729E9C8710046AE19 /* AStar */; };
 		44B6BA2A29DB547900F41D0E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B6BA2829DB547900F41D0E /* PopUpViewController.swift */; };
 		44B6BA2B29DB547900F41D0E /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B6BA2929DB547900F41D0E /* PopUpViewController.xib */; };
 		4D1184BB29D49FB5004CE063 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 4D1184BA29D49FB5004CE063 /* CodeScanner */; };
@@ -73,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4477124829E9C8710046AE19 /* AStar in Frameworks */,
 				7E6509D121B06864005D2B6C /* MapKit.framework in Frameworks */,
 				7E61CF13215E20B700EAD172 /* CoreLocation.framework in Frameworks */,
 				4D1184BB29D49FB5004CE063 /* CodeScanner in Frameworks */,
@@ -208,6 +210,7 @@
 			name = roomfinder;
 			packageProductDependencies = (
 				4D1184BA29D49FB5004CE063 /* CodeScanner */,
+				4477124729E9C8710046AE19 /* AStar */,
 			);
 			productName = IMDF_Sample_Code;
 			productReference = 7E61CEFC215E1FF500EAD172 /* roomfinder.app */;
@@ -240,6 +243,7 @@
 			mainGroup = 7E61CEF3215E1FF500EAD172;
 			packageReferences = (
 				4D1184B929D49FB5004CE063 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				4477124629E9C8710046AE19 /* XCRemoteSwiftPackageReference "A-Star" */,
 			);
 			productRefGroup = 7E61CEFD215E1FF500EAD172 /* Products */;
 			projectDirPath = "";
@@ -506,6 +510,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4477124629E9C8710046AE19 /* XCRemoteSwiftPackageReference "A-Star" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dev1an/A-Star.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		4D1184B929D49FB5004CE063 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/twostraws/CodeScanner";
@@ -517,6 +529,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4477124729E9C8710046AE19 /* AStar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4477124629E9C8710046AE19 /* XCRemoteSwiftPackageReference "A-Star" */;
+			productName = AStar;
+		};
 		4D1184BA29D49FB5004CE063 /* CodeScanner */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4D1184B929D49FB5004CE063 /* XCRemoteSwiftPackageReference "CodeScanner" */;

@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "a-star",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Dev1an/A-Star.git",
+      "state" : {
+        "revision" : "d058ecc05f48551b1cc3d4e68f365f655f8febcc",
+        "version" : "2.1.0"
+      }
+    },
+    {
       "identity" : "codescanner",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/twostraws/CodeScanner",
