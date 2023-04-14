@@ -17,7 +17,7 @@ import SwiftUI
 class IndoorMapViewController: UIViewController, UISearchControllerDelegate, LevelPickerDelegate {
     
     @IBOutlet weak var errorMessage: UILabel!
-    
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet var mapView: MKMapView!                       // connects to our map on the map view
     @IBOutlet var levelPicker: LevelPickerView!             // connects to our level picker on the map view
     private let locationManager = CLLocationManager()       // location manager; allows us to locate the user
@@ -35,7 +35,7 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
                 let roomread = result.string
                 print("Found code: \(roomread)")
                 //fill out search bar with the scanned code
-                self.searchController.searchBar.text = roomread
+                self.searchBar.text = roomread
                 self.filterRooms(searchTerm: roomread)
                 
                 
@@ -65,34 +65,41 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
     let pointAnnotationViewIdentifier = "PointAnnotationView"
     let labelAnnotationViewIdentifier = "LabelAnnotationView"
     
-    var searchController: UISearchController!
     var currentDataSource: [String] = []
-    @IBOutlet weak var searchContainerView: UIView!
 
     @IBOutlet weak var getDIrectionsButton: UIButton!
     
     var filterOptions: [String] = ["office", "lab", "library", "classroom", "conference", "auditorium", "restroom", "elevator", "stairs"]
     var floorOptions: [Int] = [1,2,3]
     
+    var searchFrame: CGRect!
+    var errorFrame: CGRect!
+    
     /// Gets called everytime this view is loaded (e.g. when the app is opened).
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // dismiss the keyboard on tap
         let tap = UITapGestureRecognizer(
             target: self,
             action: #selector(UIInputViewController.dismissKeyboard)
         )
         self.view.addGestureRecognizer(tap)
         
-        self.getDIrectionsButton.layer.cornerRadius = 20
+        searchBar.delegate = self
+        searchBar.showsBookmarkButton = true
+        searchBar.setImage(UIImage(systemName: "qrcode.viewfinder"), for: .bookmark, state: .normal)
+        searchBar.backgroundImage = UIImage()
         
-        searchController = UISearchController(searchResultsController: nil)
-        searchController.searchResultsUpdater = self
-//        searchController.obscuresBackgroundDuringPresentation = false
-        searchContainerView.addSubview(searchController.searchBar)
-        searchController.searchBar.delegate = self
-        searchController.searchBar.showsBookmarkButton = true
-        searchController.searchBar.setImage(UIImage(systemName: "qrcode.viewfinder"), for: .bookmark, state: .normal)
+        searchFrame = searchBar.frame
+        errorFrame = errorMessage.frame
+        
+
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        self.getDIrectionsButton.layer.cornerRadius = 20
             
         getDIrectionsButton.isEnabled = false
         getDIrectionsButton.isHidden = true
@@ -255,7 +262,20 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
     }
     
     @objc func dismissKeyboard() {
-        searchController.searchBar.resignFirstResponder()
+        searchBar.resignFirstResponder()
+    }
+    
+    @objc func keyBoardWillShow(notification: NSNotification) {
+        if let keyBoardSize = notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? CGRect {
+            let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyBoardSize.height, right: 0)
+            searchBar.frame = searchBar.frame.offsetBy(dx: 0, dy: -1*keyBoardSize.height + 20)
+            errorMessage.frame = errorMessage.frame.offsetBy(dx: 0, dy: -1*keyBoardSize.height + 30)
+        }
+    }
+
+    @objc func keyBoardWillHide(notification: NSNotification) {
+        searchBar.frame = searchFrame
+        errorMessage.frame = errorFrame
     }
 }
 
@@ -283,12 +303,9 @@ extension IndoorMapViewController: UISearchResultsUpdating{
 extension IndoorMapViewController: UISearchBarDelegate{
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchController.isActive = true
-        
         if let searchText = searchBar.text {
             filterRooms(searchTerm: searchText)
         }
-        
     }
     
     func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
@@ -296,8 +313,6 @@ extension IndoorMapViewController: UISearchBarDelegate{
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchController.isActive = false
-        
         //deselect all annotations when cancel button is clicked
         let selectedAnnotations = self.mapView.selectedAnnotations
         for annotation in selectedAnnotations{
