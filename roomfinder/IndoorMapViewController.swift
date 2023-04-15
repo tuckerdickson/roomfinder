@@ -271,22 +271,6 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
         }
     }
     
-    func addAnnotation(searchTerm: String){
-        for occupant in self.currentLevelAnnotations{
-            if(occupant.title!! == searchTerm){
-                self.mapView.selectAnnotation(occupant, animated: true)
-                getDirectionsButton.isEnabled = true
-                getDirectionsButton.isHidden = false
-                errorMessage.isHidden = true
-                break
-            }
-            else{
-                //show that no room was found
-                errorMessage.isHidden = false
-            }
-        }
-    }
-    
     @objc func dismissKeyboard() {
         if(searchBar.searchTextField.text == "") {
             getDirectionsButton.isEnabled = false
@@ -306,9 +290,9 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
     }
     
     @objc func keyBoardWillShow(notification: NSNotification) {
-        if let keyBoardSize = notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? CGRect {
-            searchBar.frame = searchBar.frame.offsetBy(dx: 0, dy: -1*keyBoardSize.height + 20)
-            errorMessage.frame = errorMessage.frame.offsetBy(dx: 0, dy: -1*keyBoardSize.height + 30)
+        if let keyBoardSize = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect {
+            searchBar.frame = searchBar.frame.offsetBy(dx: 0, dy: -2 * keyBoardSize.height / 3)
+            errorMessage.frame = errorMessage.frame.offsetBy(dx: 0, dy: -2 * keyBoardSize.height / 3)
         }
     }
 
@@ -317,27 +301,6 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
         errorMessage.frame = errorFrame
     }
 }
-
-//extension IndoorMapViewController: UISearchResultsUpdating{
-//    func updateSearchResults(for searchController: UISearchController) {
-//        if let searchText = searchController.searchBar.text{
-//            if (searchText == "") {
-//                //hide get directions button
-//                getDIrectionsButton.isEnabled = false
-//                getDIrectionsButton.isHidden = true
-//
-//                //deselect all annotations when cancel button is clicked
-//                let selectedAnnotations = self.mapView.selectedAnnotations
-//                for annotation in selectedAnnotations{
-//                    self.mapView.deselectAnnotation(annotation, animated: true)
-//                }
-//
-//                //add back all dots
-//                self.mapView.addAnnotations(self.currentLevelAnnotations)
-//            }
-//        }
-//    }
-//}
 
 extension IndoorMapViewController {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
