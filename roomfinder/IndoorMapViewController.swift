@@ -14,7 +14,7 @@ import CodeScanner
 import SwiftUI
 
 /// Controls the map view.
-class IndoorMapViewController: UIViewController, UISearchControllerDelegate, LevelPickerDelegate {
+class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPickerDelegate {
     
     @IBOutlet weak var errorMessage: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -69,7 +69,10 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
 
     @IBOutlet weak var getDIrectionsButton: UIButton!
     
-    var filterOptions: [String] = ["office", "lab", "library", "classroom", "conference", "auditorium", "restroom", "elevator", "stairs"]
+    var filterOptions: [String] = ["office", "lab", "library",
+                                   "classroom", "conference",
+                                   "auditorium", "restroom",
+                                   "elevator", "stairs"]
     var floorOptions: [Int] = [1,2,3]
     
     var searchFrame: CGRect!
@@ -267,7 +270,6 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
     
     @objc func keyBoardWillShow(notification: NSNotification) {
         if let keyBoardSize = notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? CGRect {
-            let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyBoardSize.height, right: 0)
             searchBar.frame = searchBar.frame.offsetBy(dx: 0, dy: -1*keyBoardSize.height + 20)
             errorMessage.frame = errorMessage.frame.offsetBy(dx: 0, dy: -1*keyBoardSize.height + 30)
         }
@@ -300,12 +302,13 @@ extension IndoorMapViewController: UISearchResultsUpdating{
     }
 }
 
-extension IndoorMapViewController: UISearchBarDelegate{
+extension IndoorMapViewController {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let searchText = searchBar.text {
             filterRooms(searchTerm: searchText)
         }
+        dismissKeyboard()
     }
     
     func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
