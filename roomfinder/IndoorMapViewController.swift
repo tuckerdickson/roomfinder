@@ -14,28 +14,50 @@ import CodeScanner
 import SwiftUI
 
 /// Controls the map view.
-class IndoorMapViewController: UIViewController, UISearchControllerDelegate, LevelPickerDelegate {
+class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPickerDelegate {
     
-    @IBOutlet weak var errorMessage: UILabel!
+    // storyboard elements
+    @IBOutlet var mapView: MKMapView!                           // the map background
+    @IBOutlet weak var searchBar: UISearchBar!                  // the search bar on the map
+    @IBOutlet weak var errorMessage: UILabel!                   // the message that appears on bad queries
+    @IBOutlet weak var getDirectionsButton: UIButton!           // the blue get directions button
+    @IBOutlet var levelPicker: LevelPickerView!                 // the level picker
+        
+    var venue: Venue?                                           // object of type Venue; represents Seamans Center
+    private var levels: [Level] = []                            // levels of Seamans Center
     
-    @IBOutlet var mapView: MKMapView!                       // connects to our map on the map view
-    @IBOutlet var levelPicker: LevelPickerView!             // connects to our level picker on the map view
-    private let locationManager = CLLocationManager()       // location manager; allows us to locate the user
+    private var currentLevelFeatures = [StylableFeature]()      // features of the current level
+    private var currentLevelOverlays = [MKOverlay]()            // overlays of the current level
+    private var currentLevelAnnotations = [MKAnnotation]()      // annotations of the current level
+    
+    let pointAnnotationViewIdentifier = "PointAnnotationView"
+    let labelAnnotationViewIdentifier = "LabelAnnotationView"
+        
+    var floorOptions: [Int] = [1,2,3]
+    var currentDataSource: [String] = []
+    var filterOptions: [String] = ["office", "lab", "library",
+                                   "classroom", "conference",
+                                   "auditorium", "restroom",
+                                   "elevator", "stairs"]
+
+    var searchFrame: CGRect!                                    // original position of search bar (before offsetting)
+    var errorFrame: CGRect!                                     // original position of error message (before offsetting)
+    
+    private let locationManager = CLLocationManager()           // TODO: figure out if we want to scrap blue dot
     
     //on qr button click, show qr scanner
     @IBSegueAction func scanView(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder,
                                    rootView: CodeScannerView(codeTypes: [.qr],  //only scan qr codes
                                                              showViewfinder: true,
-                                            simulatedData: "Simulated QR Code Read"
-                                                             ) { response in
+                                                             simulatedData: "Simulated QR Code Read") { response in
             switch response {
             case .success(let result):
                 //get text read from qr code (room number)
                 let roomread = result.string
                 print("Found code: \(roomread)")
                 //fill out search bar with the scanned code
-                self.searchController.searchBar.text = roomread
+                self.searchBar.text = roomread
                 self.filterRooms(searchTerm: roomread)
                 
                 
@@ -54,54 +76,15 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
         return PopUpViewController(coder: coder)
     }
     
-    
-    var venue: Venue?                                       // object of type Venue; represents Seamans Center
-    private var levels: [Level] = []                        // levels of Seamans Center
-    
-    private var currentLevelFeatures = [StylableFeature]()  // all features of the current level being displayed
-    private var currentLevelOverlays = [MKOverlay]()        // overlays (e.g. borders) of the current level being displayed
-    private var currentLevelAnnotations = [MKAnnotation]()  // annotations (e.g. markers) of the current level being displayed
-    
-    let pointAnnotationViewIdentifier = "PointAnnotationView"
-    let labelAnnotationViewIdentifier = "LabelAnnotationView"
-    
-    var searchController: UISearchController!
-    var currentDataSource: [String] = []
-    @IBOutlet weak var searchContainerView: UIView!
-
-    @IBOutlet weak var getDIrectionsButton: UIButton!
-    
-    var filterOptions: [String] = ["office", "lab", "library", "classroom", "conference", "auditorium", "restroom", "elevator", "stairs"]
-    var floorOptions: [Int] = [1,2,3]
-    
     /// Gets called everytime this view is loaded (e.g. when the app is opened).
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let tap = UITapGestureRecognizer(
-            target: self,
-            action: #selector(UIInputViewController.dismissKeyboard)
-        )
-        self.view.addGestureRecognizer(tap)
-        
-        self.getDIrectionsButton.layer.cornerRadius = 20
-        
-        searchController = UISearchController(searchResultsController: nil)
-        searchController.searchResultsUpdater = self
-//        searchController.obscuresBackgroundDuringPresentation = false
-        searchContainerView.addSubview(searchController.searchBar)
-        searchController.searchBar.delegate = self
-        searchController.searchBar.showsBookmarkButton = true
-        searchController.searchBar.setImage(UIImage(systemName: "qrcode.viewfinder"), for: .bookmark, state: .normal)
-            
-        getDIrectionsButton.isEnabled = false
-        getDIrectionsButton.isHidden = true
+
         // request location authorization from the user
         locationManager.requestWhenInUseAuthorization()
 
         // set the mapView delegate to self so that we can use mapView delegate methods (below)
         self.mapView.delegate = self
-        
         
         // tell mapView that PointAnnotationView & LabelAnnotationView will be used to display points and annotation on map
         self.mapView.register(PointAnnotationView.self, forAnnotationViewWithReuseIdentifier: pointAnnotationViewIdentifier)
@@ -142,6 +125,42 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
         
         // Setup the level picker with the shortName of each level
         setupLevelPicker()
+        
+        // set the properties of the search bar
+        searchBar.delegate = self
+        searchBar.showsBookmarkButton = true
+        searchBar.backgroundImage = UIImage()
+        searchBar.placeholder = "Where do you want to go?"
+        searchBar.setImage(UIImage(systemName: "qrcode.viewfinder"), for: .bookmark, state: .normal)
+        
+        // record the positions of the search bar and error message, for reuse later
+        searchFrame = searchBar.frame
+        errorFrame = errorMessage.frame
+        
+
+        // when the keyboard is opened, call the keyBoardWillShow function
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyBoardWillShow),
+                                               name: UIResponder.keyboardWillShowNotification,
+                                               object: nil)
+        
+        // when the keyboard is closed, call the keyBoardWillHide function
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyBoardWillHide),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil)
+        
+        // configure the get directions button; make it invisible to start
+        self.getDirectionsButton.layer.cornerRadius = 20
+        getDirectionsButton.isEnabled = false
+        getDirectionsButton.isHidden = true
+        
+        // configure the keyboard to be dismissed when tapping off of it
+        let tap = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIInputViewController.dismissKeyboard)
+        )
+        self.view.addGestureRecognizer(tap)
     }
     
     /// Displays the features for the current ordinal.
@@ -183,50 +202,6 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
         self.mapView.addAnnotations(self.currentLevelAnnotations)
     }
     
-    func filterRooms(searchTerm: String) {
-        
-        //self.mapView.addAnnotations(self.currentLevelAnnotations)
-        if(searchTerm.first!.wholeNumberValue == nil){
-            if(filterOptions.contains(searchTerm.lowercased())){
-                let allAnnotations = self.mapView.annotations
-                self.mapView.removeAnnotations(allAnnotations)
-                for occupant in self.currentLevelAnnotations{
-                    if(occupant.subtitle!! == searchTerm){
-                        self.mapView.addAnnotation(occupant)
-                    }
-                }
-                errorMessage.isHidden = true
-            }
-            else{
-                //show pop up that nothing was found
-                errorMessage.isHidden = false
-            }
-        }
-        else{
-            if (floorOptions.contains(searchTerm.first!.wholeNumberValue!) && (levelPicker.selectedIndex != floorOptions.count - searchTerm.first!.wholeNumberValue!)) {
-                //showFeaturesForOrdinal(searchText.first!.wholeNumberValue! - 2)
-                selectedLevelDidChange(selectedIndex: floorOptions.count - searchTerm.first!.wholeNumberValue!)
-                levelPicker.selectedIndex = floorOptions.count - searchTerm.first!.wholeNumberValue!
-            }
-            
-            for occupant in self.currentLevelAnnotations{
-                
-                if(occupant.title!! == searchTerm){
-                    self.mapView.selectAnnotation(occupant, animated: true)
-                    getDIrectionsButton.isEnabled = true
-                    getDIrectionsButton.isHidden = false
-                    errorMessage.isHidden = true
-                    break
-                }
-                else{
-                    //show that no room was found
-                    errorMessage.isHidden = false
-                }
-            }
-        }
-    }
-    
-    
     /// Sets up the level-picker in the map view.
     private func setupLevelPicker() {
         // use the levels' short names to display on the level-picker
@@ -254,41 +229,104 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
         showFeaturesForOrdinal(selectedLevel.properties.ordinal)
     }
     
+    func filterRooms(searchTerm: String) {
+        if(searchTerm != "") {
+            if(searchTerm.first!.wholeNumberValue == nil){
+                if(filterOptions.contains(searchTerm.lowercased())){
+                    let allAnnotations = self.mapView.annotations
+                    self.mapView.removeAnnotations(allAnnotations)
+                    for occupant in self.currentLevelAnnotations{
+                        if(occupant.subtitle!! == searchTerm){
+                            self.mapView.addAnnotation(occupant)
+                        }
+                    }
+                    errorMessage.isHidden = true
+                }
+                else{
+                    //show pop up that nothing was found
+                    errorMessage.isHidden = false
+                }
+            }
+            else{
+                if (floorOptions.contains(searchTerm.first!.wholeNumberValue!) && (levelPicker.selectedIndex != floorOptions.count - searchTerm.first!.wholeNumberValue!)) {
+                    //showFeaturesForOrdinal(searchText.first!.wholeNumberValue! - 2)
+                    selectedLevelDidChange(selectedIndex: floorOptions.count - searchTerm.first!.wholeNumberValue!)
+                    levelPicker.selectedIndex = floorOptions.count - searchTerm.first!.wholeNumberValue!
+                }
+                
+                for occupant in self.currentLevelAnnotations{
+                    if(occupant.title!! == searchTerm){
+                        self.mapView.selectAnnotation(occupant, animated: true)
+                        getDirectionsButton.isEnabled = true
+                        getDirectionsButton.isHidden = false
+                        errorMessage.isHidden = true
+                        break
+                    }
+                    else{
+                        //show that no room was found
+                        errorMessage.isHidden = false
+                    }
+                }
+            }
+        }
+    }
+    
     @objc func dismissKeyboard() {
-        searchController.searchBar.resignFirstResponder()
+        if(searchBar.searchTextField.text == "") {
+            getDirectionsButton.isEnabled = false
+            getDirectionsButton.isHidden = true
+            errorMessage.isHidden = true
+            
+            //deselect all annotations when cancel button is clicked
+            let selectedAnnotations = self.mapView.selectedAnnotations
+            for annotation in selectedAnnotations{
+                self.mapView.deselectAnnotation(annotation, animated: true)
+            }
+            
+            //add back all dots
+            self.mapView.addAnnotations(self.currentLevelAnnotations)
+        }
+        searchBar.resignFirstResponder()
+    }
+    
+    @objc func keyBoardWillShow(notification: NSNotification) {
+        if let keyBoardSize = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect {
+            searchBar.frame = searchBar.frame.offsetBy(dx: 0, dy: -2 * keyBoardSize.height / 3)
+            errorMessage.frame = errorMessage.frame.offsetBy(dx: 0, dy: -2 * keyBoardSize.height / 3)
+        }
+    }
+
+    @objc func keyBoardWillHide(notification: NSNotification) {
+        searchBar.frame = searchFrame
+        errorMessage.frame = errorFrame
     }
 }
 
-extension IndoorMapViewController: UISearchResultsUpdating{
-    func updateSearchResults(for searchController: UISearchController) {
-        if let searchText = searchController.searchBar.text{
+extension IndoorMapViewController {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if let searchText = searchBar.text{
             if (searchText == "") {
                 //hide get directions button
-                getDIrectionsButton.isEnabled = false
-                getDIrectionsButton.isHidden = true
-                
+                getDirectionsButton.isEnabled = false
+                getDirectionsButton.isHidden = true
+
                 //deselect all annotations when cancel button is clicked
                 let selectedAnnotations = self.mapView.selectedAnnotations
                 for annotation in selectedAnnotations{
                     self.mapView.deselectAnnotation(annotation, animated: true)
                 }
-                
+
                 //add back all dots
                 self.mapView.addAnnotations(self.currentLevelAnnotations)
             }
         }
     }
-}
-
-extension IndoorMapViewController: UISearchBarDelegate{
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchController.isActive = true
-        
         if let searchText = searchBar.text {
             filterRooms(searchTerm: searchText)
         }
-        
+        dismissKeyboard()
     }
     
     func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
@@ -296,8 +334,6 @@ extension IndoorMapViewController: UISearchBarDelegate{
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchController.isActive = false
-        
         //deselect all annotations when cancel button is clicked
         let selectedAnnotations = self.mapView.selectedAnnotations
         for annotation in selectedAnnotations{
@@ -362,10 +398,5 @@ extension IndoorMapViewController: MKMapViewDelegate {
         }
 
         return nil
-    }
-
-    /// From Apple's documentation: tells the delegate when the map view updates the user's location.
-    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        // do nothing for now
     }
 }
