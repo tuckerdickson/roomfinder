@@ -20,7 +20,7 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
     @IBOutlet var mapView: MKMapView!                           // the map background
     @IBOutlet weak var searchBar: UISearchBar!                  // the search bar on the map
     @IBOutlet weak var errorMessage: UILabel!                   // the message that appears on bad queries
-    @IBOutlet weak var getDIrectionsButton: UIButton!           // the blue get directions button
+    @IBOutlet weak var getDirectionsButton: UIButton!           // the blue get directions button
     @IBOutlet var levelPicker: LevelPickerView!                 // the level picker
         
     var venue: Venue?                                           // object of type Venue; represents Seamans Center
@@ -151,9 +151,9 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
                                                object: nil)
         
         // configure the get directions button; make it invisible to start
-        self.getDIrectionsButton.layer.cornerRadius = 20
-        getDIrectionsButton.isEnabled = false
-        getDIrectionsButton.isHidden = true
+        self.getDirectionsButton.layer.cornerRadius = 20
+        getDirectionsButton.isEnabled = false
+        getDirectionsButton.isHidden = true
         
         // configure the keyboard to be dismissed when tapping off of it
         let tap = UITapGestureRecognizer(
@@ -231,7 +231,6 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
     
     func filterRooms(searchTerm: String) {
         if(searchTerm != "") {
-            //self.mapView.addAnnotations(self.currentLevelAnnotations)
             if(searchTerm.first!.wholeNumberValue == nil){
                 if(filterOptions.contains(searchTerm.lowercased())){
                     let allAnnotations = self.mapView.annotations
@@ -256,11 +255,10 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
                 }
                 
                 for occupant in self.currentLevelAnnotations{
-                    
                     if(occupant.title!! == searchTerm){
                         self.mapView.selectAnnotation(occupant, animated: true)
-                        getDIrectionsButton.isEnabled = true
-                        getDIrectionsButton.isHidden = false
+                        getDirectionsButton.isEnabled = true
+                        getDirectionsButton.isHidden = false
                         errorMessage.isHidden = true
                         break
                     }
@@ -273,10 +271,26 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
         }
     }
     
+    func addAnnotation(searchTerm: String){
+        for occupant in self.currentLevelAnnotations{
+            if(occupant.title!! == searchTerm){
+                self.mapView.selectAnnotation(occupant, animated: true)
+                getDirectionsButton.isEnabled = true
+                getDirectionsButton.isHidden = false
+                errorMessage.isHidden = true
+                break
+            }
+            else{
+                //show that no room was found
+                errorMessage.isHidden = false
+            }
+        }
+    }
+    
     @objc func dismissKeyboard() {
         if(searchBar.searchTextField.text == "") {
-            getDIrectionsButton.isEnabled = false
-            getDIrectionsButton.isHidden = true
+            getDirectionsButton.isEnabled = false
+            getDirectionsButton.isHidden = true
             errorMessage.isHidden = true
             
             //deselect all annotations when cancel button is clicked

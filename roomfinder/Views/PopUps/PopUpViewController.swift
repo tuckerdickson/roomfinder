@@ -2,20 +2,20 @@
 //  PopUpViewController.swift
 //  roomfinder
 //
-//  Created by Cathryn Lyons on 3/30/23.
-//  Copyright © 2023 Apple. All rights reserved.
+//  Created on 3/30/23.
 //
 import UIKit
 import CodeScanner
 import SwiftUI
 
-class PopUpViewController: UIViewController {
+class PopUpViewController: UIViewController{
     
-    var searchController: UISearchController!
-    
+    // storyboard elements
+    @IBOutlet var contentView: UIView!
     @IBOutlet weak var searchContainerView: UIView!
 
-    @IBOutlet var contentView: UIView!
+    var searchController: UISearchController!
+    var indoorMapViewController: IndoorMapViewController!
     
     @IBSegueAction func scanView(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder,
@@ -26,9 +26,15 @@ class PopUpViewController: UIViewController {
             case .success(let result):
                 //get text read from qr code (room number)
                 let roomread = result.string
-                print("Found code: \(roomread)")
+                
                 //fill out search bar with the scanned code
                 self.searchController.searchBar.text = roomread
+                
+                // annotate the scanned room on the map
+                self.indoorMapViewController.filterRooms(searchTerm: roomread)
+                
+                // return to the map
+                self.hide()
                 
             case .failure(let error):
                 print(error.localizedDescription)
@@ -38,24 +44,26 @@ class PopUpViewController: UIViewController {
             
             //dismiss the scanning screen when done
             self.dismiss(animated: true, completion: nil)
-        })}
-    
+        })
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.contentView.layer.cornerRadius = 15
-        
         //configuration for search bar
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
-//        searchController.obscuresBackgroundDuringPresentation = false
+
         //adding the physical search bar to view
         searchContainerView.addSubview(searchController.searchBar)
         searchController.searchBar.delegate = self
         
-
+        // styling the view
+        self.contentView.layer.cornerRadius = 15
         
+        // get a reference to the IndoorMapViewController
+        let parentResponder: UIResponder? = self.next
+        indoorMapViewController = parentResponder as? IndoorMapViewController
     }
     
     //make pop appear whenever it is asked for
@@ -70,11 +78,12 @@ class PopUpViewController: UIViewController {
         self.removeFromParent()
     }
 }
+
 extension PopUpViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text{
             if(searchText != ""){
-                //insert action here
+
             }
         }
     }
@@ -82,13 +91,17 @@ extension PopUpViewController: UISearchResultsUpdating{
 
 extension PopUpViewController: UISearchBarDelegate{
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchController.isActive = false
-        
+        // get the text from the search bar
         if let searchText = searchBar.text {
-            //insert action here
+            // add a bubble to the map
+            indoorMapViewController.filterRooms(searchTerm: searchText)
         }
         
+        // hide the pop up
+        searchController.isActive = false
+        hide()
     }
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchController.isActive = false
 

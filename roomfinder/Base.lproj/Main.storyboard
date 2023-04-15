@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -119,7 +118,7 @@
                     <navigationItem key="navigationItem" id="K5F-1D-Vei"/>
                     <connections>
                         <outlet property="errorMessage" destination="QSk-oY-vX4" id="Ngm-0K-POc"/>
-                        <outlet property="getDIrectionsButton" destination="dbc-lJ-YzU" id="tbR-Eo-lFG"/>
+                        <outlet property="getDirectionsButton" destination="dbc-lJ-YzU" id="tbR-Eo-lFG"/>
                         <outlet property="levelPicker" destination="sL9-v1-3AR" id="fhf-85-VpR"/>
                         <outlet property="mapView" destination="IgS-LO-u88" id="VA8-Ts-RWb"/>
                         <outlet property="searchBar" destination="LS7-Sb-wEw" id="FXe-Tf-1Te"/>
@@ -144,7 +143,7 @@
             <objects>
                 <viewController title="PopUp" id="lYr-5c-1aL" customClass="PopUpViewController" customModule="roomfinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vsr-HZ-84w">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Z20-al-JpR">
