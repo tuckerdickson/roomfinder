@@ -340,6 +340,24 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
 //}
 
 extension IndoorMapViewController {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if let searchText = searchBar.text{
+            if (searchText == "") {
+                //hide get directions button
+                getDirectionsButton.isEnabled = false
+                getDirectionsButton.isHidden = true
+
+                //deselect all annotations when cancel button is clicked
+                let selectedAnnotations = self.mapView.selectedAnnotations
+                for annotation in selectedAnnotations{
+                    self.mapView.deselectAnnotation(annotation, animated: true)
+                }
+
+                //add back all dots
+                self.mapView.addAnnotations(self.currentLevelAnnotations)
+            }
+        }
+    }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let searchText = searchBar.text {
