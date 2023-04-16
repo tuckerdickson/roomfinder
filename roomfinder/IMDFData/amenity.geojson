@@ -1097,6 +1097,34 @@
     {
       "type": "Feature",
       "feature_type": "amenity",
+      "id": "2f2269e3-d4e5-47fe-89d8-81019b5488d7",
+      "properties": {
+        "accessibility": null,
+        "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+        "alt_name": null,
+        "category": "restroom",
+        "correlation_id": null,
+        "hours": null,
+        "name": {
+          "en": "3521 - Staff Shower"
+        },
+        "phone": null,
+        "unit_ids": [
+          "d72658ba-1332-4158-aa1a-5d6509b8797e"
+        ],
+        "website": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.53667263071388,
+          41.65939869853338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "amenity",
       "id": "1aac7328-8a99-4f35-9824-30f974792c78",
       "properties": {
         "accessibility": null,
@@ -1147,6 +1175,34 @@
         "coordinates": [
           -91.5368692839809,
           41.659390009818736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "amenity",
+      "id": "8f40109e-2fca-46b2-bdf8-80f441e26cc8 ",
+      "properties": {
+        "accessibility": null,
+        "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+        "alt_name": null,
+        "category": "restroom",
+        "correlation_id": null,
+        "hours": null,
+        "name": {
+          "en": "3642 - Single Use Restroom"
+        },
+        "phone": null,
+        "unit_ids": [
+          "543a5bb6-b7fb-4a5f-be03-b2fb3064e45f"
+        ],
+        "website": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.53640102011023,
+          41.65857121567774
         ]
       }
     },
