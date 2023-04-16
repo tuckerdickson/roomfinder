@@ -10,6 +10,7 @@
 		4306A889223825C9005E7E97 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4306A888223825C9005E7E97 /* Styles.swift */; };
 		4353A0932228CD9600F2977B /* IMDFData in Resources */ = {isa = PBXBuildFile; fileRef = 4353A0922228CD9500F2977B /* IMDFData */; };
 		436217FD2256A4800075E16C /* LocalizedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436217FC2256A4800075E16C /* LocalizedName.swift */; };
+		4479FEE629EC832B00D7BDB0 /* PathData in Resources */ = {isa = PBXBuildFile; fileRef = 4479FEE529EC832B00D7BDB0 /* PathData */; };
 		44B6BA2A29DB547900F41D0E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B6BA2829DB547900F41D0E /* PopUpViewController.swift */; };
 		44B6BA2B29DB547900F41D0E /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B6BA2929DB547900F41D0E /* PopUpViewController.xib */; };
 		4D1184BB29D49FB5004CE063 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 4D1184BA29D49FB5004CE063 /* CodeScanner */; };
@@ -40,6 +41,7 @@
 		4306A888223825C9005E7E97 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		4353A0922228CD9500F2977B /* IMDFData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IMDFData; sourceTree = "<group>"; };
 		436217FC2256A4800075E16C /* LocalizedName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedName.swift; sourceTree = "<group>"; };
+		4479FEE529EC832B00D7BDB0 /* PathData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PathData; sourceTree = "<group>"; };
 		44B6BA2829DB547900F41D0E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		44B6BA2929DB547900F41D0E /* PopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
 		75E7ED09E5BC9AB9BC056378 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				7E61CEFF215E1FF500EAD172 /* AppDelegate.swift */,
 				7EEBCE8A21AD3B0D00FF4181 /* IMDFDecoder.swift */,
 				7E61CF01215E1FF500EAD172 /* IndoorMapViewController.swift */,
+				4479FEE529EC832B00D7BDB0 /* PathData */,
 				4306A888223825C9005E7E97 /* Styles.swift */,
 				7E4CC6C9224222C400724B06 /* Views */,
 				7EEA2CBA21CBF218005539F2 /* IMDFModel */,
@@ -259,6 +262,7 @@
 				7E61CF07215E1FF600EAD172 /* Assets.xcassets in Resources */,
 				F77FB50D2276FE70006F9FD0 /* README.md in Resources */,
 				7E61CF05215E1FF500EAD172 /* Main.storyboard in Resources */,
+				4479FEE629EC832B00D7BDB0 /* PathData in Resources */,
 				4353A0932228CD9600F2977B /* IMDFData in Resources */,
 				44B6BA2B29DB547900F41D0E /* PopUpViewController.xib in Resources */,
 			);
