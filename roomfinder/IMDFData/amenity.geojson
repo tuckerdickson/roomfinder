@@ -593,6 +593,31 @@
     {
       "type": "Feature",
       "feature_type": "amenity",
+      "id": "1609746c-3f23-42b7-917a-720e320d0262",
+      "properties": {
+        "accessibility": null,
+        "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+        "alt_name": null,
+        "category": "restroom",
+        "correlation_id": null,
+        "hours": null,
+        "name": {
+          "en": "2042 - Men's Restroom"
+        },
+        "phone": null,
+        "website": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.53641001414604,
+          41.659659128952256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "amenity",
       "id": "da3db602-87a9-468b-8f57-4914c509b336",
       "properties": {
         "accessibility": null,
@@ -1265,6 +1290,34 @@
     {
       "type": "Feature",
       "feature_type": "amenity",
+      "id": "7176c7b6-d355-4c8e-ad5b-0468e4541ee3",
+      "properties": {
+        "accessibility": null,
+        "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+        "alt_name": null,
+        "category": "restroom",
+        "correlation_id": null,
+        "hours": null,
+        "name": {
+          "en": "2444 - Men's Restroom"
+        },
+        "phone": null,
+        "unit_ids": [
+          "6bff5d15-87ec-41e8-9e14-2e930e27cfcc"
+        ],
+        "website": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.53722439552465,
+          41.65975900463221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "amenity",
       "id": "19614949-c699-4966-97ed-0e96105a50bb",
       "properties": {
         "accessibility": null,
@@ -1274,7 +1327,7 @@
         "correlation_id": null,
         "hours": null,
         "name": {
-          "en": "2442 - Men's Restroom"
+          "en": "2442 - Women's Restroom"
         },
         "phone": null,
         "unit_ids": [

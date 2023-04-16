@@ -2087,7 +2087,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "8c1564d0-5874-49b0-8e40-63a926633830",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.53726438252822,
@@ -2114,7 +2114,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "8ebda8de-af05-4e45-add6-d46bea01c068",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.5374142782904,
@@ -2141,7 +2141,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "b11eb9da-d470-42cb-b3d4-76b1d9f02b25",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.53742425654046,
@@ -2168,7 +2168,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "80efe6ff-486e-4596-a648-e8707c559ca4",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.53726300503884,
@@ -2195,7 +2195,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "856f9e6f-e956-4ad4-8d52-39d76a294c66",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.53742652768837,
@@ -2222,7 +2222,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "7c3da589-f226-4ef5-8cd6-11357581568c",
-                "category": "office",
+                "category": "utility",
                 "display_point": {
                     "coordinates": [
                         -91.53728571651817,
@@ -2244,39 +2244,12 @@
         {
             "feature_type": "occupant",
             "geometry": null,
-            "id": "7176c7b6-d355-4c8e-ad5b-0468e4541ee3",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "ffa113d2-ef5b-496b-b2cf-ebae78dca93f",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53722439552465,
-                        41.65975900463221
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "2444"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
             "id": "14055a26-faa5-48cc-aa6e-8662e1ce44fe",
             "properties": {
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "cd8a403a-e391-4487-a4b2-4d7b9a612fa9",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.53741517194888,
@@ -2303,7 +2276,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "3608873e-c0fb-4900-a687-7115f4c9778c",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.53742425654046,
@@ -2330,7 +2303,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "ea3d9599-6903-47f5-a66a-03c577584f86",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.53742652768837,
@@ -2384,7 +2357,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "0d36cfa4-3633-4176-a5db-62dd29168539",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.53729707225764,
@@ -2438,7 +2411,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "93474fc0-fa80-45b7-bc2c-084acc29f5c9",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.53731751258867,
@@ -2708,7 +2681,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "1a3e297a-00da-4142-937c-5c601969d0e1",
-                "category": "office",
+                "category": "utility",
                 "display_point": {
                     "coordinates": [
                         -91.53713727340666,
@@ -3086,7 +3059,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "9ff71a04-456b-4dce-a271-33617f973f74",
-                "category": "office",
+                "category": "lounge",
                 "display_point": {
                     "coordinates": [
                         -91.53655893942936,
@@ -3167,7 +3140,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "bb5ee3c7-f4e7-45f3-8d7f-1077f8293d15",
-                "category": "office",
+                "category": "utility",
                 "display_point": {
                     "coordinates": [
                         -91.5368735165146,
@@ -3356,7 +3329,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "27bc320e-2a17-461e-aa66-abd08ab9fcc5",
-                "category": "office",
+                "category": "academic center",
                 "display_point": {
                     "coordinates": [
                         -91.53660920501383,
@@ -3383,7 +3356,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "c499493e-20b6-4907-a580-a1a31de4fe5c",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.53668092157251,
@@ -3410,7 +3383,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "c2229f1e-e31a-4d40-adf7-a8a5d5a0e69d",
-                "category": "office",
+                "category": "utility",
                 "display_point": {
                     "coordinates": [
                         -91.53674177198593,
@@ -3464,7 +3437,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "ed999058-f005-4c55-9f60-061966116c6c",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.5365505278293,
@@ -3491,7 +3464,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "35ff65d5-1cb6-4688-850e-4b5380aab07e",
-                "category": "office",
+                "category": "lab",
                 "display_point": {
                     "coordinates": [
                         -91.53665049636557,
@@ -3518,7 +3491,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "2164e703-29e7-40ec-b541-74eff6a86956",
-                "category": "office",
+                "category": "utility",
                 "display_point": {
                     "coordinates": [
                         -91.53673742552772,
@@ -3572,7 +3545,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "aebdf60d-0da3-4ba5-8510-1d3ac487e116",
-                "category": "office",
+                "category": "academic center",
                 "display_point": {
                     "coordinates": [
                         -91.53635419369917,
@@ -3599,7 +3572,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "731cf744-f4a9-48b6-a688-2020688c0b5b",
-                "category": "office",
+                "category": "academic center",
                 "display_point": {
                     "coordinates": [
                         -91.53634989981904,
@@ -3621,39 +3594,12 @@
         {
             "feature_type": "occupant",
             "geometry": null,
-            "id": "1609746c-3f23-42b7-917a-720e320d0262",
-            "properties": {
-                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
-                "alt_name": null,
-                "anchor_id": "5022124f-4dd9-452c-8a29-a0c6d8526d45",
-                "category": "office",
-                "display_point": {
-                    "coordinates": [
-                        -91.53641001414604,
-                        41.659659128952256
-                    ],
-                    "type": "Point"
-                },
-                "hours": "Su-Sa 09:00-17:00",
-                "name": {
-                    "en": "2042"
-                },
-                "phone": "+14087924511",
-                "restriction": null,
-                "website": null,
-                "correlation_id": null
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "occupant",
-            "geometry": null,
             "id": "50b27426-f8b8-461c-a32d-34a5affbe454",
             "properties": {
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "5aa3ebbb-d5c0-4bc4-af51-9dd52416c838",
-                "category": "office",
+                "category": "utility",
                 "display_point": {
                     "coordinates": [
                         -91.53641001414604,
@@ -3680,7 +3626,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "f462029e-6d80-4fda-9e6f-eee2b32fbd4f",
-                "category": "office",
+                "category": "academic center",
                 "display_point": {
                     "coordinates": [
                         -91.53636492840045,
@@ -3842,7 +3788,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "5db69f13-9892-4b6d-a596-07dddd8fce90",
-                "category": "office",
+                "category": "utility",
                 "display_point": {
                     "coordinates": [
                         -91.53684398679066,
@@ -4004,7 +3950,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "7b06967d-705c-4899-bbac-21eeda6fc508",
-                "category": "office",
+                "category": "academic center",
                 "display_point": {
                     "coordinates": [
                         -91.53659838202266,
@@ -4031,7 +3977,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "f1ec685d-085b-46c7-884d-f9f78d6f1433",
-                "category": "office",
+                "category": "classroom",
                 "display_point": {
                     "coordinates": [
                         -91.53645531128345,
