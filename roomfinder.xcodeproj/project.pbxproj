@@ -10,6 +10,9 @@
 		4306A889223825C9005E7E97 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4306A888223825C9005E7E97 /* Styles.swift */; };
 		4353A0932228CD9600F2977B /* IMDFData in Resources */ = {isa = PBXBuildFile; fileRef = 4353A0922228CD9500F2977B /* IMDFData */; };
 		436217FD2256A4800075E16C /* LocalizedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436217FC2256A4800075E16C /* LocalizedName.swift */; };
+		4477125529EB67170046AE19 /* PathData in Resources */ = {isa = PBXBuildFile; fileRef = 4477125429EB67170046AE19 /* PathData */; };
+		4477125929EB7BD30046AE19 /* EdgeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4477125829EB7BD30046AE19 /* EdgeManager.swift */; };
+		4477125B29EB931E0046AE19 /* NodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4477125A29EB931E0046AE19 /* NodeManager.swift */; };
 		44B6BA2A29DB547900F41D0E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B6BA2829DB547900F41D0E /* PopUpViewController.swift */; };
 		44B6BA2B29DB547900F41D0E /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B6BA2929DB547900F41D0E /* PopUpViewController.xib */; };
 		4D1184BB29D49FB5004CE063 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 4D1184BA29D49FB5004CE063 /* CodeScanner */; };
@@ -42,6 +45,9 @@
 		4306A888223825C9005E7E97 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		4353A0922228CD9500F2977B /* IMDFData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IMDFData; sourceTree = "<group>"; };
 		436217FC2256A4800075E16C /* LocalizedName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedName.swift; sourceTree = "<group>"; };
+		4477125429EB67170046AE19 /* PathData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PathData; sourceTree = "<group>"; };
+		4477125829EB7BD30046AE19 /* EdgeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeManager.swift; sourceTree = "<group>"; };
+		4477125A29EB931E0046AE19 /* NodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeManager.swift; sourceTree = "<group>"; };
 		44B6BA2829DB547900F41D0E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		44B6BA2929DB547900F41D0E /* PopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
 		4DF5AC2E29E9CD08005F9B2B /* pathfind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pathfind.swift; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 		7E61CEFE215E1FF500EAD172 /* roomfinder */ = {
 			isa = PBXGroup;
 			children = (
+				4477125429EB67170046AE19 /* PathData */,
 				7E61CEFF215E1FF500EAD172 /* AppDelegate.swift */,
 				7EEBCE8A21AD3B0D00FF4181 /* IMDFDecoder.swift */,
 				7E61CF01215E1FF500EAD172 /* IndoorMapViewController.swift */,
@@ -150,6 +157,8 @@
 				7E61CF0B215E1FF600EAD172 /* Info.plist */,
 				7E61CF06215E1FF600EAD172 /* Assets.xcassets */,
 				4DF5AC2E29E9CD08005F9B2B /* pathfind.swift */,
+				4477125829EB7BD30046AE19 /* EdgeManager.swift */,
+				4477125A29EB931E0046AE19 /* NodeManager.swift */,
 			);
 			path = roomfinder;
 			sourceTree = "<group>";
@@ -266,6 +275,7 @@
 				7E61CF07215E1FF600EAD172 /* Assets.xcassets in Resources */,
 				F77FB50D2276FE70006F9FD0 /* README.md in Resources */,
 				7E61CF05215E1FF500EAD172 /* Main.storyboard in Resources */,
+				4477125529EB67170046AE19 /* PathData in Resources */,
 				4353A0932228CD9600F2977B /* IMDFData in Resources */,
 				44B6BA2B29DB547900F41D0E /* PopUpViewController.xib in Resources */,
 			);
@@ -290,8 +300,10 @@
 				7E61CF02215E1FF500EAD172 /* IndoorMapViewController.swift in Sources */,
 				7E4CC6C82242206000724B06 /* PointAnnotationView.swift in Sources */,
 				44B6BA2A29DB547900F41D0E /* PopUpViewController.swift in Sources */,
+				4477125B29EB931E0046AE19 /* NodeManager.swift in Sources */,
 				7EEA2CC221CBF3BB005539F2 /* Level.swift in Sources */,
 				7EEBCE8B21AD3B0E00FF4181 /* IMDFDecoder.swift in Sources */,
+				4477125929EB7BD30046AE19 /* EdgeManager.swift in Sources */,
 				7EEA2CBE21CBF2DF005539F2 /* Unit.swift in Sources */,
 				7EEA2CBC21CBF241005539F2 /* Occupant.swift in Sources */,
 				F712C6332262725500F3AFFB /* Feature.swift in Sources */,

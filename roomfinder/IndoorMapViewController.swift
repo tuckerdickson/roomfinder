@@ -51,7 +51,10 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
     
     
     @IBSegueAction func directionsButtonTapped(_ coder: NSCoder) -> PopUpViewController? {
-        createNodes().create(currentLevelAnnotations)
+        //createNodes().create(currentLevelAnnotations)
+
+        EdgeManager().parse()
+        NodeManager().parse()
         return PopUpViewController(coder: coder)
     }
     

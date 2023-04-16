@@ -1,0 +1,96 @@
+{
+  "type": "FeatureCollection",
+  "name": "node",
+  "features": [
+    {
+      "type": "Feature",
+      "feature_type": "node",
+      "properties": {
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1421"
+      },
+      "geometry": {
+        "coordinates": [
+          -91.53736741325439,
+          41.659864710620326
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "node",
+      "properties": {
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1422"
+      },
+      "geometry": {
+        "coordinates": [
+          -91.53738704466318,
+          41.659864710620326
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "node",
+      "properties": {
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1420"
+      },
+      "geometry": {
+        "coordinates": [
+          -91.53738704466318,
+          41.65989556136586
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "node",
+      "properties": {
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1418"
+      },
+      "geometry": {
+        "coordinates": [
+          -91.53738704466318,
+          41.65990749100382
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "node",
+      "properties": {
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1416"
+      },
+      "geometry": {
+        "coordinates": [
+          -91.53738704466318,
+          41.659932794256775
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "feature_type": "node",
+      "properties": {
+        "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+        "name": "1414"
+      },
+      "geometry": {
+        "coordinates": [
+          -91.53738704466318,
+          41.65996346485264
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+    "type": "FeatureCollection",
+    "name": "node",
+    "features": [
+      {
+        "type": "Feature",
+        "feature_type": "edge",
+        "properties": {
+          "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+          "nodes": [
+            1421,
+            1422
+          ]
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              -91.53736741325439,
+              41.659864710620326
+            ],
+            [
+              -91.53738704466318,
+              41.659864710620326
+            ]
+          ],
+          "type": "LineString"
+        }
+      },
+      {
+        "type": "Feature",
+        "feature_type": "edge",
+        "properties": {
+          "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+          "nodes": [
+            1422,
+            1420
+          ]
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              -91.53738704466318,
+              41.659864710620326
+            ],
+            [
+              -91.53738704466318,
+              41.65989556136586
+            ]
+          ],
+          "type": "LineString"
+        }
+      },
+      {
+        "type": "Feature",
+        "feature_type": "edge",
+        "properties": {
+          "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+          "nodes": [
+            1420,
+            1418
+          ]
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              -91.53738704466318,
+              41.65989556136586
+            ],
+            [
+              -91.53738704466318,
+              41.65990749100382
+            ]
+          ],
+          "type": "LineString"
+        }
+      },
+      {
+        "type": "Feature",
+        "feature_type": "edge",
+        "properties": {
+          "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+          "nodes": [
+            1418,
+            1416
+          ]
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              -91.53738704466318,
+              41.65990749100382
+            ],
+            [
+              -91.53738704466318,
+              41.659932794256775
+            ]
+          ],
+          "type": "LineString"
+        }
+      },
+      {
+        "type": "Feature",
+        "feature_type": "edge",
+        "properties": {
+          "level_id": "cd426e9b-5a66-4de9-92a7-255ba3912574",
+          "nodes": [
+            1416,
+            1414
+          ]
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              -91.53738704466318,
+              41.659932794256775
+            ],
+            [
+              -91.53738704466318,
+              41.65996346485264
+            ]
+          ],
+          "type": "LineString"
+        }
+      }
+    ]
+  }
