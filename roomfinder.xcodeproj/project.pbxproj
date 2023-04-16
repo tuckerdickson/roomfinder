@@ -16,7 +16,6 @@
 		44B6BA2A29DB547900F41D0E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B6BA2829DB547900F41D0E /* PopUpViewController.swift */; };
 		44B6BA2B29DB547900F41D0E /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B6BA2929DB547900F41D0E /* PopUpViewController.xib */; };
 		4D1184BB29D49FB5004CE063 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 4D1184BA29D49FB5004CE063 /* CodeScanner */; };
-		4DF5AC2F29E9CD08005F9B2B /* pathfind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF5AC2E29E9CD08005F9B2B /* pathfind.swift */; };
 		4DF5AC3229E9CD36005F9B2B /* AStar in Frameworks */ = {isa = PBXBuildFile; productRef = 4DF5AC3129E9CD36005F9B2B /* AStar */; };
 		7E4BF84722160D8B00AE3916 /* Amenity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4BF84622160D8B00AE3916 /* Amenity.swift */; };
 		7E4CC6C82242206000724B06 /* PointAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4CC6C72242206000724B06 /* PointAnnotationView.swift */; };
@@ -50,7 +49,6 @@
 		4477125A29EB931E0046AE19 /* NodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeManager.swift; sourceTree = "<group>"; };
 		44B6BA2829DB547900F41D0E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		44B6BA2929DB547900F41D0E /* PopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
-		4DF5AC2E29E9CD08005F9B2B /* pathfind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pathfind.swift; sourceTree = "<group>"; };
 		75E7ED09E5BC9AB9BC056378 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		7E4BF84622160D8B00AE3916 /* Amenity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amenity.swift; sourceTree = "<group>"; };
 		7E4CC6C72242206000724B06 /* PointAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointAnnotationView.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				7E61CF03215E1FF500EAD172 /* Main.storyboard */,
 				7E61CF0B215E1FF600EAD172 /* Info.plist */,
 				7E61CF06215E1FF600EAD172 /* Assets.xcassets */,
-				4DF5AC2E29E9CD08005F9B2B /* pathfind.swift */,
 				4477125829EB7BD30046AE19 /* EdgeManager.swift */,
 				4477125A29EB931E0046AE19 /* NodeManager.swift */,
 			);
@@ -293,7 +290,6 @@
 				436217FD2256A4800075E16C /* LocalizedName.swift in Sources */,
 				F78C77EB228DF74D0017CF2D /* LabelAnnotationView.swift in Sources */,
 				7EEA2CC421CBF454005539F2 /* Venue.swift in Sources */,
-				4DF5AC2F29E9CD08005F9B2B /* pathfind.swift in Sources */,
 				7E4BF84722160D8B00AE3916 /* Amenity.swift in Sources */,
 				4306A889223825C9005E7E97 /* Styles.swift in Sources */,
 				7EEA2CB521CA3D87005539F2 /* LevelPickerView.swift in Sources */,

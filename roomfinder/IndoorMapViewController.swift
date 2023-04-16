@@ -51,10 +51,6 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
     
     
     @IBSegueAction func directionsButtonTapped(_ coder: NSCoder) -> PopUpViewController? {
-        //createNodes().create(currentLevelAnnotations)
-
-        EdgeManager().parse()
-        NodeManager().parse()
         return PopUpViewController(coder: coder)
     }
     
@@ -82,6 +78,18 @@ class IndoorMapViewController: UIViewController, UISearchControllerDelegate, Lev
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let nodes = NodeManager().parse()
+        EdgeManager().parse(nodes: nodes)
+        
+        var path: [Simple2DNode] = []
+        path = EdgeManager().pathFind(to: nodes.1[3], from: nodes.1[0])
+        print(path)
+        for node in path{
+            let roomIndex = nodes.1.firstIndex(of: node)!
+            print(node.position)
+            print(nodes.0[roomIndex])
+        }
+
         let tap = UITapGestureRecognizer(
             target: self,
             action: #selector(UIInputViewController.dismissKeyboard)
