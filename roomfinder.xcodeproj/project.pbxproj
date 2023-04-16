@@ -11,6 +11,8 @@
 		4353A0932228CD9600F2977B /* IMDFData in Resources */ = {isa = PBXBuildFile; fileRef = 4353A0922228CD9500F2977B /* IMDFData */; };
 		436217FD2256A4800075E16C /* LocalizedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436217FC2256A4800075E16C /* LocalizedName.swift */; };
 		4479FEE629EC832B00D7BDB0 /* PathData in Resources */ = {isa = PBXBuildFile; fileRef = 4479FEE529EC832B00D7BDB0 /* PathData */; };
+		4479FEE829EC836000D7BDB0 /* EdgeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479FEE729EC836000D7BDB0 /* EdgeManager.swift */; };
+		4479FEEB29EC83B300D7BDB0 /* AStar in Frameworks */ = {isa = PBXBuildFile; productRef = 4479FEEA29EC83B300D7BDB0 /* AStar */; };
 		44B6BA2A29DB547900F41D0E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B6BA2829DB547900F41D0E /* PopUpViewController.swift */; };
 		44B6BA2B29DB547900F41D0E /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B6BA2929DB547900F41D0E /* PopUpViewController.xib */; };
 		4D1184BB29D49FB5004CE063 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 4D1184BA29D49FB5004CE063 /* CodeScanner */; };
@@ -42,6 +44,7 @@
 		4353A0922228CD9500F2977B /* IMDFData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IMDFData; sourceTree = "<group>"; };
 		436217FC2256A4800075E16C /* LocalizedName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedName.swift; sourceTree = "<group>"; };
 		4479FEE529EC832B00D7BDB0 /* PathData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PathData; sourceTree = "<group>"; };
+		4479FEE729EC836000D7BDB0 /* EdgeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeManager.swift; sourceTree = "<group>"; };
 		44B6BA2829DB547900F41D0E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		44B6BA2929DB547900F41D0E /* PopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
 		75E7ED09E5BC9AB9BC056378 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4479FEEB29EC83B300D7BDB0 /* AStar in Frameworks */,
 				7E6509D121B06864005D2B6C /* MapKit.framework in Frameworks */,
 				7E61CF13215E20B700EAD172 /* CoreLocation.framework in Frameworks */,
 				4D1184BB29D49FB5004CE063 /* CodeScanner in Frameworks */,
@@ -148,6 +152,7 @@
 				7E61CF03215E1FF500EAD172 /* Main.storyboard */,
 				7E61CF0B215E1FF600EAD172 /* Info.plist */,
 				7E61CF06215E1FF600EAD172 /* Assets.xcassets */,
+				4479FEE729EC836000D7BDB0 /* EdgeManager.swift */,
 			);
 			path = roomfinder;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			name = roomfinder;
 			packageProductDependencies = (
 				4D1184BA29D49FB5004CE063 /* CodeScanner */,
+				4479FEEA29EC83B300D7BDB0 /* AStar */,
 			);
 			productName = IMDF_Sample_Code;
 			productReference = 7E61CEFC215E1FF500EAD172 /* roomfinder.app */;
@@ -243,6 +249,7 @@
 			mainGroup = 7E61CEF3215E1FF500EAD172;
 			packageReferences = (
 				4D1184B929D49FB5004CE063 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				4479FEE929EC83B300D7BDB0 /* XCRemoteSwiftPackageReference "A-Star" */,
 			);
 			productRefGroup = 7E61CEFD215E1FF500EAD172 /* Products */;
 			projectDirPath = "";
@@ -285,6 +292,7 @@
 				7EEA2CB521CA3D87005539F2 /* LevelPickerView.swift in Sources */,
 				7E61CF02215E1FF500EAD172 /* IndoorMapViewController.swift in Sources */,
 				7E4CC6C82242206000724B06 /* PointAnnotationView.swift in Sources */,
+				4479FEE829EC836000D7BDB0 /* EdgeManager.swift in Sources */,
 				44B6BA2A29DB547900F41D0E /* PopUpViewController.swift in Sources */,
 				7EEA2CC221CBF3BB005539F2 /* Level.swift in Sources */,
 				7EEBCE8B21AD3B0E00FF4181 /* IMDFDecoder.swift in Sources */,
@@ -510,6 +518,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4479FEE929EC83B300D7BDB0 /* XCRemoteSwiftPackageReference "A-Star" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dev1an/A-Star.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		4D1184B929D49FB5004CE063 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/twostraws/CodeScanner";
@@ -521,6 +537,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4479FEEA29EC83B300D7BDB0 /* AStar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4479FEE929EC83B300D7BDB0 /* XCRemoteSwiftPackageReference "A-Star" */;
+			productName = AStar;
+		};
 		4D1184BA29D49FB5004CE063 /* CodeScanner */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4D1184B929D49FB5004CE063 /* XCRemoteSwiftPackageReference "CodeScanner" */;
