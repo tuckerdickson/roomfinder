@@ -28,6 +28,7 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
     
     private var currentLevelFeatures = [StylableFeature]()      // features of the current level
     private var currentLevelOverlays = [MKOverlay]()            // overlays of the current level
+    private var currentPathOverlay = MKPolyline()               // overlays for a route
     private var currentLevelAnnotations = [MKAnnotation]()      // annotations of the current level
     
     let pointAnnotationViewIdentifier = "PointAnnotationView"
@@ -241,11 +242,22 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
         
         path = EdgeManager().pathFind(to: nodes.1[toIndex], from: nodes.1[fromIndex])
         print(path)
+        
+        var coordinates: [CLLocationCoordinate2D] = []
         for node in path{
             let roomIndex = nodes.1.firstIndex(of: node)!
             print(node.position)
             print(nodes.0[roomIndex])
+            
+            let lat = CLLocationDegrees(node.position.y)
+            let long = CLLocationDegrees(node.position.x)
+            coordinates.append(CLLocationCoordinate2D(latitude: lat, longitude: long))
         }
+        
+        mapView.removeOverlay(currentPathOverlay)
+        currentPathOverlay = MKPolyline(coordinates: &coordinates, count: coordinates.count)
+        currentPathOverlay.title = "Path"
+        mapView.addOverlay(currentPathOverlay)
     }
     
     func filterRooms(searchTerm: String) {
@@ -374,6 +386,15 @@ extension IndoorMapViewController: MKMapViewDelegate {
         // extract geometry and features from the overlay
         guard let shape = overlay as? (MKShape & MKGeoJSONObject),
             let feature = currentLevelFeatures.first( where: { $0.geometry.contains( where: { $0 == shape }) }) else {
+            
+            if let routePolyline = overlay as? MKPolyline {
+                print(overlay.title!!)
+                let renderer = MKPolylineRenderer(polyline: routePolyline)
+                renderer.strokeColor = UIColor.systemBlue
+                renderer.lineWidth = 5
+                return renderer
+            }
+            
             return MKOverlayRenderer(overlay: overlay)
         }
 
