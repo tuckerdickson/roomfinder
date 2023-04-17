@@ -239,7 +239,7 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
         let toIndex = nodes.0.firstIndex(of: toRoom)!
         let fromIndex = nodes.0.firstIndex(of: fromRoom)!
         
-        path = EdgeManager().pathFind(to: nodes.1[fromIndex], from: nodes.1[toIndex])
+        path = EdgeManager().pathFind(to: nodes.1[toIndex], from: nodes.1[fromIndex])
         print(path)
         for node in path{
             let roomIndex = nodes.1.firstIndex(of: node)!
