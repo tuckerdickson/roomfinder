@@ -45,6 +45,9 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
     
     private let locationManager = CLLocationManager()           // TODO: figure out if we want to scrap blue dot
     
+    let nodes = NodeManager().parse()
+    var fromRoom : String = ""
+    
     //on qr button click, show qr scanner
     @IBSegueAction func scanView(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder,
@@ -79,17 +82,8 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
     /// Gets called everytime this view is loaded (e.g. when the app is opened).
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nodes = NodeManager().parse()
-        EdgeManager().parse(nodes: nodes)
         
-        var path: [Simple2DNode] = []
-        path = EdgeManager().pathFind(to: nodes.1[3], from: nodes.1[0])
-        print(path)
-        for node in path{
-            let roomIndex = nodes.1.firstIndex(of: node)!
-            print(node.position)
-            print(nodes.0[roomIndex])
-        }
+        EdgeManager().parse(nodes: nodes)
         
         // request location authorization from the user
         locationManager.requestWhenInUseAuthorization()
@@ -240,6 +234,20 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
         showFeaturesForOrdinal(selectedLevel.properties.ordinal)
     }
     
+    func getPath(toRoom: String){
+        var path: [Simple2DNode] = []
+        let toIndex = nodes.0.firstIndex(of: toRoom)!
+        let fromIndex = nodes.0.firstIndex(of: fromRoom)!
+        
+        path = EdgeManager().pathFind(to: nodes.1[fromIndex], from: nodes.1[toIndex])
+        print(path)
+        for node in path{
+            let roomIndex = nodes.1.firstIndex(of: node)!
+            print(node.position)
+            print(nodes.0[roomIndex])
+        }
+    }
+    
     func filterRooms(searchTerm: String) {
         if(searchTerm != "") {
             if(searchTerm.first!.wholeNumberValue == nil){
@@ -271,6 +279,7 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
                         getDirectionsButton.isEnabled = true
                         getDirectionsButton.isHidden = false
                         errorMessage.isHidden = true
+                        fromRoom = searchTerm
                         break
                     }
                     else{

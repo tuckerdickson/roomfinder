@@ -31,7 +31,7 @@ class PopUpViewController: UIViewController{
                 self.searchController.searchBar.text = roomread
                 
                 // annotate the scanned room on the map
-                self.indoorMapViewController.filterRooms(searchTerm: roomread)
+                self.indoorMapViewController.getPath(toRoom: roomread)
                 
                 // return to the map
                 self.hide()
@@ -94,7 +94,7 @@ extension PopUpViewController: UISearchBarDelegate{
         // get the text from the search bar
         if let searchText = searchBar.text {
             // add a bubble to the map
-            indoorMapViewController.filterRooms(searchTerm: searchText)
+            indoorMapViewController.getPath(toRoom: searchText)
         }
         
         // hide the pop up
