@@ -1,39 +1,42 @@
 /*
- 
  IndoorMapViewController.swift
  roomfindr
  This file controls the map view.
  Created on 2/25/23.
- 
  */
 
 import UIKit
-import CoreLocation
 import MapKit
 import CodeScanner
 import SwiftUI
 
-/// Controls the map view.
 class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPickerDelegate {
     
     // storyboard elements
-    @IBOutlet var mapView: MKMapView!                           // the map background
-    @IBOutlet weak var searchBar: UISearchBar!                  // the search bar on the map
-    @IBOutlet weak var errorMessage: UILabel!                   // the message that appears on bad queries
-    @IBOutlet weak var getDirectionsButton: UIButton!           // the blue get directions button
-    @IBOutlet var levelPicker: LevelPickerView!                 // the level picker
+    @IBOutlet var mapView: MKMapView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var errorMessage: UILabel!
+    @IBOutlet weak var getDirectionsButton: UIButton!
+    @IBOutlet var levelPicker: LevelPickerView!
         
-    var venue: Venue?                                           // object of type Venue; represents Seamans Center
-    private var levels: [Level] = []                            // levels of Seamans Center
+    // position and dimensions of storyboard elements
+    var searchFrame: CGRect!
+    var errorFrame: CGRect!
+        
+    // geojson objects
+    var venue: Venue?
+    private var levels: [Level] = []
     
-    private var currentLevelFeatures = [StylableFeature]()      // features of the current level
-    private var currentLevelOverlays = [MKOverlay]()            // overlays of the current level
-    private var currentPathOverlay = MKPolyline()               // overlays for a route
-    private var currentLevelAnnotations = [MKAnnotation]()      // annotations of the current level
+    // features, overlays, and annotations
+    private var currentLevelFeatures = [StylableFeature]()
+    private var currentLevelOverlays = [MKOverlay]()
+    private var currentPathOverlay = MKPolyline()
+    private var currentLevelAnnotations = [MKAnnotation]()
     
     let pointAnnotationViewIdentifier = "PointAnnotationView"
     let labelAnnotationViewIdentifier = "LabelAnnotationView"
         
+    // used for filtering rooms
     var floorOptions: [Int] = [1,2,3]
     var currentDataSource: [String] = []
     var filterOptions: [String] = ["office", "lab", "library",
@@ -41,54 +44,46 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
                                    "auditorium", "restroom",
                                    "elevator", "stairs"]
 
-    var searchFrame: CGRect!                                    // original position of search bar (before offsetting)
-    var errorFrame: CGRect!                                     // original position of error message (before offsetting)
-    
-    private let locationManager = CLLocationManager()           // TODO: figure out if we want to scrap blue dot
-    
+    // used for routing between rooms
     let nodes = NodeManager().parse()
-    var fromRoom : String = ""
+    var fromRoom: String = ""
     
-    //on qr button click, show qr scanner
+    // on qr button click, show qr scanner
     @IBSegueAction func scanView(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder,
-                                   rootView: CodeScannerView(codeTypes: [.qr],  //only scan qr codes
+                                   rootView: CodeScannerView(codeTypes: [.qr],
                                                              showViewfinder: true,
-                                                             simulatedData: "Simulated QR Code Read") { response in
-            switch response {
-            case .success(let result):
-                //get text read from qr code (room number)
-                let roomread = result.string
-                print("Found code: \(roomread)")
-                //fill out search bar with the scanned code
-                self.searchBar.text = roomread
-                self.filterRooms(searchTerm: roomread)
-                
-                
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-            //above chunk handles if successful or unsuccessful scan and prints it out,
-            // can add more within there for roomfinder specific applications
-            
-            //dismiss the scanning screen when done
-            self.dismiss(animated: true, completion: nil)
-        })}
+                                                             simulatedData: "Simulated QR Code Read") {
+            response in
+                switch response {
+                    case .success(let result):
+                        // get room number from qr code
+                        let roomread = result.string
+                    
+                        //fill out search bar with the scanned room number
+                        self.searchBar.text = roomread
+                    
+                        // highlight the room on the map
+                        self.filterRooms(searchTerm: roomread)
+                        
+                    case .failure(let error):
+                        print(error.localizedDescription)
+                }
+
+                //dismiss the scanning screen when done
+                self.dismiss(animated: true, completion: nil)
+        })
+    }
     
-    
+    // displays the pop up view when the directions button is tapped
     @IBSegueAction func directionsButtonTapped(_ coder: NSCoder) -> PopUpViewController? {
         return PopUpViewController(coder: coder)
     }
     
-    /// Gets called everytime this view is loaded (e.g. when the app is opened).
+    // Gets called everytime this view is loaded (e.g. when the app is opened).
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        EdgeManager().parse(nodes: nodes)
-        
-        // request location authorization from the user
-        locationManager.requestWhenInUseAuthorization()
-
         // set the mapView delegate to self so that we can use mapView delegate methods (below)
         self.mapView.delegate = self
         
@@ -105,31 +100,26 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
             print(error)
         }
         
-        // You might have multiple levels per ordinal. A selected level picker item displays all levels with the same ordinal.
+        // extract and sort levels of the venue
         if let levelsByOrdinal = self.venue?.levelsByOrdinal {
             let levels = levelsByOrdinal.mapValues { (levels: [Level]) -> [Level] in
-                // Choose indoor level over outdoor level
-                if let level = levels.first(where: { $0.properties.outdoor == false }) {
-                    return [level]
-                } else {
-                    return [levels.first!]
-                }
+                return [levels.first!]
             }.flatMap({ $0.value })
             
-            // Sort levels by their ordinal numbers
+            // sort levels by their ordinal numbers
             self.levels = levels.sorted(by: { $0.properties.ordinal > $1.properties.ordinal })
         }
         
-        // Set the map view's region to enclose the venue
+        // set the map view's region to the venue
         if let venue = venue, let venueOverlay = venue.geometry[0] as? MKOverlay {
             self.mapView.setVisibleMapRect(venueOverlay.boundingMapRect, edgePadding:
                 UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20), animated: false)
         }
 
-        // Display a default level at start, for example a level with ordinal 0
+        // display ordianl 0 (level 2) to start
         showFeaturesForOrdinal(0)
         
-        // Setup the level picker with the shortName of each level
+        // setup the level picker with the shortName of each level
         setupLevelPicker()
         
         // set the properties of the search bar
@@ -167,6 +157,9 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
             action: #selector(UIInputViewController.dismissKeyboard)
         )
         self.view.addGestureRecognizer(tap)
+        
+        // construct the graph of units
+        EdgeManager().parse(nodes: nodes)
     }
     
     /// Displays the features for the current ordinal.
