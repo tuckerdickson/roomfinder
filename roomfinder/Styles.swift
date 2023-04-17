@@ -34,6 +34,7 @@ extension StylableFeature {
 extension Level: StylableFeature {
     func configure(overlayRenderer: MKOverlayPathRenderer) {
         overlayRenderer.strokeColor = UIColor(named: "LevelStroke")
+        overlayRenderer.fillColor = UIColor(named: "WalkwayFill")
         overlayRenderer.lineWidth = 2.0
     }
 }
