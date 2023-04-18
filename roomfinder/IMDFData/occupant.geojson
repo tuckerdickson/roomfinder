@@ -494,7 +494,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "7bb7e22e-7596-403e-8a98-2ac31d3d0da4",
-                "category": "office",
+                "category": "utility",
                 "display_point": {
                     "coordinates": [
                         -91.53716660071402,
@@ -1304,7 +1304,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "57834993-e876-44d8-9aaa-bae5c19c70fb",
-                "category": "office",
+                "category": "utility",
                 "display_point": {
                     "coordinates": [
                         -91.53661441795056,
@@ -1493,7 +1493,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "bd26f0a2-bd9f-4231-87a6-56fec4417d01",
-                "category": "office",
+                "category": "utility",
                 "display_point": {
                     "coordinates": [
                         -91.53679371710047,
@@ -1655,7 +1655,7 @@
                 "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
                 "alt_name": null,
                 "anchor_id": "bf3c1852-1b80-4984-bc5f-4dc516c31b08",
-                "category": "office",
+                "category": "utility",
                 "display_point": {
                     "coordinates": [
                         -91.53643933760415,
