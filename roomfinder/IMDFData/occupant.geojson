@@ -6668,6 +6668,33 @@
                 "correlation_id": null
             },
             "type": "Feature"
+        },
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "c2868326-2586-4182-abed-58475615fd72 ",
+            "properties": {
+                "address_id": "699f17f4-a0c1-495b-aa51-0aad3d37863b",
+                "alt_name": null,
+                "anchor_id": "d11676f1-2817-465a-91f6-e62515810ea5",
+                "category": "lab",
+                "display_point": {
+                    "coordinates": [
+                        -91.53672124002642,
+                        41.65918585002058
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Su-Sa 09:00-17:00",
+                "name": {
+                    "en": "3642"
+                },
+                "phone": "+14087924511",
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
         }
     ],
     "name": "Occupant",
