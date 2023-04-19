@@ -225,12 +225,43 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
         // ensure selectedIndex is in appropriate range
         precondition(selectedIndex >= 0 && selectedIndex < self.levels.count)
         
+        
+        
         // select the appropriate level and update the features to reflect it
         let selectedLevel = self.levels[selectedIndex]
         showFeaturesForOrdinal(selectedLevel.properties.ordinal)
         
+        if pathQueue != []{
+            let index = nodes.1.firstIndex(of: pathQueue[0][0])!
+            let floor = nodes.0[index]
+            if selectedIndex == floorOptions.count - floor.first!.wholeNumberValue! {
+                //display next part of path queue
+                showNextPath()
+                pathQueue.remove(at: 0)
+            }
+        }else{
+            mapView.removeOverlay(currentPathOverlay)
+        }
+        
     }
     
+    func showNextPath(){
+        var coordinates: [CLLocationCoordinate2D] = []
+        for node in pathQueue[0] {
+            let roomIndex = nodes.1.firstIndex(of: node)!
+            print(node.position)
+            print(nodes.0[roomIndex])
+            
+            let lat = CLLocationDegrees(node.position.y)
+            let long = CLLocationDegrees(node.position.x)
+            coordinates.append(CLLocationCoordinate2D(latitude: lat, longitude: long))
+        }
+
+        mapView.removeOverlay(currentPathOverlay)
+        currentPathOverlay = MKPolyline(coordinates: &coordinates, count: coordinates.count)
+        currentPathOverlay.title = "Path"
+        mapView.addOverlay(currentPathOverlay)
+    }
     
     func getPath(toRoom: String){
         var path: [Simple2DNode] = []
@@ -258,7 +289,7 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
                 if prevBreak == 0{
                     pathQueue.append(Array(path[prevBreak ..< breaks+1]))
                 }else{
-                    pathQueue.append(Array(path[prevBreak-1 ..< breaks+1]))
+                    pathQueue.append(Array(path[prevBreak+1 ..< breaks+2]))
                 }
                 
                 prevBreak = breaks
@@ -281,6 +312,7 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
         //remove the path that is first displayed from pathQueue
         let index = nodes.1.firstIndex(of: pathQueue[0][0])!
         let floor = nodes.0[index]
+
         pathQueue.remove(at: 0)
         
         if pathQueue != [] {
@@ -288,11 +320,11 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
             selectedLevelDidChange(selectedIndex: floorOptions.count - floor.first!.wholeNumberValue!)
             levelPicker.selectedIndex = floorOptions.count - floor.first!.wholeNumberValue!
         }
+        
         mapView.removeOverlay(currentPathOverlay)
         currentPathOverlay = MKPolyline(coordinates: &coordinates, count: coordinates.count)
         currentPathOverlay.title = "Path"
         mapView.addOverlay(currentPathOverlay)
-        
         
     }
     
