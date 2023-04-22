@@ -15,7 +15,7 @@ class EdgeManager {
     let stairList3 = [["1259", "2259", "3259"], ["1300", "2300", "3300"], ["1203", "2203", "3203"], ["1100", "2100", "3100"], ["151", "251", "335"], ["1233", "2233", "3233"]]
     //list of stairs on only floors 1 and 2
     let stairList2 = [["1126", "2126"], ["1400", "2400"]]
-    
+    //coordinates for a stair nodes
     var stairPoints : [Simple2DNode] = []
     
     struct Geodata: Codable {
@@ -39,13 +39,16 @@ class EdgeManager {
         let nodes: [Int]
     }
     
+    //create connection between 2 nodes
     func createConnection(from source: Simple2DNode, to target: Simple2DNode) {
         source.connectedNodes.insert(target)
     }
     
+    //parse the edge data to figure out where connections need to be made
     func parse(nodes: ([String], [Simple2DNode])){
         var edgeData : Geodata?
         
+        //try to read in geojson file
         guard let jsonUrl = Bundle.main.url(forResource: "PathData/edge", withExtension: "geojson") else {
             return
         }
@@ -84,7 +87,7 @@ class EdgeManager {
             createConnection(from: nodes.1[index2], to: nodes.1[index1])
         }
     
-        
+        //make rest of connections
         for edge in edgeData!.features{
             //print(edge.properties.nodes)
             let index1 = nodes.0.firstIndex(of: String(edge.properties.nodes[0]))!
@@ -95,10 +98,10 @@ class EdgeManager {
         }
         
     }
+    
+    //used to find path between 2 nodes
     func pathFind(to start: Simple2DNode, from end: Simple2DNode) -> [Simple2DNode]{
         let path = start.findPath(to: end)
-
-        
         return path
     }
 }

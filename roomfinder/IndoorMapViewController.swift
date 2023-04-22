@@ -274,10 +274,16 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
         //figure out if or where you need to break the path
         var breakIndex : [Int] = []
         var i : Int = 0
-        for element in path {
-            //check to see if the point in the path is a stair point
+        var lastElementWasStair : Bool = false
+        for element in path{
             if manager.stairPoints.contains(element) {
-                breakIndex.append(i)
+                //if last element was a stair and this one is also a stair
+                if lastElementWasStair {
+                    breakIndex.append(i-1)
+                }
+                lastElementWasStair = true
+            } else{
+                lastElementWasStair = false
             }
             i += 1
         }
@@ -294,10 +300,10 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
                 
                 prevBreak = breaks
             }
+            pathQueue.append(Array(path[prevBreak+1 ..< path.count]))
         }else{
             pathQueue.append(path)
         }
-        
         
         var coordinates: [CLLocationCoordinate2D] = []
         for node in pathQueue[0] {

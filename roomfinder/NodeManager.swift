@@ -41,7 +41,6 @@ final class Simple2DNode: GraphNode {
 }
 
 class NodeManager {
-    
     struct Geodata: Codable {
         let type: String
         let features: [Feature]
@@ -63,16 +62,17 @@ class NodeManager {
         let name: String
     }
     
+    //used to read in nodes from geojson file
     func parse() -> ([String], [Simple2DNode]){
         var nodeData : Geodata?
+        
+        //try to read in geojson file
         guard let jsonUrl = Bundle.main.url(forResource: "PathData/node", withExtension: "geojson") else {
             return ([],[])
         }
         guard let jsonData = try? Data(contentsOf: jsonUrl) else { return ([],[]) }
         do {
            nodeData = try JSONDecoder().decode(Geodata.self, from: jsonData)
-
-
         } catch {
            print("\(error)")
         }
@@ -85,10 +85,6 @@ class NodeManager {
             let y = node.geometry.coordinates[1]
             coordinates.append(Simple2DNode(x: Float(x), y: Float(y)))
             rooms.append(node.properties.name)
-//            print("Coordinates")
-//            print(x)
-//            print(y)
-//            print(node.properties.name)
         }
         
         return(rooms, coordinates)
