@@ -3002,2726 +3002,2531 @@
         "type": "LineString"
       }
     },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2430,
-          2429
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53734502030866,
-            41.65961899304756
-          ],
-          [
-            -91.53734502030866,
-            41.659624629007084
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2429,
-          2428
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53734502030866,
-            41.659624629007084
-          ],
-          [
-            -91.53734502030866,
-            41.65963191793992
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2428,
-          2427
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53734502030866,
-            41.65963191793992
-          ],
-          [
-            -91.53734502030866,
-            41.659637804385255
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2427,
-          2426
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53734502030866,
-            41.659637804385255
-          ],
-          [
-            -91.53734502030866,
-            41.659690908983606
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2426,
-          2425
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53734502030866,
-            41.659690908983606
-          ],
-          [
-            -91.53734502030866,
-            41.65974859408814
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2425,
-          2424
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53734502030866,
-            41.65974859408814
-          ],
-          [
-            -91.53734502030866,
-            41.659760742685904
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2424,
-          2423
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53734502030866,
-            41.659760742685904
-          ],
-          [
-            -91.53734502030866,
-            41.659811605956236
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2423,
-          2422
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53734502030866,
-            41.659811605956236
-          ],
-          [
-            -91.53734502030866,
-            41.65984704976347
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2422,
-          2420
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53734502030866,
-            41.65984704976347
-          ],
-          [
-            -91.53734502030866,
-            41.6598675955494
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2420,
-          2416
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53734502030866,
-            41.6598675955494
-          ],
-          [
-            -91.53734502030866,
-            41.659917519419736
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2416,
-          2412
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53734502030866,
-            41.659917519419736
-          ],
-          [
-            -91.53734502030866,
-            41.65992277962411
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2412,
-          2410
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53734502030866,
-            41.65992277962411
-          ],
-          [
-            -91.53731645002064,
-            41.65992277962411
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2410,
-          2407
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53731645002064,
-            41.65992277962411
-          ],
-          [
-            -91.5373027452783,
-            41.65992277962411
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2407,
-          2405
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5373027452783,
-            41.65992277962411
-          ],
-          [
-            -91.53729139077825,
-            41.65992277962411
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2405,
-          2408
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53729139077825,
-            41.65992277962411
-          ],
-          [
-            -91.53727819940508,
-            41.65992277962411
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2408,
-          2406
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53727819940508,
-            41.65992277962411
-          ],
-          [
-            -91.53723920081032,
-            41.65992277962411
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2406,
-          2403
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53723920081032,
-            41.65992277962411
-          ],
-          [
-            -91.53722774310972,
-            41.65992277962411
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2403,
-          2404
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53722774310972,
-            41.65992277962411
-          ],
-          [
-            -91.53720003630751,
-            41.65992277962411
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2404,
-          2401
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53720003630751,
-            41.65992277962411
-          ],
-          [
-            -91.53718320348673,
-            41.65992277962411
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2401,
-          2402
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53718320348673,
-            41.65992277962411
-          ],
-          [
-            -91.53713358317202,
-            41.65992277962411
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2402,
-          22400
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53713358317202,
-            41.65992277962411
-          ],
-          [
-            -91.53713358317202,
-            41.65988590484301
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2100,
-          2141
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53707826096168,
-            41.65987064391723
-          ],
-          [
-            -91.53705840151648,
-            41.65987064391723
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          205,
-          2140
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53707826096168,
-            41.659915007059595
-          ],
-          [
-            -91.53705840151648,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2140,
-          2138
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53705840151648,
-            41.659915007059595
-          ],
-          [
-            -91.53703993420193,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2138,
-          2139
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53703993420193,
-            41.659915007059595
-          ],
-          [
-            -91.5370297036952,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2139,
-          2136
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5370297036952,
-            41.659915007059595
-          ],
-          [
-            -91.53698362531047,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2136,
-          2137
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53698362531047,
-            41.659915007059595
-          ],
-          [
-            -91.5369726972694,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2137,
-          2134
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5369726972694,
-            41.659915007059595
-          ],
-          [
-            -91.53694386584179,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2134,
-          2135
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53694386584179,
-            41.659915007059595
-          ],
-          [
-            -91.53693410035844,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2135,
-          2133
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53693410035844,
-            41.659915007059595
-          ],
-          [
-            -91.53691544947247,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2133,
-          2132
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53691544947247,
-            41.659915007059595
-          ],
-          [
-            -91.53690292207924,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2132,
-          2130
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53690292207924,
-            41.659915007059595
-          ],
-          [
-            -91.5368601776961,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2130,
-          2128
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5368601776961,
-            41.659915007059595
-          ],
-          [
-            -91.53682218268828,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2128,
-          2126
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53682218268828,
-            41.659915007059595
-          ],
-          [
-            -91.53676312600757,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2203,
-          202
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65982167188449
-          ],
-          [
-            -91.53678574722682,
-            41.65979668375928
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          202,
-          2215
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65979668375928
-          ],
-          [
-            -91.53678574722682,
-            41.65976375437842
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2215,
-          2217
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65976375437842
-          ],
-          [
-            -91.53678574722682,
-            41.65969300986049
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2217,
-          2229
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65969300986049
-          ],
-          [
-            -91.53678574722682,
-            41.65956545757393
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2229,
-          2233
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65956545757393
-          ],
-          [
-            -91.53678574722682,
-            41.659475977462506
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2233,
-          2235
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.659475977462506
-          ],
-          [
-            -91.53678574722682,
-            41.65943919361848
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2235,
-          2237
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65943919361848
-          ],
-          [
-            -91.53678574722682,
-            41.659405064259175
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2237,
-          2243
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.659405064259175
-          ],
-          [
-            -91.53678574722682,
-            41.65934431463259
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2243,
-          2244
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65934431463259
-          ],
-          [
-            -91.53678574722682,
-            41.659328060954294
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2244,
-          2245
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.659328060954294
-          ],
-          [
-            -91.53678574722682,
-            41.659314919679446
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2245,
-          2246
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.659314919679446
-          ],
-          [
-            -91.53678574722682,
-            41.65930627410185
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2246,
-          2249
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65930627410185
-          ],
-          [
-            -91.53678574722682,
-            41.65924836821233
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2249,
-          2248
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65924836821233
-          ],
-          [
-            -91.53678574722682,
-            41.65923690808228
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2248,
-          2251
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65923690808228
-          ],
-          [
-            -91.53678574722682,
-            41.65921722014272
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2251,
-          2256
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65921722014272
-          ],
-          [
-            -91.53678574722682,
-            41.65920958005279
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2256,
-          2253
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65921722014272
-          ],
-          [
-            -91.53678574722682,
-            41.65914904699838
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2253,
-          2257
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65914904699838
-          ],
-          [
-            -91.53678574722682,
-            41.659123777344035
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2257,
-          2258
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.659123777344035
-          ],
-          [
-            -91.53678574722682,
-            41.65911542478986
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2258,
-          2259
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53678574722682,
-            41.65911542478986
-          ],
-          [
-            -91.53678574722682,
-            41.65908943906058
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2329,
-          2328
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5367455786916,
-            41.659599967929154
-          ],
-          [
-            -91.5367305422818,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2328,
-          2325
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5367305422818,
-            41.659599967929154
-          ],
-          [
-            -91.53670459710482,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2325,
-          2322
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53670459710482,
-            41.659599967929154
-          ],
-          [
-            -91.53664533596135,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2322,
-          2320
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53664533596135,
-            41.659599967929154
-          ],
-          [
-            -91.53661437134501,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2320,
-          2318
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53661437134501,
-            41.659599967929154
-          ],
-          [
-            -91.53657774504673,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2318,
-          2319
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53657774504673,
-            41.659599967929154
-          ],
-          [
-            -91.53653784718787,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2319,
-          2312
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53653784718787,
-            41.659599967929154
-          ],
-          [
-            -91.53649057325411,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2312,
-          2313
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53649057325411,
-            41.659599967929154
-          ],
-          [
-            -91.5364824707272,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2313,
-          2301
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5364824707272,
-            41.659599967929154
-          ],
-          [
-            -91.53641683390231,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2301,
-          2300
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53641683390231,
-            41.659599967929154
-          ],
-          [
-            -91.53640556255611,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2300,
-          2028
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53640556255611,
-            41.659599967929154
-          ],
-          [
-            -91.53640556255611,
-            41.65962647688522
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2028,
-          2042
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53640556255611,
-            41.65962647688522
-          ],
-          [
-            -91.53641683390231,
-            41.65962647688522
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2020,
-          2018
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53644927087274,
-            41.65969677689915
-          ],
-          [
-            -91.53644927087274,
-            41.659726217189785
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2018,
-          204
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53644927087274,
-            41.659726217189785
-          ],
-          [
-            -91.53644927087274,
-            41.659780844202885
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2222,
-          2224
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5366746628469,
-            41.65979338882465
-          ],
-          [
-            -91.5366746628469,
-            41.65976619501788
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2224,
-          2226
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5366746628469,
-            41.65976619501788
-          ],
-          [
-            -91.5366746628469,
-            41.65973847824222
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2226,
-          2228
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5366746628469,
-            41.65973847824222
-          ],
-          [
-            -91.5366746628469,
-            41.65969088903256
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2220,
-          2001
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53670718463773,
-            41.65983471473396
-          ],
-          [
-            -91.53651965151751,
-            41.65983471473396
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2444,
-          2400
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53725112868858,
-            41.659770750451685
-          ],
-          [
-            -91.53725112868858,
-            41.65978708630459
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2400,
-          2442
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53725112868858,
-            41.65978708630459
-          ],
-          [
-            -91.53725112868858,
-            41.65979875476856
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2442,
-          2440
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53725112868858,
-            41.65979875476856
-          ],
-          [
-            -91.53725112868858,
-            41.659902215055524
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2040,
-          2045
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53640351377916,
-            41.65932356261726
-          ],
-          [
-            -91.53657464785837,
-            41.65932356261726
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          251,
-          206
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5364552441315,
-            41.65914353217374
-          ],
-          [
-            -91.5364552441315,
-            41.65912922390464
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          206,
-          207
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5364552441315,
-            41.65912922390464
-          ],
-          [
-            -91.5364552441315,
-            41.65909177884464
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2444,
-          2424
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53725112868858,
-            41.659770750451685
-          ],
-          [
-            -91.53734502030866,
-            41.659770750451685
-          ],
-          [
-            -91.53734502030866,
-            41.659760742685904
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2444,
-          2423
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53725112868858,
-            41.659770750451685
-          ],
-          [
-            -91.53734502030866,
-            41.659770750451685
-          ],
-          [
-            -91.53734502030866,
-            41.659811605956236
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2440,
-          2406
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53725112868858,
-            41.659851907431516
-          ],
-          [
-            -91.53725112868858,
-            41.65992277962411
-          ],
-          [
-            -91.53723920081032,
-            41.65992277962411
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2440,
-          2408
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53725112868858,
-            41.659851907431516
-          ],
-          [
-            -91.53725112868858,
-            41.65992277962411
-          ],
-          [
-            -91.53727819940508,
-            41.65992277962411
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          22400,
-          2100
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53713358317202,
-            41.65988590484301
-          ],
-          [
-            -91.53707826096168,
-            41.65988590484301
-          ],
-          [
-            -91.53707826096168,
-            41.65987064391723
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          22400,
-          205
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53713358317202,
-            41.65988590484301
-          ],
-          [
-            -91.53707826096168,
-            41.65988590484301
-          ],
-          [
-            -91.53707826096168,
-            41.659915007059595
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2140,
-          2141
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53705840151648,
-            41.659915007059595
-          ],
-          [
-            -91.53705840151648,
-            41.65987064391723
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2128,
-          2203
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53682218268828,
-            41.659915007059595
-          ],
-          [
-            -91.53678574722682,
-            41.659915007059595
-          ],
-          [
-            -91.53678574722682,
-            41.65982167188449
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2126,
-          2203
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53676312600757,
-            41.659915007059595
-          ],
-          [
-            -91.53678574722682,
-            41.659915007059595
-          ],
-          [
-            -91.53678574722682,
-            41.65982167188449
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2220,
-          2203
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53670718463773,
-            41.65983471473396
-          ],
-          [
-            -91.53678574722682,
-            41.65983471473396
-          ],
-          [
-            -91.53678574722682,
-            41.65982167188449
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2128,
-          2220
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53682218268828,
-            41.659915007059595
-          ],
-          [
-            -91.53678574722682,
-            41.659915007059595
-          ],
-          [
-            -91.53678574722682,
-            41.65983471473396
-          ],
-          [
-            -91.53670718463773,
-            41.65983471473396
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2126,
-          2220
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53676312600757,
-            41.659915007059595
-          ],
-          [
-            -91.53678574722682,
-            41.659915007059595
-          ],
-          [
-            -91.53678574722682,
-            41.65983471473396
-          ],
-          [
-            -91.53670718463773,
-            41.65983471473396
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2220,
-          2222
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53670718463773,
-            41.65983471473396
-          ],
-          [
-            -91.5366746628469,
-            41.65983471473396
-          ],
-          [
-            -91.5366746628469,
-            41.65979338882465
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2001,
-          2222
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53651965151751,
-            41.65983471473396
-          ],
-          [
-            -91.5366746628469,
-            41.65983471473396
-          ],
-          [
-            -91.5366746628469,
-            41.65979338882465
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          204,
-          2001
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53644927087274,
-            41.659780844202885
-          ],
-          [
-            -91.53644927087274,
-            41.65983471473396
-          ],
-          [
-            -91.53651965151751,
-            41.65983471473396
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2020,
-          2042
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53644927087274,
-            41.65969677689915
-          ],
-          [
-            -91.53644927087274,
-            41.65962647688522
-          ],
-          [
-            -91.53641683390231,
-            41.65962647688522
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2020,
-          2313
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53644927087274,
-            41.65969677689915
-          ],
-          [
-            -91.53644927087274,
-            41.659599967929154
-          ],
-          [
-            -91.5364824707272,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2020,
-          2301
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53644927087274,
-            41.65969677689915
-          ],
-          [
-            -91.53644927087274,
-            41.659599967929154
-          ],
-          [
-            -91.53641683390231,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2040,
-          2301
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53640351377916,
-            41.65932356261726
-          ],
-          [
-            -91.53644927087274,
-            41.65932356261726
-          ],
-          [
-            -91.53644927087274,
-            41.659599967929154
-          ],
-          [
-            -91.53641683390231,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2040,
-          2313
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53640351377916,
-            41.65932356261726
-          ],
-          [
-            -91.53644927087274,
-            41.65932356261726
-          ],
-          [
-            -91.53644927087274,
-            41.659599967929154
-          ],
-          [
-            -91.5364824707272,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2040,
-          2020
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53640351377916,
-            41.65932356261726
-          ],
-          [
-            -91.53644927087274,
-            41.65932356261726
-          ],
-          [
-            -91.53644927087274,
-            41.65969677689915
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2040,
-          201
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53640351377916,
-            41.65932356261726
-          ],
-          [
-            -91.53644927087274,
-            41.65932356261726
-          ],
-          [
-            -91.53644927087274,
-            41.65943919361848
-          ],
-          [
-            -91.53674391843698,
-            41.65943919361848
-          ],
-          [
-            -91.53674391843698,
-            41.65949925209398
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          201,
-          2233
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53674391843698,
-            41.65949925209398
-          ],
-          [
-            -91.53678574722682,
-            41.65949925209398
-          ],
-          [
-            -91.53678574722682,
-            41.659475977462506
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          201,
-          2229
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53674391843698,
-            41.65949925209398
-          ],
-          [
-            -91.53678574722682,
-            41.65949925209398
-          ],
-          [
-            -91.53678574722682,
-            41.65956545757393
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          201,
-          2313
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53674391843698,
-            41.65949925209398
-          ],
-          [
-            -91.53644927087274,
-            41.65949925209398
-          ],
-          [
-            -91.53644927087274,
-            41.659599967929154
-          ],
-          [
-            -91.5364824707272,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          201,
-          2301
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53674391843698,
-            41.65949925209398
-          ],
-          [
-            -91.53644927087274,
-            41.65949925209398
-          ],
-          [
-            -91.53644927087274,
-            41.659599967929154
-          ],
-          [
-            -91.53641683390231,
-            41.659599967929154
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          201,
-          2020
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53674391843698,
-            41.65949925209398
-          ],
-          [
-            -91.53644927087274,
-            41.65949925209398
-          ],
-          [
-            -91.53644927087274,
-            41.65969677689915
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2045,
-          251
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.53657464785837,
-            41.65932356261726
-          ],
-          [
-            -91.53657464785837,
-            41.659164523060156
-          ],
-          [
-            -91.5364552441315,
-            41.659164523060156
-          ],
-          [
-            -91.5364552441315,
-            41.65914353217374
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2329,
-          2229
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5367455786916,
-            41.659599967929154
-          ],
-          [
-            -91.53678574722682,
-            41.659599967929154
-          ],
-          [
-            -91.53678574722682,
-            41.65956545757393
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
-    {
-      "type": "Feature",
-      "feature_type": "edge",
-      "properties": {
-        "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
-        "nodes": [
-          2329,
-          2217
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            -91.5367455786916,
-            41.659599967929154
-          ],
-          [
-            -91.53678574722682,
-            41.659599967929154
-          ],
-          [
-            -91.53678574722682,
-            41.65969300986049
-          ]
-        ],
-        "type": "LineString"
-      }
-    },
+    
+    
+    
+    
+    {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2430,
+                  2429
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53734502030866,
+                                41.65961899304756],
+                  [
+                      -91.53734502030866,
+                                41.659624629007084
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2429,
+                  2428
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53734502030866,
+                                41.659624629007084],
+                  [
+                      -91.53734502030866,
+                                41.65963191793992
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2428,
+                  2427
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53734502030866,
+                                41.65963191793992],
+                  [
+                      -91.53734502030866,
+                                41.659637804385255
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2427,
+                  2426
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53734502030866,
+                                41.659637804385255],
+                  [
+                      -91.53734502030866,
+                                41.659690908983606
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2426,
+                  2425
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53734502030866,
+                                41.659690908983606],
+                  [
+                      -91.53734502030866,
+                                41.65974859408814
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2425,
+                  2424
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53734502030866,
+                                41.65974859408814],
+                  [
+                      -91.53734502030866,
+                                41.659760742685904
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2423,
+                  2422
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53734502030866,
+                                41.659811605956236],
+                  [
+                      -91.53734502030866,
+                                41.65984704976347
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2422,
+                  2420
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53734502030866,
+                                41.65984704976347],
+                  [
+                      -91.53734502030866,
+                                41.6598675955494
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2420,
+                  2416
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53734502030866,
+                                41.6598675955494],
+                  [
+                      -91.53734502030866,
+                                41.659917519419736
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2416,
+                  2412
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53734502030866,
+                                41.659917519419736],
+                  [
+                      -91.53734502030866,
+                                41.65992277962411
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2412,
+                  2410
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53734502030866,
+                                41.65992277962411],
+                  [
+                      -91.53731645002064,
+                                41.65992277962411
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2410,
+                  2407
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53731645002064,
+                                41.65992277962411],
+                  [
+                      -91.5373027452783,
+                                41.65992277962411
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2407,
+                  2405
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5373027452783,
+                                41.65992277962411],
+                  [
+                      -91.53729139077825,
+                                41.65992277962411
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2405,
+                  2408
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53729139077825,
+                                41.65992277962411],
+                  [
+                      -91.53727819940508,
+                                41.65992277962411
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2406,
+                  2403
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53723920081032,
+                                41.65992277962411],
+                  [
+                      -91.53722774310972,
+                                41.65992277962411
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2403,
+                  2404
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53722774310972,
+                                41.65992277962411],
+                  [
+                      -91.53720003630751,
+                                41.65992277962411
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2404,
+                  2401
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53720003630751,
+                                41.65992277962411],
+                  [
+                      -91.53718320348673,
+                                41.65992277962411
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2401,
+                  2402
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53718320348673,
+                                41.65992277962411],
+                  [
+                      -91.53713358317202,
+                                41.65992277962411
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2402,
+                  22400
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53713358317202,
+                                41.65992277962411],
+                  [
+                      -91.53713358317202,
+                                41.65988590484301
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2100,
+                  2141
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53707826096168,
+                                41.65987064391723],
+                  [
+                      -91.53705840151648,
+                                41.65987064391723
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  205,
+                  2140
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53707826096168,
+                                41.659915007059595],
+                  [
+                      -91.53705840151648,
+                                41.659915007059595
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2140,
+                  2138
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53705840151648,
+                                41.659915007059595],
+                  [
+                      -91.53703993420193,
+                                41.659915007059595
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2138,
+                  2139
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53703993420193,
+                                41.659915007059595],
+                  [
+                      -91.5370297036952,
+                                41.659915007059595
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2139,
+                  2136
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5370297036952,
+                                41.659915007059595],
+                  [
+                      -91.53698362531047,
+                                41.659915007059595
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2136,
+                  2137
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53698362531047,
+                                41.659915007059595],
+                  [
+                      -91.5369726972694,
+                                41.659915007059595
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2137,
+                  2134
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5369726972694,
+                                41.659915007059595],
+                  [
+                      -91.53694386584179,
+                                41.659915007059595
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2134,
+                  2135
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53694386584179,
+                                41.659915007059595],
+                  [
+                      -91.53693410035844,
+                               41.659915007059595
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2135,
+                  2133
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53693410035844,
+                               41.659915007059595],
+                  [
+                      -91.53691544947247,
+                                41.659915007059595
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2133,
+                  2132
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53691544947247,
+                                41.659915007059595],
+                  [
+                      -91.53690292207924,
+                                41.659915007059595
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2132,
+                  2130
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53690292207924,
+                                41.659915007059595],
+                  [
+                      -91.5368601776961,
+                                41.659915007059595
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2130,
+                  2128
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5368601776961,
+                                41.659915007059595],
+                  [
+                      -91.53682218268828,
+                                41.659915007059595
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2203,
+                  202
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.65982167188449],
+                  [
+                      -91.53678574722682,
+                                41.65979668375928
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  202,
+                  2215
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.65979668375928],
+                  [
+                      -91.53678574722682,
+                                41.65976375437842
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2215,
+                  2217
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.65976375437842],
+                  [
+                      -91.53678574722682,
+                                41.65969300986049
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2233,
+                  2235
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.659475977462506],
+                  [
+                      -91.53678574722682,
+                                41.65943919361848
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2235,
+                  2237
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.65943919361848],
+                  [
+                      -91.53678574722682,
+                                41.659405064259175
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2237,
+                  2243
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.659405064259175],
+                  [
+                      -91.53678574722682,
+                  41.65934431463259
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2243,
+                  2244
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                  41.65934431463259],
+                  [
+                      -91.53678574722682,
+                                41.659328060954294
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2244,
+                  2245
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.659328060954294],
+                  [
+                      -91.53678574722682,
+                                41.659314919679446
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2245,
+                  2246
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.659314919679446],
+                  [
+                      -91.53678574722682,
+                                41.65930627410185
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2246,
+                  2249
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.65930627410185],
+                  [
+                      -91.53678574722682,
+                                41.65924836821233
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2249,
+                  2248
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.65924836821233],
+                  [
+                      -91.53678574722682,
+                               41.65923690808228
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2248,
+                  2251
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                               41.65923690808228],
+                  [
+                      -91.53678574722682,
+                                41.65921722014272
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2251,
+                  2256
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.65921722014272],
+                  [
+                      -91.53678574722682,
+                                41.65920958005279
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2256,
+                  2253
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.65921722014272],
+                  [
+                      -91.53678574722682,
+                                41.65914904699838
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2253,
+                  2257
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.65914904699838],
+                  [
+                      -91.53678574722682,
+                                41.659123777344035
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2257,
+                  2258
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.659123777344035],
+                  [
+                      -91.53678574722682,
+                                41.65911542478986
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2258,
+                  2259
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.65911542478986],
+                  [
+                      -91.53678574722682,
+                                41.65908943906058
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2329,
+                  2328
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5367455786916,
+                                41.659599967929154],
+                  [
+                      -91.5367305422818,
+                                41.659599967929154
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2328,
+                  2325
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5367305422818,
+                                41.659599967929154],
+                  [
+                      -91.53670459710482,
+                                41.659599967929154
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2325,
+                  2322
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53670459710482,
+                                41.659599967929154],
+                  [
+                      -91.53664533596135,
+                               41.659599967929154
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2322,
+                  2320
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53664533596135,
+                               41.659599967929154],
+                  [
+                      -91.53661437134501,
+                                41.659599967929154
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2320,
+                  2318
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53661437134501,
+                                41.659599967929154],
+                  [
+                      -91.53657774504673,
+                                41.659599967929154
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2318,
+                  2319
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53657774504673,
+                                41.659599967929154],
+                  [
+                      -91.53653784718787,
+                                41.659599967929154
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2319,
+                  2312
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53653784718787,
+                                41.659599967929154],
+                  [
+                      -91.53649057325411,
+                                41.659599967929154
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2312,
+                  2313
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53649057325411,
+                                41.659599967929154],
+                  [
+                      -91.5364824707272,
+                                41.659599967929154
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2301,
+                  2300
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53641683390231,
+                                41.659599967929154],
+                  [
+                      -91.53640556255611,
+                                41.659599967929154
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2300,
+                  2028
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53640556255611,
+                                41.659599967929154],
+                  [
+                      -91.53640556255611,
+                                41.65962647688522
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2028,
+                  2042
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53640556255611,
+                                41.65962647688522],
+                  [
+                      -91.53641683390231,
+                                41.65962647688522
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2020,
+                  2018
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.65969677689915],
+                  [
+                      -91.53644927087274,
+                                41.659726217189785
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2018,
+                  204
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.659726217189785],
+                  [
+                      -91.53644927087274,
+                                41.659780844202885
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2222,
+                  2224
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5366746628469,
+                                41.65979338882465],
+                  [
+                      -91.5366746628469,
+                                41.65976619501788
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2224,
+                  2226
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5366746628469,
+                                41.65976619501788],
+                  [
+                      -91.5366746628469,
+                                41.65973847824222
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2226,
+                  2228
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5366746628469,
+                                41.65973847824222],
+                  [
+                      -91.5366746628469,
+                                41.65969088903256
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2444,
+                  2400
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53725112868858,
+                                41.659770750451685],
+                  [
+                      -91.53725112868858,
+                                41.65978708630459
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2400,
+                  2442
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53725112868858,
+                                41.65978708630459],
+                  [
+                      -91.53725112868858,
+                                41.65979875476856
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2442,
+                  2440
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53725112868858,
+                                41.65979875476856],
+                  [
+                      -91.53725112868858,
+                  41.659851907431516
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  251,
+                  206
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5364552441315,
+                                41.65914353217374],
+                  [
+                      -91.5364552441315,
+                                41.65912922390464
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  206,
+                  207
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5364552441315,
+                                41.65912922390464],
+                  [
+                      -91.5364552441315,
+                                41.65909177884464
+                          ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2140,
+                  2141
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                              -91.53705840151648,
+                               41.659915007059595
+                            ],
+                            [
+                              -91.53705840151648,
+                               41.65987064391723
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8888,
+                  2444
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                              -91.53734502030866,
+                            41.659770750451685
+                            ],
+                            [
+                              -91.53725112868858,
+                                        41.659770750451685
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8888,
+                  2424
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                              -91.53734502030866,
+                            41.659770750451685
+                            ],
+                            [
+                                -91.53734502030866,
+                            41.659760742685904
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8888,
+                  2423
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                              -91.53734502030866,
+                            41.659770750451685
+                            ],
+                            [
+                                -91.53734502030866,
+                            41.659811605956236
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8887,
+                  2440
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                              -91.53725112868858,
+                            41.65992277962411
+                            ],
+                            [
+                              -91.53725112868858,
+                                        41.659851907431516
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8887,
+                  2408
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                              -91.53725112868858,
+                            41.65992277962411
+                            ],
+                            [
+                                -91.53727819940508,
+                                41.65992277962411
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8887,
+                  2406
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                              -91.53725112868858,
+                            41.65992277962411
+                            ],
+                            [
+                                -91.53723920081032,
+                            41.65992277962411                                ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8886,
+                  205
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53707826096168,
+                                41.65988590484301
+                            ],
+                            [
+                                -91.53707826096168,
+                            41.659915007059595                              ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8886,
+                  2100
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53707826096168,
+                                41.65988590484301
+                            ],
+                            [
+                                -91.53707826096168,
+                            41.65987064391723                             ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8886,
+                  22400
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53707826096168,
+                                41.65988590484301
+                            ],
+                            [
+                                -91.53713358317202,
+                            41.65988590484301                           ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8885,
+                  2203
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                             -91.53678574722682,
+                           41.659915007059595
+                           ],
+                           [
+                            -91.53678574722682,
+                             41.65982167188449
+                           ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8885,
+                  2126
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                             -91.53678574722682,
+                           41.659915007059595
+                           ],
+                           [
+                               -91.53676312600757,
+                           41.659915007059595
+                           ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8885,
+                  2128
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                             -91.53678574722682,
+                           41.659915007059595
+                           ],
+                           [
+                               -91.53682218268828,
+                           41.659915007059595
+                           ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2220,
+                  2203
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                              -91.53670718463773,
+                                        41.65983471473396
+                            ],
+                            [
+                             -91.53678574722682,
+                                        41.65982167188449
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8884,
+                  2329
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                              -91.53678574722682,
+                            41.659599967929154
+                            ],
+                            [
+                              -91.5367455786916,
+                                        41.659599967929154
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8884,
+                  2229
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                              -91.53678574722682,
+                            41.659599967929154
+                            ],
+                            [
+                                -91.53678574722682,
+                            41.65956545757393
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8884,
+                  2217
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                              -91.53678574722682,
+                            41.659599967929154
+                            ],
+                            [
+                                -91.53678574722682,
+                            41.65969300986049
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8883,
+                  2220
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5366746628469,
+                                41.65983471473396
+                            ],
+                            [
+                                -91.53670718463773,
+                            41.65983471473396
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8883,
+                  2222
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5366746628469,
+                                41.65983471473396
+                            ],
+                            [
+                                -91.5366746628469,
+                            41.65979338882465
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8883,
+                  2001
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5366746628469,
+                                41.65983471473396
+                            ],
+                            [
+                                -91.53651965151751,
+                            41.65983471473396
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8882,
+                  2001
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.65983471473396
+                            ],
+                            [
+                                -91.53651965151751,
+                            41.65983471473396
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8882,
+                  204
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.65983471473396
+                            ],
+                            [
+                                -91.53644927087274,
+                            41.659780844202885
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8881,
+                  2020
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.65962647688522
+                            ],
+                            [
+                                -91.53644927087274,
+                            41.65969677689915
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8881,
+                  2042
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.65962647688522
+                            ],
+                            [
+                                -91.53641683390231,
+                            41.65962647688522
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  2301,
+                  2042
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53641683390231,
+                  41.659599967929154
+                            ],
+                            [
+                                -91.53641683390231,
+                            41.65962647688522
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8881,
+                  8880
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.65962647688522
+                            ],
+                            [
+                                -91.53644927087274,
+                                          41.659599967929154
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8880,
+                  2301
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.659599967929154
+                            ],
+                            [
+                                -91.53641683390231,
+                            41.659599967929154
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8880,
+                  2313
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.659599967929154
+                            ],
+                            [
+                                -91.5364824707272,
+                            41.659599967929154
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8880,
+                  8879
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.659599967929154
+                            ],
+                            [
+                                -91.53644927087274,
+                                          41.65949925209398
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  201,
+                  8879
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53674391843698,
+                  41.65949925209398
+                            ],
+                            [
+                                -91.53644927087274,
+                                          41.65949925209398
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  201,
+                  8878
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53674391843698,
+                  41.65949925209398
+                            ],
+                            [
+                                -91.53678574722682,
+                                          41.65949925209398
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8878,
+                  2233
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.65949925209398
+                            ],
+                            [
+                                -91.53678574722682,
+                            41.659475977462506
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8878,
+                  2229
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53678574722682,
+                                41.65949925209398
+                            ],
+                            [
+                                -91.53678574722682,
+                            41.65956545757393
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8877,
+                  251
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.5364552441315,
+                                41.6591631039951
+                            ],
+                            [
+                                -91.5364552441315,
+                            41.65914353217374
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8876,
+                  2045
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53657464785837,
+                                41.6591631039951
+                            ],
+                            [
+                                -91.53657464785837,
+                            41.65932356261726
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8876,
+                  8877
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53657464785837,
+                                41.6591631039951
+                            ],
+                            [
+                                -91.5364552441315,
+                                          41.6591631039951
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8875,
+                  8879
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.65932356261726
+                            ],
+                            [
+                                -91.53644927087274,
+                                          41.65949925209398
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8875,
+                  2040
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.65932356261726
+                            ],
+                            [
+                                -91.53640351377916,
+                            41.65932356261726
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+          {
+            "type": "Feature",
+            "feature_type": "edge",
+            "properties": {
+              "level_id": "0cb1f312-fb8f-4bab-ace3-28f33d5103e9",
+              "nodes": [
+                  8875,
+                  2045
+              ]
+            },
+            "geometry": {
+              "coordinates": [
+                  [
+                      -91.53644927087274,
+                                41.65932356261726
+                            ],
+                            [
+                                -91.53657464785837,
+                            41.65932356261726
+                            ]
+              ],
+              "type": "LineString"
+            }
+          },
+  
+
     {
       "type": "Feature",
       "feature_type": "edge",
