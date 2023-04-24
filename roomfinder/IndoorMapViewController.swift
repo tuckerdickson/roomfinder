@@ -391,6 +391,7 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
             
             //add back all dots
             self.mapView.addAnnotations(self.currentLevelAnnotations)
+            self.mapView.removeOverlay(currentPathOverlay)
         }
         searchBar.resignFirstResponder()
     }
@@ -424,6 +425,7 @@ extension IndoorMapViewController {
 
                 //add back all dots
                 self.mapView.addAnnotations(self.currentLevelAnnotations)
+                self.mapView.removeOverlay(currentPathOverlay)
             }
         }
     }
