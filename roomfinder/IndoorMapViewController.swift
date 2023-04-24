@@ -11,7 +11,8 @@ import CodeScanner
 import SwiftUI
 
 class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPickerDelegate {
-    
+    let manager = EdgeManager()
+    var pathQueue : [[Simple2DNode]] = []
     // storyboard elements
     @IBOutlet var mapView: MKMapView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -159,7 +160,8 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
         self.view.addGestureRecognizer(tap)
         
         // construct the graph of units
-        EdgeManager().parse(nodes: nodes)
+        
+        manager.parse(nodes: nodes)
     }
     
     /// Displays the features for the current ordinal.
@@ -223,21 +225,29 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
         // ensure selectedIndex is in appropriate range
         precondition(selectedIndex >= 0 && selectedIndex < self.levels.count)
         
+        
+        
         // select the appropriate level and update the features to reflect it
         let selectedLevel = self.levels[selectedIndex]
         showFeaturesForOrdinal(selectedLevel.properties.ordinal)
+        
+        if pathQueue != []{
+            let index = nodes.1.firstIndex(of: pathQueue[0][0])!
+            let floor = nodes.0[index]
+            if selectedIndex == floorOptions.count - floor.first!.wholeNumberValue! {
+                //display next part of path queue
+                showNextPath()
+                pathQueue.remove(at: 0)
+            }
+        }else{
+            mapView.removeOverlay(currentPathOverlay)
+        }
+        
     }
     
-    func getPath(toRoom: String){
-        var path: [Simple2DNode] = []
-        let toIndex = nodes.0.firstIndex(of: toRoom)!
-        let fromIndex = nodes.0.firstIndex(of: fromRoom)!
-        
-        path = EdgeManager().pathFind(to: nodes.1[toIndex], from: nodes.1[fromIndex])
-        print(path)
-        
+    func showNextPath(){
         var coordinates: [CLLocationCoordinate2D] = []
-        for node in path{
+        for node in pathQueue[0] {
             let roomIndex = nodes.1.firstIndex(of: node)!
             print(node.position)
             print(nodes.0[roomIndex])
@@ -246,11 +256,82 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
             let long = CLLocationDegrees(node.position.x)
             coordinates.append(CLLocationCoordinate2D(latitude: lat, longitude: long))
         }
+
+        mapView.removeOverlay(currentPathOverlay)
+        currentPathOverlay = MKPolyline(coordinates: &coordinates, count: coordinates.count)
+        currentPathOverlay.title = "Path"
+        mapView.addOverlay(currentPathOverlay)
+    }
+    
+    func getPath(toRoom: String){
+        var path: [Simple2DNode] = []
+
+        let toIndex = nodes.0.firstIndex(of: toRoom)!
+        let fromIndex = nodes.0.firstIndex(of: fromRoom)!
+        
+        path = manager.pathFind(to: nodes.1[toIndex], from: nodes.1[fromIndex])
+        
+        //figure out if or where you need to break the path
+        var breakIndex : [Int] = []
+        var i : Int = 0
+        var lastElementWasStair : Bool = false
+        for element in path{
+            if manager.stairPoints.contains(element) {
+                //if last element was a stair and this one is also a stair
+                if lastElementWasStair {
+                    breakIndex.append(i-1)
+                }
+                lastElementWasStair = true
+            } else{
+                lastElementWasStair = false
+            }
+            i += 1
+        }
+        
+        //if the path contained a stair element
+        if breakIndex != []{
+            var prevBreak : Int = 0
+            for breaks in breakIndex{
+                if prevBreak == 0{
+                    pathQueue.append(Array(path[prevBreak ..< breaks+1]))
+                }else{
+                    pathQueue.append(Array(path[prevBreak+1 ..< breaks+2]))
+                }
+                
+                prevBreak = breaks
+            }
+            pathQueue.append(Array(path[prevBreak+1 ..< path.count]))
+        }else{
+            pathQueue.append(path)
+        }
+        
+        var coordinates: [CLLocationCoordinate2D] = []
+        for node in pathQueue[0] {
+            let roomIndex = nodes.1.firstIndex(of: node)!
+            print(node.position)
+            print(nodes.0[roomIndex])
+            
+            let lat = CLLocationDegrees(node.position.y)
+            let long = CLLocationDegrees(node.position.x)
+            coordinates.append(CLLocationCoordinate2D(latitude: lat, longitude: long))
+        }
+        //remove the path that is first displayed from pathQueue
+        let index = nodes.1.firstIndex(of: pathQueue[0][0])!
+        let floor = nodes.0[index]
+
+        pathQueue.remove(at: 0)
+        
+        if pathQueue != [] {
+            //change the floor level so it correlates with first part of path
+            selectedLevelDidChange(selectedIndex: floorOptions.count - floor.first!.wholeNumberValue!)
+            levelPicker.selectedIndex = floorOptions.count - floor.first!.wholeNumberValue!
+        }
         
         mapView.removeOverlay(currentPathOverlay)
         currentPathOverlay = MKPolyline(coordinates: &coordinates, count: coordinates.count)
         currentPathOverlay.title = "Path"
         mapView.addOverlay(currentPathOverlay)
+        
     }
     
     func filterRooms(searchTerm: String) {
