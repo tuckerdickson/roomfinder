@@ -37,6 +37,17 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4451135E29FED9C600414EC3"
+               BuildableName = "roomfinderUITests.xctest"
+               BlueprintName = "roomfinderUITests"
+               ReferencedContainer = "container:roomfinder.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
