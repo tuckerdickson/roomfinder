@@ -10,6 +10,8 @@
 		4306A889223825C9005E7E97 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4306A888223825C9005E7E97 /* Styles.swift */; };
 		4353A0932228CD9600F2977B /* IMDFData in Resources */ = {isa = PBXBuildFile; fileRef = 4353A0922228CD9500F2977B /* IMDFData */; };
 		436217FD2256A4800075E16C /* LocalizedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436217FC2256A4800075E16C /* LocalizedName.swift */; };
+		4451136229FED9C700414EC3 /* roomfinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451136129FED9C700414EC3 /* roomfinderUITests.swift */; };
+		4451136429FED9C700414EC3 /* roomfinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451136329FED9C700414EC3 /* roomfinderUITestsLaunchTests.swift */; };
 		4479FEE629EC832B00D7BDB0 /* PathData in Resources */ = {isa = PBXBuildFile; fileRef = 4479FEE529EC832B00D7BDB0 /* PathData */; };
 		4479FEE829EC836000D7BDB0 /* EdgeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479FEE729EC836000D7BDB0 /* EdgeManager.swift */; };
 		4479FEEB29EC83B300D7BDB0 /* AStar in Frameworks */ = {isa = PBXBuildFile; productRef = 4479FEEA29EC83B300D7BDB0 /* AStar */; };
@@ -39,11 +41,24 @@
 		F78C77EB228DF74D0017CF2D /* LabelAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C77EA228DF74D0017CF2D /* LabelAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4451136529FED9C700414EC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E61CEF4215E1FF500EAD172 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E61CEFB215E1FF500EAD172;
+			remoteInfo = roomfinder;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0E4DF414B6CA3700FEC8FA74 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		4306A888223825C9005E7E97 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		4353A0922228CD9500F2977B /* IMDFData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IMDFData; sourceTree = "<group>"; };
 		436217FC2256A4800075E16C /* LocalizedName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedName.swift; sourceTree = "<group>"; };
+		4451135F29FED9C600414EC3 /* roomfinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roomfinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4451136129FED9C700414EC3 /* roomfinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomfinderUITests.swift; sourceTree = "<group>"; };
+		4451136329FED9C700414EC3 /* roomfinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomfinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4479FEE529EC832B00D7BDB0 /* PathData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PathData; sourceTree = "<group>"; };
 		4479FEE729EC836000D7BDB0 /* EdgeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeManager.swift; sourceTree = "<group>"; };
 		4479FEEC29EC83FE00D7BDB0 /* NodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeManager.swift; sourceTree = "<group>"; };
@@ -76,6 +91,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4451135C29FED9C600414EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E61CEF9215E1FF500EAD172 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4451136029FED9C700414EC3 /* roomfinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4451136129FED9C700414EC3 /* roomfinderUITests.swift */,
+				4451136329FED9C700414EC3 /* roomfinderUITestsLaunchTests.swift */,
+			);
+			path = roomfinderUITests;
+			sourceTree = "<group>";
+		};
 		44B6BA2729DB545000F41D0E /* PopUps */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +154,7 @@
 			children = (
 				F77FB50C2276FE70006F9FD0 /* README.md */,
 				7E61CEFE215E1FF500EAD172 /* roomfinder */,
+				4451136029FED9C700414EC3 /* roomfinderUITests */,
 				7E61CEFD215E1FF500EAD172 /* Products */,
 				7E61CF11215E20B600EAD172 /* Frameworks */,
 				F786F26322679FBB006CBEC1 /* LICENSE */,
@@ -135,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				7E61CEFC215E1FF500EAD172 /* roomfinder.app */,
+				4451135F29FED9C600414EC3 /* roomfinderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,6 +237,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4451135E29FED9C600414EC3 /* roomfinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4451136729FED9C700414EC3 /* Build configuration list for PBXNativeTarget "roomfinderUITests" */;
+			buildPhases = (
+				4451135B29FED9C600414EC3 /* Sources */,
+				4451135C29FED9C600414EC3 /* Frameworks */,
+				4451135D29FED9C600414EC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4451136629FED9C700414EC3 /* PBXTargetDependency */,
+			);
+			name = roomfinderUITests;
+			productName = roomfinderUITests;
+			productReference = 4451135F29FED9C600414EC3 /* roomfinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		7E61CEFB215E1FF500EAD172 /* roomfinder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E61CF0E215E1FF600EAD172 /* Build configuration list for PBXNativeTarget "roomfinder" */;
@@ -231,10 +282,15 @@
 		7E61CEF4215E1FF500EAD172 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
+					4451135E29FED9C600414EC3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 7E61CEFB215E1FF500EAD172;
+					};
 					7E61CEFB215E1FF500EAD172 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 1000;
@@ -259,11 +315,19 @@
 			projectRoot = "";
 			targets = (
 				7E61CEFB215E1FF500EAD172 /* roomfinder */,
+				4451135E29FED9C600414EC3 /* roomfinderUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4451135D29FED9C600414EC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E61CEFA215E1FF500EAD172 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +345,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4451135B29FED9C600414EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4451136229FED9C700414EC3 /* roomfinderUITests.swift in Sources */,
+				4451136429FED9C700414EC3 /* roomfinderUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E61CEF8215E1FF500EAD172 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,6 +382,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4451136629FED9C700414EC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E61CEFB215E1FF500EAD172 /* roomfinder */;
+			targetProxy = 4451136529FED9C700414EC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		7E61CF03215E1FF500EAD172 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -329,6 +410,47 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4451136829FED9C700414EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Cathryn.roomfinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = roomfinder;
+			};
+			name = Debug;
+		};
+		4451136929FED9C700414EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Cathryn.roomfinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = roomfinder;
+			};
+			name = Release;
+		};
 		7E61CF0C215E1FF600EAD172 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E4DF414B6CA3700FEC8FA74 /* SampleCode.xcconfig */;
@@ -501,6 +623,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4451136729FED9C700414EC3 /* Build configuration list for PBXNativeTarget "roomfinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4451136829FED9C700414EC3 /* Debug */,
+				4451136929FED9C700414EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7E61CEF7215E1FF500EAD172 /* Build configuration list for PBXProject "roomfinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
