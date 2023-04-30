@@ -11,21 +11,17 @@ import XCTest
 final class roomfinderUITests: XCTestCase {
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        
     }
-
-    func testExample() throws {
+    
+    //The following is meant to test the inital view and make sure only expected components exist
+    func testInitialView() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
         
-        
-        //The following is meant to test the inital view and make sure only expected components exist
         //search Bar on Main Screen should exist
         let destinationField = app.searchFields["Where do you want to go?"]
         XCTAssertTrue(destinationField.exists)
@@ -53,10 +49,18 @@ final class roomfinderUITests: XCTestCase {
         //Scan QR button in pop up should NOT exist
         let popUpQR = app/*@START_MENU_TOKEN@*/.buttons[" Scan QR Code"].staticTexts[" Scan QR Code"]/*[[".buttons[\" Scan QR Code\"].staticTexts[\" Scan QR Code\"]",".staticTexts[\" Scan QR Code\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         XCTAssertFalse(popUpQR.exists)
+    }
+    
+    //The following is meant to test to see if searching a destination room acts as expected
+    func testSeachRoom() throws {
+        //UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
         
+        let destinationField = app.searchFields["Where do you want to go?"]
+        let pathButton = app/*@START_MENU_TOKEN@*/.buttons["Show Path"].staticTexts["Show Path"]/*[[".buttons[\"Show Path\"].staticTexts[\"Show Path\"]",".staticTexts[\"Show Path\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
+        let lab = app.otherElements["2244, Lab"]
         
-        
-        //The following is meant to test to see if searching a destination room acts as expected
         //When we search 2258
         destinationField.tap()
         destinationField.typeText("2258")
@@ -91,10 +95,109 @@ final class roomfinderUITests: XCTestCase {
         XCTAssertTrue(pathButton.exists)
         //and we should be on the 1st floor
         XCTAssertTrue(app.otherElements["1416, Office"].exists)
-                                                                
-
+        
+        //When we search a room that does not exist
+        destinationField.tap()
+        destinationField.typeText(XCUIKeyboardKey.delete.rawValue)
+        destinationField.typeText(XCUIKeyboardKey.delete.rawValue)
+        destinationField.typeText(XCUIKeyboardKey.delete.rawValue)
+        destinationField.typeText(XCUIKeyboardKey.delete.rawValue)
+        destinationField.typeText("Test")
+        app.buttons["search"].tap()
+        //The path button should NOT exist
+        XCTAssertFalse(pathButton.exists)
+        //and we should remain the 1st floor
+        XCTAssertTrue(app.otherElements["1416, Office"].exists)
+        //error should be displayed
+        XCTAssertTrue(app.staticTexts["No rooms matching your search were found."].exists)
     }
-
+    
+    func testFilterRoom() throws {
+        //UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        
+        let destinationField = app.searchFields["Where do you want to go?"]
+        let pathButton = app.buttons["Show Path"].staticTexts["Show Path"]
+        let lab = app.otherElements["2244, Lab"]
+        
+        destinationField.tap()
+        destinationField.typeText("Office")
+        app.buttons["search"].tap()
+        //The path button should NOT exist
+        XCTAssertFalse(pathButton.exists)
+        //offices shoudl exist
+        XCTAssertTrue(app.otherElements["2226, Office"].exists)
+        //and classrooms should NOT
+        XCTAssertFalse(lab.exists)
+    }
+    
+    func testShowPath() throws {
+        //UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        
+        let destinationField = app.searchFields["Where do you want to go?"]
+        let pathButton = app.buttons["Show Path"].staticTexts["Show Path"]
+        let lab = app.otherElements["2244, Lab"]
+        let popUpSearch = app.searchFields["Search"]
+        let popUpQR = app/*@START_MENU_TOKEN@*/.buttons[" Scan QR Code"].staticTexts[" Scan QR Code"]/*[[".buttons[\" Scan QR Code\"].staticTexts[\" Scan QR Code\"]",".staticTexts[\" Scan QR Code\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
+        
+        //when I type in 2258 as the destination room
+        destinationField.tap()
+        destinationField.typeText("2258")
+        app.buttons["search"].tap()
+        //and hit the show path button
+        pathButton.tap()
+        //then source search should exist
+        XCTAssertTrue(popUpSearch.exists)
+        //and Scan QR button in pop up should exist
+        XCTAssertTrue(popUpQR.exists)
+        
+        //when I type 2040 into the source search bar
+        popUpSearch.tap()
+        popUpSearch.typeText("2040")
+        app.buttons["search"].tap()
+        //I should be on the 2nd floor
+        XCTAssertTrue(lab.exists)
+        
+        //When I type in 2258 as the destination room
+        destinationField.tap()
+        destinationField.typeText(XCUIKeyboardKey.delete.rawValue)
+        destinationField.typeText(XCUIKeyboardKey.delete.rawValue)
+        destinationField.typeText(XCUIKeyboardKey.delete.rawValue)
+        destinationField.typeText(XCUIKeyboardKey.delete.rawValue)
+        destinationField.typeText("2258")
+        app.buttons["search"].tap()
+        //and hit the show path button
+        pathButton.tap()
+        //and I type 3231 into the source search bar
+        popUpSearch.tap()
+        popUpSearch.typeText("3231")
+        app.buttons["search"].tap()
+        sleep(3)
+        //I should be on the 3rd floor
+        XCTAssertTrue(app.otherElements["3245, Lab"].exists)
+        
+        //When I type in 2258 as the destination room
+        destinationField.tap()
+        destinationField.typeText(XCUIKeyboardKey.delete.rawValue)
+        destinationField.typeText(XCUIKeyboardKey.delete.rawValue)
+        destinationField.typeText(XCUIKeyboardKey.delete.rawValue)
+        destinationField.typeText(XCUIKeyboardKey.delete.rawValue)
+        destinationField.typeText("2258")
+        app.buttons["search"].tap()
+        //and hit the show path button
+        pathButton.tap()
+        //and I type 1414 into the source search bar
+        popUpSearch.tap()
+        popUpSearch.typeText("1414")
+        app.buttons["search"].tap()
+        sleep(3)
+        //I should be on the 1st floor
+        XCTAssertTrue(app.otherElements["1416, Office"].exists)
+    }
+    
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
