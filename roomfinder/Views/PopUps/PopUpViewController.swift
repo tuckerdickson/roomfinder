@@ -13,7 +13,8 @@ class PopUpViewController: UIViewController{
     // storyboard elements
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var searchContainerView: UIView!
-
+    @IBOutlet weak var errorLabel: UILabel!
+    
     var searchController: UISearchController!
     var indoorMapViewController: IndoorMapViewController!
     
@@ -50,6 +51,7 @@ class PopUpViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        errorLabel.isHidden = true
         //configuration for search bar
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
@@ -93,13 +95,25 @@ extension PopUpViewController: UISearchBarDelegate{
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         // get the text from the search bar
         if let searchText = searchBar.text {
-            // add a bubble to the map
-            indoorMapViewController.getPath(toRoom: searchText)
+            for occupant in indoorMapViewController.currentLevelAnnotations{
+                if(occupant.title!! == searchText){
+                    indoorMapViewController.mapView.selectAnnotation(occupant, animated: true)
+                    errorLabel.isHidden = true
+                    // hide the pop up
+                    searchController.isActive = false
+                    hide()
+                    indoorMapViewController.getPath(toRoom: searchText)
+                    break
+                }
+                else{
+                    //show that no room was found
+                    errorLabel.isHidden = false
+                }
+            }
         }
         
-        // hide the pop up
-        searchController.isActive = false
-        hide()
+        
+        
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {

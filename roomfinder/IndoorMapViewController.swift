@@ -32,7 +32,7 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
     private var currentLevelFeatures = [StylableFeature]()
     private var currentLevelOverlays = [MKOverlay]()
     private var currentPathOverlay = MKPolyline()
-    private var currentLevelAnnotations = [MKAnnotation]()
+    var currentLevelAnnotations = [MKAnnotation]()
     
     let pointAnnotationViewIdentifier = "PointAnnotationView"
     let labelAnnotationViewIdentifier = "LabelAnnotationView"

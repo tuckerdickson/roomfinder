@@ -150,29 +150,35 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Z20-al-JpR">
                                 <rect key="frame" x="0.0" y="76" width="375" height="233"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Nearby Room Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyz-yN-FSE">
-                                        <rect key="frame" x="78.333333333333329" y="0.0" width="218.33333333333337" height="20.333333333333332"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter Nearby Room Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyz-yN-FSE">
+                                        <rect key="frame" x="78.333333333333329" y="0.0" width="218.33333333333337" height="14"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4n-3m-1Ie">
-                                        <rect key="frame" x="0.0" y="56.333333333333343" width="375" height="50"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t4n-3m-1Ie">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="0.0"/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l39-CF-LWD">
-                                        <rect key="frame" x="179.66666666666666" y="142.33333333333334" width="15.666666666666657" height="20.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l39-CF-LWD">
+                                        <rect key="frame" x="179.66666666666666" y="86" width="15.666666666666657" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXT-JB-Ubr">
-                                        <rect key="frame" x="105" y="198.66666666666669" width="165" height="34.333333333333343"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXT-JB-Ubr">
+                                        <rect key="frame" x="105" y="142.33333333333334" width="165" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="qrcode.viewfinder" catalog="system" title=" Scan QR Code"/>
                                         <connections>
                                             <segue destination="YZf-8O-ZsI" kind="show" destinationCreationSelector="scanView:" id="hoI-oi-EEz"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="No rooms matching your search were found." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KV3-S3-zaP">
+                                        <rect key="frame" x="19.333333333333343" y="212.66666666666669" width="336.66666666666663" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="t4n-3m-1Ie" secondAttribute="trailing" id="R0R-hP-V0O"/>
@@ -194,6 +200,7 @@
                     <navigationItem key="navigationItem" id="fWJ-GB-64Z"/>
                     <connections>
                         <outlet property="contentView" destination="vsr-HZ-84w" id="Oq6-Hu-ebo"/>
+                        <outlet property="errorLabel" destination="KV3-S3-zaP" id="92C-Oj-KdK"/>
                         <outlet property="searchContainerView" destination="t4n-3m-1Ie" id="YzI-U1-XBU"/>
                     </connections>
                 </viewController>
@@ -203,7 +210,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="G0V-hn-mlY"/>
+        <segue reference="hoI-oi-EEz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
