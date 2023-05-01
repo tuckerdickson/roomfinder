@@ -117,6 +117,7 @@ extension Occupant: StylableFeature {
         case office
         case conference
         case library
+
     }
 
     // configure the annotation color for each type of occupant above
@@ -137,6 +138,8 @@ extension Occupant: StylableFeature {
                 annotationView.backgroundColor = UIColor(named: "LibraryFill")
 
             }
+        } else {
+            annotationView.backgroundColor = UIColor(named: "DefaultAmenityFill")
         }
 
         // typically, occupants have higher priority than amenities
