@@ -43,7 +43,8 @@ class IndoorMapViewController: UIViewController, UISearchBarDelegate, LevelPicke
     var filterOptions: [String] = ["office", "lab", "library",
                                    "classroom", "conference",
                                    "auditorium", "restroom",
-                                   "elevator", "stairs"]
+                                   "elevator", "stairs", "utility", "lounge", "academic center",
+                                    "religious", "lounge", ]
 
     // used for routing between rooms
     let nodes = NodeManager().parse()
